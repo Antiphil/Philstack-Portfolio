@@ -1,6 +1,6 @@
 ---
-title: Laser Cutting - Meine Einstieg & Erfahrungen
-description: Erfahre wie ich meine ersten Schritte im bereich der Laser Gravur & Cuttin gemacht habe und was dabei gelernt habe.
+title: Tufting - Mein Einstieg & Erfahrungen
+description: Erfahre wie ich meine ersten Schritte im bereich des Tuftens gemacht habe und was dabei gelernt habe.
 date: '2023-6-27'
 categories:
   - DeepDive
