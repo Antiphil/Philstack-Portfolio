@@ -1,5 +1,6 @@
 <script lang="ts">
 	import logo from '$lib/assets/logo.svg';
+	import Footer from '$lib/components/layout/footer.svelte';
 	import { onMount } from 'svelte';
 	import { fade, fly } from 'svelte/transition';
 	import '../app.css';
@@ -39,6 +40,7 @@
 <div class="">
 	<slot />
 </div>
+<Footer />
 
 <style lang="postcss">
 	.vl {

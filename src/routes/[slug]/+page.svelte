@@ -16,7 +16,7 @@
 			<h1 class="text-4xl font-bold md:tracki md:text-5xl">{data.meta.title}</h1>
 			<div class="flex flex-col items-start justify-between w-full md:flex-row md:items-center dark:text-gray-400">
 				<div class="flex items-center md:space-x-2">
-					<img src="https://source.unsplash.com/75x75/?portrait" alt="" class="w-10 h-10 border rounded-full dark:bg-gray-500 dark:border-gray-700" />
+					<img src="https://vercel.com/api/www/avatar/99253364f34c46441fa86cb84910593e836ae286?s=64" alt="" class="w-10 h-10 border rounded-full dark:bg-gray-500 dark:border-gray-700" />
 					<p class="text-sm font-bold">Phil • {formatDate(data.meta.date)}</p>
 				</div>
 				<p class="flex-shrink-0 mt-3 text-sm md:mt-0">4 min read • 1,570 views</p>
