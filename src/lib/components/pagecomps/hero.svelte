@@ -1,51 +1,28 @@
-<div class="relative pt-40 pb-20 lg:pt-44 mb-32">
-	<div class="relative m-auto px-10 md:px-12 lg:px-24">
-		<h1 class="sm:mx-auto sm:w-10/12 md:w-2/3 font-black text-blue-900 text-4xl text-center sm:text-5xl md:text-6xl lg:w-auto lg:text-left xl:text-7xl dark:text-white">Im Phil - Web Developer from Germany! <br class="lg:block hidden" /> <span class="relative text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-blue-400 dark:to-cyan-300">This is my Portfolio</span>.</h1>
-		<div class="lg:flex">
-			<div class="relative mt-8 md:mt-16 space-y-8 sm:w-10/12 md:w-2/3 lg:ml-0 sm:mx-auto text-center lg:text-left lg:mr-auto lg:w-7/12">
-				<p class="sm:text-lg text-gray-700 dark:text-gray-300 lg:w-11/12">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, nihil porro rerum iure blanditiis impedit molestias earum consequuntur autem delectus ad non, culpa tenetur ut labore voluptas vitae odio maiores voluptate alias eligendi ea natus fuga? Amet ducimus illo non cupiditate quasi rem veniam? Saepe nesciunt repellat aut quaerat quia.</p>
-				<span class="block font-semibold text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. </span>
-				<div class="grid grid-cols-3 space-x-4 md:space-x-6 md:flex md:justify-center lg:justify-start">
-					<a aria-label="add to slack" href="#" class="p-4 border border-gray-200 dark:bg-gray-800 dark:border-gray-700 rounded-full duration-300 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-600/20 dark:hover:border-cyan-300/30">
-						<div class="flex justify-center space-x-4">
-							<img class="w-6 h-6" src="https://tailus.io/sources/blocks/tech-startup/preview/images/slack.png" alt="slack logo" loading="lazy" width="128" height="128" />
-							<span class="hidden font-medium md:block dark:text-white">E-Mail</span>
-						</div>
-					</a>
-					<a aria-label="add to chat" href="#" class="p-4 border border-gray-200 dark:bg-gray-800 dark:border-gray-700 rounded-full duration-300 hover:border-green-400 hover:shadow-lg hover:shadow-lime-600/20 dark:hover:border-green-300/30">
-						<div class="flex justify-center space-x-4">
-							<img class="w-6 h-6" src="https://tailus.io/sources/blocks/tech-startup/preview/images/chat.png" alt="chat logo" loading="lazy" width="128" height="128" />
-							<span class="hidden font-medium md:block dark:text-white">Phone</span>
-						</div>
-					</a>
-					<a aria-label="add to zoom" href="#" class="p-4 border border-gray-200 dark:bg-gray-800 dark:border-gray-700 rounded-full duration-300 hover:border-blue-400 hover:shadow-lg hover:shadow-blue-600/20 dark:hover:border-blue-300/30">
-						<div class="flex justify-center space-x-4">
-							<img class="w-6 h-6" src="https://tailus.io/sources/blocks/tech-startup/preview/images/zoom.png" alt="chat logo" loading="lazy" width="128" height="128" />
-							<span class="hidden font-medium md:block dark:text-white">Discord</span>
-						</div>
-					</a>
-				</div>
+<script lang="ts">
+	import shil from '$lib/assets/shil.png'
+</script>
 
-				<div class="dark:text-gray-300">
-					🔥🌟
-					<span>Lorem Ipsum:</span>
-					<a href="#" class="font-semibold text-gray-700 dark:text-gray-200">Stuff,</a>
-					<a href="#" class="font-semibold text-gray-700 dark:text-gray-200">Stuff</a>
-				</div>
+<section class="pt-10 overflow-hidden md:pt-0 sm:pt-16 2xl:pt-16">
+    <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+        <div class="grid items-center grid-cols-1 md:grid-cols-2">
+            <div>
+                <h2 class="text-3xl font-bold leading-tight  sm:text-4xl lg:text-5xl">Hey 👋 I am <br class="block sm:hidden" />Phil!</h2>
+                <p class="max-w-lg mt-3 text-xl leading-relaxed  md:mt-8">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
 
-				<div class="pt-12 flex gap-6 lg:gap-12 justify-between grayscale lg:w-2/3">
-					<a href="https://lebenshilfe-suedthueringen.de/" target="_blank"><img src="https://codedreams.de/build/assets/lebenshilfe.0517f13b.png" class="h-8 sm:h-10 w-auto lg:h-12 invert brightness-0 opacity-70" alt="" /></a>
-					<a href="https://kreativwerkstatt.de/" target="_blank"><img src="https://codedreams.de/build/assets/kreawe.1c39ef07.svg" class="h-8 sm:h-10 w-auto lg:h-12 invert brightness-0 opacity-70" alt="" /></a>
-					<a href="https://www.kleineckemedia.de/" target="_blank"><img src="https://kleineckepriva.vercel.app/_app/immutable/assets/kleinecke.bdc0f231.svg" class="h-8 sm:h-10 w-auto lg:h-12 invert brightness-0 opacity-70" alt="" /></a>
-					<a href="https://codedreams.de/" target="_blank"><img src="https://codedreams.de/build/assets/CodeDreams.da805abb.svg" class="h-8 sm:h-10 w-auto lg:h-12 invert brightness-0 opacity-70" alt="" /></a>
-				</div>
-			</div>
-			<!-- <div class="mt-12 md:mt-0 lg:absolute -right-10 lg:w-7/12">
-				<div class="relative w-full">
-					<div aria-hidden="true" class="absolute scale-75 md:scale-110 inset-0 m-auto w-full h-full md:w-96 md:h-96 rounded-full rotate-45 bg-gradient-to-r from-sky-500 to-cyan-300 blur-3xl" />
-					<img src="https://tailus.io/sources/blocks/tech-startup/preview/images/globalization-cuate.svg" class="relative w-full" alt="wath illustration" loading="lazy" width="320" height="280" />
-				</div>
-			</div> -->
-		</div>
-	</div>
-</div>
+                <p class="mt-4 text-xl md:mt-8">
+                    <span class="relative inline-block">
+                        <span class="absolute inline-block w-full bottom-0.5 h-2 bg-blue-400"></span>
+                        <span class="relative"> Have a question? </span>
+                    </span>
+                    <br class="block sm:hidden" />Contact me on <a href="#" title="" class="transition-all duration-200 text-sky-500 hover:text-sky-600 hover:underline">Discord</a>
+                </p>
+            </div>
+
+            <div class="relative">
+                <img class="absolute inset-x-0 bottom-0 -mb-48 -translate-x-1/2 left-1/2" src="https://cdn.rareblocks.xyz/collection/celebration/images/team/1/blob-shape.svg" alt="" />
+
+                <img class="relative w-full xl:max-w-lg xl:mx-auto 2xl:origin-bottom 2xl:scale-110" src={shil} alt="" />
+            </div>
+        </div>
+    </div>
+</section>
