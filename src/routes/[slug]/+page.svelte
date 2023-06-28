@@ -29,20 +29,20 @@
 	<div>
 		<div class="flex flex-wrap py-6 space-x-2 border-t border-dashed dark:border-gray-400">
 			{#each data.meta.categories as category}
-				<a rel="noopener noreferrer" href="#" class="px-3 py-1 rounded-sm hover:underline dark:bg-violet-400 dark:text-gray-900">{category}</a>
+				<a rel="noopener noreferrer" href="/" class="px-3 py-1 rounded-sm hover:underline dark:bg-violet-400 dark:text-gray-900">{category}</a>
 			{/each}
 		</div>
 		<div class="space-y-2">
 			<h4 class="text-lg font-semibold">Related posts</h4>
 			<ul class="ml-4 space-y-1 list-disc">
 				<li>
-					<a rel="noopener noreferrer" href="#" class="hover:underline">Nunc id magna mollis</a>
+					<a rel="noopener noreferrer" href="/" class="hover:underline">Nunc id magna mollis</a>
 				</li>
 				<li>
-					<a rel="noopener noreferrer" href="#" class="hover:underline">Duis molestie, neque eget pretium lobortis</a>
+					<a rel="noopener noreferrer" href="/" class="hover:underline">Duis molestie, neque eget pretium lobortis</a>
 				</li>
 				<li>
-					<a rel="noopener noreferrer" href="#" class="hover:underline">Mauris nec urna volutpat, aliquam lectus sit amet</a>
+					<a rel="noopener noreferrer" href="/" class="hover:underline">Mauris nec urna volutpat, aliquam lectus sit amet</a>
 				</li>
 			</ul>
 		</div>

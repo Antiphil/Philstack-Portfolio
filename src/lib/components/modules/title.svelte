@@ -3,7 +3,7 @@
 	export let title2: string;
 </script>
 
-<div class="relative flex flex-col justify-center items-center mb-20">
+<div class="relative flex flex-col justify-center items-center mb-20 text-center">
 	<h1 class="absolute -top-9 opacity-10 text-6xl font-semibold uppercase">{title2}</h1>
 	<h2 class="text-3xl font-semibold uppercase">{title1}</h2>
 	<div class="mt-2">
