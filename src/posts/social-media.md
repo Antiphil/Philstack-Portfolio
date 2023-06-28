@@ -12,4 +12,14 @@ published: true
 
 ## Vorgeschichte - Wie kam ich dazu?
 
-Nach meinem Einstieg in den **3D-Druck** auf meiner Arbeit in der KreativWerkstatt in Meiningen habe ich wärend der üblichen Teamsitzung zum arbeitsbeginn von meiner Chefin gesagt bekommen, das sie gern mit mir das Thema Laser Cutting in angriff nehmen würde, da sie das Potential in mir sähe. Wie es aber nunmal in der Werkstatt so ist kann so ein Prozess bis es nun wirklich dazu kommt einige Zeit dauern.
+Nachdem ich in der KreativWerkstatt in Meiningen zu arbeiten begonnen hatte und den dort bereits vorhandenen 3D-Drucker ausprobiert hatte, sprach meine Chefin eines Morgens mit mir über das Projekt Laser Cutting. Sie wollte gerne, dass wir unseren Kunden eine noch bessere Personalisierungsmöglichkeit anbieten können. Da das Thema Finanzierung bei der Lebenshilfe immer etwas mühsam ist, dauerte es eine Weile, bis die endgültige Anschaffung erfolgte. Zu diesem Zeitpunkt war es mir nicht ganz recht, mich im Voraus bereits mit dem Großteil des Wissens anzueignen, da das letzte Wort darüber, ob das Ganze überhaupt zustande kommt, noch nicht gesprochen war.
+
+Mitte März hat es dann doch endlich geklappt und plötzlich lag ein Paket von Amazon vor mir auf dem Tisch mit dem Sculpfun S9. Es ist kein besonders leistungsstarker Laser, aber für die ersten Schritte und den Hobbygebrauch ist er auf jeden Fall sein Geld wert!
+
+## Montage des Laser Cutters
+
+Die Montage ging ziemlich schnell vonstatten und dank der Anleitung, die vergleichbar mit der eines einfachen IKEA-Regals ist, war sie auch für die meisten Menschen einfach und übersichtlich. In der Aufbauanleitung gab es am Ende auch gleich die ersten Empfehlungen für verwendbare Software.
+
+## Erste Schritte
+
+Da die ersten Schritte mit dem Laser etwas überwältigend sein können und man oft nicht genau weiß, wo und wie man anfangen soll, hier eine kurze Übersicht...
