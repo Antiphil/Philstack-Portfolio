@@ -2,8 +2,8 @@
 	import logo from '$lib/assets/logo.svg';
 </script>
 
-<footer class="p-4 sm:p-6 bg-black/20">
-	<div class="sm:px-20">
+<footer class="py-4 sm:py-6 px-5 lg:px-32 bg-black/20">
+	<div class="">
 		<div class="md:flex md:justify-between">
 			<div class="mb-6 md:mb-0">
 				<a href="https://philstack.de" class="flex items-center">
