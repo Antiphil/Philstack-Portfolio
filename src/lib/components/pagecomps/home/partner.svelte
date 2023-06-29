@@ -1,26 +1,26 @@
 <section class="py-10 sm:py-16 lg:py-24">
 	<div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
 		<div class="grid items-center grid-cols-2 gap-10 sm:gap-y-16 sm:grid-cols-3 xl:grid-cols-6">
-			<a href="https://lebenshilfe-suedthueringen.de/">
+			<a href="https://lebenshilfe-suedthueringen.de/" class="hover:scale-110 transition-all">
 				<img class="brightness-[0.0] invert object-contain w-auto mx-auto h-14" src="https://codedreams.de/build/assets/lebenshilfe.0517f13b.png" alt="" />
 			</a>
 
-			<a href="https://www.facebook.com/KreativWerkstattMeiningen/">
+			<a href="https://www.facebook.com/KreativWerkstattMeiningen/" class="hover:scale-110 transition-all">
 				<img class="brightness-[0.0] invert object-contain w-auto mx-auto h-14" src="https://codedreams.de/build/assets/kreawe.1c39ef07.svg" alt="" />
 			</a>
 
-			<a href="https://kleineckemedia.de/">
+			<a href="https://kleineckemedia.de/" class="hover:scale-110 transition-all">
 				<img class="brightness-[0.0] invert object-contain w-auto mx-auto h-14" src="https://kleineckepriva.vercel.app/_app/immutable/assets/kleinecke.bdc0f231.svg" alt="" />
 			</a>
 
-			<a href="https://codedreams.de/">
+			<a href="https://codedreams.de/" class="hover:scale-110 transition-all">
 				<img class="brightness-[0.0] invert object-contain w-auto mx-auto h-14" src="https://codedreams.de/build/assets/CodeDreams.da805abb.svg" alt="" />
 			</a>
 
-			<a href="https://landkautz.de/">
+			<a href="https://landkautz.de/" class="hover:scale-110 transition-all">
 				<img class="brightness-[0.0] invert object-contain w-auto mx-auto h-14" src="https://cdn.shopify.com/s/files/1/0618/0323/3486/files/logo_84863ab7-659f-4ab9-a343-840d75caf7b8.png?v=1663847422" alt="" />
 			</a>
-			<a href="https://dev.xivdata.com/">
+			<a href="https://dev.xivdata.com/" class="hover:scale-110 transition-all">
 				<img class="brightness-[0.0] invert object-contain w-auto mx-auto h-14" src="https://dev.xivdata.com/build/assets/logo_placeholder2-136f5643.svg" alt="" />
 			</a>
 		</div>
