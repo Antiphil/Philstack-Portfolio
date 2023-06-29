@@ -1,6 +1,6 @@
 <section class="py-10 sm:py-16 lg:py-24">
 	<div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-		<div class="grid items-center grid-cols-2 gap-10 sm:gap-y-16 sm:grid-cols-3 xl:grid-cols-5">
+		<div class="grid items-center grid-cols-2 gap-10 sm:gap-y-16 sm:grid-cols-3 xl:grid-cols-6">
 			<a href="https://lebenshilfe-suedthueringen.de/K">
 				<img class="brightness-[0.0] invert object-contain w-auto mx-auto h-14" src="https://codedreams.de/build/assets/lebenshilfe.0517f13b.png" alt="" />
 			</a>
