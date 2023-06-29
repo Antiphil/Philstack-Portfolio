@@ -15,7 +15,7 @@
 			<Stack text="Svelte" alt="Svelte" img="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg" />
 			<Stack text="React" alt="React" img="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" />
 			<Stack text="Vue" alt="Vue" img="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" />
-			<Stack text="Tauri" alt="Tauri" img="https://tauri.app/img/index/header_dark.svg" />
+			<Stack text="Tauri" alt="Tauri" img="https://cdn.worldvectorlogo.com/logos/tauri-1.svg" />
 
 			<Stack text="CSS" alt="CSS" img="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" />
 			<Stack text="SASS/SCSS" alt="SASS/SCSS" img="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg" />
