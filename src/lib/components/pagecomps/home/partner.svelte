@@ -10,7 +10,7 @@
 			</a>
 
 			<a href="https://kleineckemedia.de/" class="hover:scale-110 transition-all">
-				<img class="brightness-[0.0] invert object-contain w-auto mx-auto h-14" src="https://kleineckepriva.vercel.app/_app/immutable/assets/kleinecke.bdc0f231.svg" alt="" />
+				<img class="brightness-[0.0] invert object-contain w-auto mx-auto h-14" src="https://www.kleineckemedia.de/_app/immutable/assets/kleinecke.bdc0f231.svg" alt="" />
 			</a>
 
 			<a href="https://codedreams.de/" class="hover:scale-110 transition-all">
