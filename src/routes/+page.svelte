@@ -11,7 +11,9 @@
 
 <div class="flex flex-col">
 	<Hero />
-	<!-- <Partner /> -->
+	<div class="lg:hidden">
+		<Partner />
+	</div>
 	<Blog {data} />
 	<Techstack />
 </div>
