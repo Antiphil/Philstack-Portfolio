@@ -2,7 +2,7 @@
 	import logo from '$lib/assets/logo.svg';
 </script>
 
-<footer class="p-4 sm:p-6">
+<footer class="p-4 sm:p-6 bg-black/20">
 	<div class="sm:px-20">
 		<div class="md:flex md:justify-between">
 			<div class="mb-6 md:mb-0">
