@@ -10,9 +10,17 @@
 	let open: boolean = false;
 	let menuButton: any;
 	let intro: any;
-
-	export let data;
 </script>
+
+<svelte:head>
+	<title>Philstack</title>
+	<meta property="og:title" content="Philstack" />
+	<meta name="description" content="Beeindruckende Frontend-Webentwicklung für Ihren Erfolg. Entdecken Sie mein Portfolio voller innovativer und ansprechender Projekte, die Ihre Online-Präsenz auf das nächste Level heben" />
+	<meta property="og:description" content="Beeindruckende Frontend-Webentwicklung für Ihren Erfolg. Entdecken Sie mein Portfolio voller innovativer und ansprechender Projekte, die Ihre Online-Präsenz auf das nächste Level heben" />
+	<meta name="keywords" content="Frontend-Webentwicklung, Portfolio, Webdesign, responsives Layout, Benutzerinteraktion, Innovation, Erfolg, Online-Präsenz" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="/favicon.png" />
+</svelte:head>
 
 <div id="smooth-wrapper" class="smooth-scroll-wrapper">
 	<div id="smooth-content" data-lag="0.5">
