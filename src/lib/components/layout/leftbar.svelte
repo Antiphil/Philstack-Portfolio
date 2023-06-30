@@ -7,7 +7,7 @@
 		<img class="w-16 mix-blend-exclusion" src={logo} alt="aa" />
 	</a>
 	<div class="hidden sm:flex pointer-events-auto flex-col items-center gap-2 max-w-5">
-		<a href="/https://twitter.com/MisterNamazu" target="_blank" class="relative flex items-center socHov hover:text-[#1DA1F2]">
+		<a href="https://twitter.com/MisterNamazu" target="_blank" class="relative flex items-center socHov hover:text-[#1DA1F2]">
 			<i class="fa-brands fa-twitter mix-blend-exclusion" />
 			<span class="absolute left-5 font-bold text-xs overflow-hidden w-0 mix-blend-normal">Twitter</span>
 		</a>
@@ -15,7 +15,7 @@
 			<i class="fa-brands fa-instagram mix-blend-exclusion" />
 			<span class="absolute left-5 font-bold text-xs overflow-hidden w-0 mix-blend-exclusion">Instagram</span>
 		</a>
-		<a href="/" target="_blank" class="relative flex items-center socHov hover:text-[#0072b1]">
+		<a href="https://www.linkedin.com/in/philipp-stehle-24a125249/" target="_blank" class="relative flex items-center socHov hover:text-[#0072b1]">
 			<i class="fa-brands fa-linkedin mix-blend-exclusion" />
 			<span class="absolute left-5 font-bold text-xs overflow-hidden w-0 mix-blend-lighten">LinkedIn</span>
 		</a>
