@@ -13,8 +13,8 @@
 </script>
 
 <svelte:head>
-	<title>Philstack</title>
-	<meta property="og:title" content="Philstack" />
+	<title>Philstack | Frontend Developer</title>
+	<meta property="og:title" content="Philstack | Frontend Developer" />
 	<meta name="description" content="Beeindruckende Frontend-Webentwicklung für Ihren Erfolg. Entdecken Sie mein Portfolio voller innovativer und ansprechender Projekte, die Ihre Online-Präsenz auf das nächste Level heben" />
 	<meta property="og:description" content="Beeindruckende Frontend-Webentwicklung für Ihren Erfolg. Entdecken Sie mein Portfolio voller innovativer und ansprechender Projekte, die Ihre Online-Präsenz auf das nächste Level heben" />
 	<meta name="keywords" content="Frontend-Webentwicklung, Portfolio, Webdesign, responsives Layout, Benutzerinteraktion, Innovation, Erfolg, Online-Präsenz" />

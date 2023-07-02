@@ -5,7 +5,7 @@
 	export let data: any;
 </script>
 
-<section class="py-6 sm:py-32 bg-black/20">
+<section class="py-6 sm:py-32">
 	<div class="container p-6 mx-auto space-y-8">
 		<Title title1="Meine neusten und besten Posts" title2="Mein Portfolio, Mein Blog" />
 

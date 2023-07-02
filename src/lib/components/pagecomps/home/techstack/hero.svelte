@@ -1,6 +1,6 @@
 <script lang="ts">
 	import sec from '$lib/assets/sectionsplit.svg';
-	import shil from '$lib/assets/shil.jpg';
+	import shil from '$lib/assets/shil.png';
 	import Partner from '../partner.svelte';
 </script>
 
