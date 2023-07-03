@@ -4,45 +4,60 @@
 	import Blogcard from './blogcard.svelte';
 
 	export let data: any;
+	let active: number = 1; 
+	let progress: number = 0;
+
+	const increaseProgress = async () => {
+		setInterval(() => {
+			if (progress === 100) {
+				progress = 0;
+				if (active === 3) {
+					active = 0;
+				} else {
+					active++;
+				}
+			} else {
+				progress++;
+			}
+		}, 100);
+	};
+
+	const setActive = (index: number) => {
+		if (active !== index) active = index;
+		progress = 0;
+	};
+	increaseProgress();
 </script>
-
-<!-- <section class="py-6 sm:py-32">
-	<div class="container p-6 mx-auto space-y-8">
-		<Title title1="Meine neusten und besten Posts" title2="Mein Portfolio, Mein Blog" />
-
-		<div class="flex flex-col sm:flex-row gap-5">
-			{#each data.posts as post}
-				<Blogcard slug={post.slug} title={post.title} date={post.date} desc={post.description} />
-			{/each}
-		</div>
-	</div>
-</section>
- -->
 
 <section class="py-6 sm:py-32">
 	<Title title1="Meine neusten und besten Posts" title2="Mein Portfolio, Mein Blog" />
 	<div class="mx-5 lg:mx-32">
-		<div class="bg-black/30 flex p-3">
-			<div class="w-1/3 flex flex-col">
-				{#each data.posts as post, i}
-					<div class="flex gap-3 group-[blog] hover:bg-black/30 p-3 transition">
-						<div class="relative">
-							<span class="absolute test w-12 shadow-red-700 ml-2">{'0' + (1 + i)}</span>
-							<img class="min-w-[80px] w-20 h-20 opacity-25" src={`/${post.slug}.png`} alt="" />
-						</div>
-						<div class="relative flex flex-col w-[83%]">
-							<h2 class="font-bold uppercase">{post.title}</h2>
-							<p class="font-light text-xs truncate">{post.description}</p>
-							<div class="absolute bottom-0 w-full flex justify-between text-xs font-semibold">
-								<p>{formatDate(post.date)}</p>
-								<p>Phil</p>
+		<div class="bg-black/30 ">
+			<div class="flex">
+				<div class="w-1/3 flex flex-col">
+					{#each data.posts as post, i}
+						<button class={`${active === i ? 'bg-black/30' : ''} flex gap-3 group-[blog] hover:bg-black/30 p-3 transition`} on:click={() => setActive(i)}>
+							<div class="relative">
+								<span class="absolute test w-12 shadow-red-700 left-1" style={`${active === i ? '-webkit-text-fill-color: #FFF; -webkit-text-stroke-color: #000;' : '-webkit-text-fill-color: transparent'}`}>{'0' + (1 + i)}</span>
+								<img class={`${active === i ? 'opacity-100' : 'opacity-20'} min-w-[80px] w-20 h-20`}  src={`/${post.slug}.png`} alt="" />
 							</div>
-						</div>
-					</div>
-				{/each}
+							<div class="relative flex flex-col w-[83%]">
+								<h2 class="font-bold uppercase text-left">{post.title}</h2>
+								<p class="font-light text-xs truncate">{post.description}</p>
+								<div class="absolute bottom-0 w-full flex justify-between text-xs font-semibold">
+									<p>{formatDate(post.date)}</p>
+									<p>Phil</p>
+								</div>
+							</div>
+						</button>
+					{/each}
+				</div>
+				<div class="">
+				<span class="test">{data.posts[active].title}</span>
 			</div>
-			<div class="">
-				<span class="test"> Laser Cutting - Meine Einstieg & Erfahrungen</span>
+		</div>
+			<div class="w-full ">
+				<div class="bg-white h-[4px] duration-100 ease-in" style="width: {progress}%;" />
 			</div>
 		</div>
 	</div>
