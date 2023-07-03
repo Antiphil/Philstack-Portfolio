@@ -58,7 +58,7 @@
 					<div class="p-2 relative flex flex-col h-[calc(100%-216px)]">
 						<h2 class="text-2xl font-bold mb-2">{data.posts[active].title}</h2>
 						<p>{data.posts[active].description}</p>
-						<button class="w-[calc(100%-16px)] text-xs hover:bg-black transition-colors hover:text-white font-bold uppercase absolute bottom-0 bg-white text-black px-3 py-2">Lies den gesamten Blogpost</button>
+						<a href={data.posts[active].slug} class="text-center w-[calc(100%-16px)] text-xs hover:bg-black transition-colors hover:text-white font-bold uppercase absolute bottom-0 bg-white text-black px-3 py-2">Zum Blogpost</a>
 					</div>
 				</div>
 			</div>
