@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { description } from './../../config.ts';
+
 	import Title from '$lib/components/modules/title.svelte';
 	import { formatDate } from '$lib/utils';
 	import Blogcard from './blogcard.svelte';
