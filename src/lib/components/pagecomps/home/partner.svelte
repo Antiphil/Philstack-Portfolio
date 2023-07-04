@@ -12,16 +12,19 @@
 			<a href="https://kleineckemedia.de/" class="hover:scale-110 transition-all">
 				<img class="brightness-[0.0] invert object-contain w-auto mx-auto h-14" src="https://www.kleineckemedia.de/_app/immutable/assets/kleinecke.bdc0f231.svg" alt="" />
 			</a>
-
+			<!-- 
 			<a href="https://codedreams.de/" class="hover:scale-110 transition-all">
 				<img class="brightness-[0.0] invert object-contain w-auto mx-auto h-14" src="https://codedreams.de/build/assets/CodeDreams.da805abb.svg" alt="" />
-			</a>
+			</a> -->
 
 			<a href="https://landkautz.de/" class="hover:scale-110 transition-all">
 				<img class="brightness-[0.0] invert object-contain w-auto mx-auto h-14" src="https://cdn.shopify.com/s/files/1/0618/0323/3486/files/logo_84863ab7-659f-4ab9-a343-840d75caf7b8.png?v=1663847422" alt="" />
 			</a>
 			<a href="https://dev.xivdata.com/" class="hover:scale-110 transition-all">
 				<img class="brightness-[0.0] invert object-contain w-auto mx-auto h-14" src="https://dev.xivdata.com/build/assets/logo_placeholder2-136f5643.svg" alt="" />
+			</a>
+			<a href="https://triostate.net" class="hover:scale-110 transition-all">
+				<img class="brightness-[0.0] invert object-contain w-auto mx-auto h-14" src="https://triostate.net/_app/immutable/assets/TrioLogoWhite-0f67fbdd.png" alt="" />
 			</a>
 		</div>
 	</div>
