@@ -11,7 +11,7 @@
     <div class="mx-5 lg:mx-32 justify-center">
         <h1 class="text-3xl font-bold uppercase mb-3 text-[#101011]"><span class="outlinex">01.</span> Latest Posts</h1>
 
-        <div class="max-w-screen-xl p-5 mx-auto bg-[#101011] rounded-xl">
+        <div class="max-w-screen-xl p-5 mx-auto  rounded-xl">
             <div class="grid grid-cols-1 gap-5 lg:grid-cols-4 sm:grid-cols-2 ">
                 <Blogitem img={laser} day="21" month="Feb" category="Mechanical Stuff" text="Erfahrungsbericht: Einstieg ins Laser Cutting Universum"/>
                 <Blogitem img={git} day="22" month="Feb" category="Version Control" text="Git & Versionskontrolle - Grundlagen"/>
@@ -19,11 +19,17 @@
                 <Blogitem img={frage} day="24" month="Feb" category="Mechanical Stuff" text="Frage"/>
             </div>
         </div>
-        <div class="w-full flex justify-content mt-5">
-            <button class="rounded-xl bg-[#101011] px-3 py-2 mx-auto uppercase font-bold text-sm">To Blog Overview</button>
-        </div>
+    </div>
+    <div class="flex justify-center mt-10">
+        <button class="bg-[#101011] font-bold text-xl px-10 py-4 uppercase buttontest  transition-all">
+            View Full Blog <i class="fa-solid fa-angles-right"></i>
+        </button>
+    </div>
 </section>
 <img class="imgtest" src={sec2} alt="">
+
+
+
 <style>
 .outlinex {
   font-weight: 900;
@@ -34,10 +40,14 @@
   -webkit-text-stroke-width: 1px;
 }
 
-.lined{
-    border:solid 7px #101011;
-    box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
-      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+.buttontest {
+    transform: skewX(-15deg);
+    box-shadow: 6px 6px 0 black;
+}
+.buttontest:hover {
+    color: black;
+    background-color: white;
+    box-shadow: 10px 10px 0 black;
 }
 
 </style>

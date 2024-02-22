@@ -11,22 +11,22 @@
 	<div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
 		<div class="grid items-center grid-cols-2 gap-10 sm:gap-y-16 sm:grid-cols-3 xl:grid-cols-6">
 			<a href="https://lebenshilfe-suedthueringen.de/" class="hover:scale-110 transition-all">
-				<img class="brightness-[0.0] invert object-contain w-auto mx-auto h-14" src={lebenshilfe} alt="" />
+				<img class="brightness-[0.0] invert object-contain w-auto mx-auto h-14 drop-shadow-[3px_3px_0px_rgba(0,0,0,1)]" src={lebenshilfe} alt="" />
 			</a>
 			<a href="https://www.facebook.com/KreativWerkstattMeiningen/" class="hover:scale-110 transition-all">
-				<img class="brightness-[0.0] invert object-contain w-auto mx-auto h-14" src={kreawe} alt="" />
+				<img class="brightness-[0.0] invert object-contain w-auto mx-auto h-14 drop-shadow-[3px_3px_0px_rgba(0,0,0,1)]" src={kreawe} alt="" />
 			</a>
 			<a href="https://kleineckemedia.de/" class="hover:scale-110 transition-all">
-				<img class="brightness-[0.0] invert object-contain w-auto mx-auto h-14" src={kleinecke} alt="" />
+				<img class="brightness-[0.0] invert object-contain w-auto mx-auto h-14 drop-shadow-[3px_3px_0px_rgba(0,0,0,1)]" src={kleinecke} alt="" />
 			</a>
 			<a href="https://landkautz.de/" class="hover:scale-110 transition-all">
-				<img class="brightness-[0.0] invert object-contain w-auto mx-auto h-14" src={landkautz} alt="" />
+				<img class="brightness-[0.0] invert object-contain w-auto mx-auto h-14 drop-shadow-[3px_3px_0px_rgba(0,0,0,1)]" src={landkautz} alt="" />
 			</a>
 			<a href="https://dev.xivdata.com/" class="hover:scale-110 transition-all">
-				<img class="brightness-[0.0] invert object-contain w-auto mx-auto h-14" src={xivdata} alt="" />
+				<img class="brightness-[0.0] invert object-contain w-auto mx-auto h-14 drop-shadow-[3px_3px_0px_rgba(0,0,0,1)]" src={xivdata} alt="" />
 			</a>
 			<a href="https://triostate.net" class="hover:scale-110 transition-all">
-				<img class="brightness-[0.0] invert object-contain w-auto mx-auto h-14" src={triostate} alt="" />
+				<img class="brightness-[0.0] invert object-contain w-auto mx-auto h-14 drop-shadow-[3px_3px_0px_rgba(0,0,0,1)]" src={triostate} alt="" />
 			</a>
 		</div>
 	</div>
