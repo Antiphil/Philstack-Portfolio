@@ -1,9 +1,9 @@
-<script>
-    export let img;
-    export let day;
-    export let month;
-    export let text;
-    export let category;
+<script lang="ts">
+    export let img: string;
+    export let day: string;
+    export let month: string;
+    export let text: string;
+    export let category: string;
 </script>
 
 
