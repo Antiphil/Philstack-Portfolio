@@ -1,5 +1,5 @@
 <script lang="ts">
-	import logo from '$lib/assets/logo.svg';
+	import logo from '$lib/assets/logos/logo.svg';
 </script>
 
 <div class="flex fixed pointer-events-none z-50 py-5 lg:py-10 px-2 lg:px-5 items-center h-screen flex-col justify-between gap-2">

@@ -7,8 +7,6 @@ body {
 	color: #ffffff;
 	min-height: 100vh;
 	width: 100%;
-	background-size: 1500px;
-	background-repeat: repeat-y;
 	overflow-x: hidden;
 	font-family: 'Poppins', sans-serif !important;
 }

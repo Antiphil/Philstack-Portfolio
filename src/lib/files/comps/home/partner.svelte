@@ -1,14 +1,18 @@
 <script>
-	import kleinecke from "$lib/assets/kleinecke.svg"
-	import landkautz from "$lib/assets/landkautz.webp"
-	import kreawe from "$lib/assets/KreaWe.svg"
-	import lebenshilfe from "$lib/assets/Lebenshilfe.svg"
-	import xivdata from "$lib/assets/xivdata.svg"
-	import triostate from "$lib/assets/Triostate.png"
+	import kleinecke from "$lib/assets/logos/partner/kleinecke.svg"
+	import landkautz from "$lib/assets/logos/partner/landkautz.webp"
+	import kreawe from "$lib/assets/logos/partner/KreaWe.svg"
+	import lebenshilfe from "$lib/assets/logos/partner/Lebenshilfe.svg"
+	import xivdata from "$lib/assets/logos/partner/xivdata.svg"
+	import triostate from "$lib/assets/logos/partner/Triostate.png"
+	import philstack from "$lib/assets/logos/philstack_long.svg"
 </script>
 
 <section class="py-10 sm:py-16 lg:py-24">
 	<div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+		<div class="flex justify-center items-center h-80">
+			<img class="w-[30%]" src={philstack} alt="philstack">
+		</div>
 		<div class="grid items-center grid-cols-2 gap-10 sm:gap-y-16 sm:grid-cols-3 xl:grid-cols-6">
 			<a href="https://lebenshilfe-suedthueringen.de/" class="hover:scale-110 transition-all">
 				<img class="brightness-[0.0] invert object-contain w-auto mx-auto h-14 drop-shadow-[3px_3px_0px_rgba(0,0,0,1)]" src={lebenshilfe} alt="" />

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import sec from '$lib/assets/SectionSplitter/split_top_y.svg';
-	import shil from '$lib/assets/shil2.png';
-	import Partner from '../partner.svelte';
+	import bg from '$lib/assets/shil2.png';
+	import Partner from './partner.svelte';
 	import split from '$lib/assets/splitter.svg'
 </script>
 
@@ -13,7 +13,7 @@
 			</div>
 		</div>
 	</div>
-	<img class="object-cover w-full h-screen" src={shil} alt="" />
+	<img class="object-cover w-full h-screen" src={bg} alt="" />
 	
 	<img class="absolute bottom-0 min-w-[100vw]" src={sec} alt="Section Split">
 </section>

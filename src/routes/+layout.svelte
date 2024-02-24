@@ -1,9 +1,11 @@
 <script lang="ts">
-	import logo from '$lib/assets/logo.svg';
-	import Footer from '$lib/components/layout/footer.svelte';
-	import Leftbar from '$lib/components/layout/leftbar.svelte';
-	import Nav from '$lib/components/layout/nav.svelte';
-	import Noisebg from '$lib/components/layout/noisebg.svelte';
+/* 	import logo from '$lib/assets/logo.svg';
+	import Footer from '$lib/components/layout/footer.svelte'; 
+  import Nav from '$lib/components/layout/nav.svelte';
+  */
+	import Overlay from '$lib/files/layout/overlay.svelte';
+  import Noise from '$lib/files/layout/noise.svelte';
+  	
 	import { navOpen, toggleNav } from '$lib/stores/navstore';
 	import '../app.css';
 
@@ -24,9 +26,9 @@
 
 <div id="smooth-wrapper" class="smooth-scroll-wrapper">
 	<div id="smooth-content" data-lag="0.5">
-		<Noisebg />
-		<Nav />
-		<Leftbar />
+		<Noise />
+		<!-- <Nav /> -->
+		<Overlay />
 		<div class="fixed right-0 top-0 py-5 lg:py-10 px-2 lg:px-5 z-40 drop-shadow-[1px_1px_0px_rgba(0,0,0,1)]">
 			<button on:click={() => toggleNav()}>
 				<svg class={`ham ham3 ${$navOpen ? 'active' : ''}`} viewBox="0 0 100 100" width="80">
@@ -39,7 +41,7 @@
 		<div class="">
 			<slot />
 		</div>
-		<Footer />
+		<!-- <Footer /> -->
 	</div>
 </div>
 

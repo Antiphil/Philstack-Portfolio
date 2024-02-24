@@ -1,11 +1,6 @@
-<script lang="ts">
-	import Title from '$lib/components/modules/title.svelte';
-	import Blog from '$lib/components/pagecomps/blog/blogoverview.svelte';
-	import Partner from '$lib/components/pagecomps/home/partner.svelte';
-	import Hero from '$lib/components/pagecomps/home/techstack/hero.svelte';
-	import Techstack from '$lib/components/pagecomps/home/techstack/techstack.svelte';
-	import { formatDate } from '$lib/utils';
-
+<script>
+	import Partner from '$lib/files/comps/home/partner.svelte';
+	import Hero from '$lib/files/comps/home/hero.svelte';
 </script>
 
 <div class="flex flex-col">
@@ -13,6 +8,6 @@
 	<div class="lg:hidden">
 		<Partner />
 	</div>
-	<Blog />
-	<Techstack />
+	<!-- <Blog /> -->
+	<!-- <Techstack /> -->
 </div>
