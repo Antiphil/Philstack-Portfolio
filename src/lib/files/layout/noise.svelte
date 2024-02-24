@@ -26,10 +26,10 @@
 			transform: translate(0, 0);
 		}
 		50% {
-			transform: translate(-10%, 5%);
+			transform: translate(-12%, 6%);
 		}
 		100% {
-			transform: translate(5%, 0);
+			transform: translate(15%, 12%);
 		}
 	}
 </style>
