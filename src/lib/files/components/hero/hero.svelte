@@ -1,18 +1,20 @@
 <script>
-    import mainHero from "$lib/assets/heroMain.png"
-    import one from "$lib/assets/1.png"
-    import two from "$lib/assets/2.png"
+    import logo from "$lib/assets/logos/logo.svg"   
+    import logofull from "$lib/assets/logos/logo_full.svg"   
+    import hero from "$lib/assets/hero.png"   
 </script>
 
-<div class="relative h-screen w-full">
-    <img class="absolute h-screen z-10" src={mainHero} alt="">
-    <div class="absolute z-20 w-[380px] h-[300px] right-[100px] bottom-[150px]">
-        <div class="absolute top-[200px] left-[180px] z-20 flex justify-center items-center">
-            <div class="absolute w-[100px] h-1 bg-red-700"></div>
-            <div class="absolute h-[100px] w-1 bg-red-700"></div>
+
+<section class="flex w-full h-screen pl-[70px] py-[35px]">
+    <div class="relative bg-secondary w-full h-full rounded-l-[75px] overflow-hidden">
+        <img class="absolute w-full z-0 h-full object-cover" src={hero} alt="hero background">
+        <div class="relative flex items-end justify-between h-full flex-col z-10 p-10">
+            <img class="w-72" src={logofull} alt="">
+            <div class="flex flex-col text-[50px] font-extrabold uppercase text-right">
+                <span>A <span class="outline-text">Designer </span>is an</span>
+                <span>emerging <span class="outline-text">Symbiosis </span>of</span>
+                <span><span class="outline-text">artist</span>, <span class="outline-text">coder</span> and <span class="outline-text">writer</span></span>
+            </div>
         </div>
-        <img class="absolute w-[200px] h-[200px]" src={one} alt="">
-        <img class="absolute right-0 bottom-0 w-[200px] h-[200px]" src={two} alt="">
     </div>
-    <p class="z-0 right-[-550px] top-20 absolute text-white/10 text-[250px] font-bold uppercase">Philstack</p>
-</div>
+</section>
