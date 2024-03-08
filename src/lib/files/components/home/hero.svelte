@@ -5,8 +5,8 @@
 </script>
 
 
-<section class="flex w-full h-screen pl-[70px] py-[35px]">
-    <div class="relative bg-secondary w-full h-full rounded-l-[75px] overflow-hidden">
+<section class="flex w-full h-screen pl-[70px] pb-[35px]">
+    <div class="relative bg-secondary w-full h-full rounded-bl-[75px] overflow-hidden">
         <img class="absolute w-full z-0 h-full object-cover" src={hero} alt="hero background">
         <div class="relative flex items-end justify-between h-full flex-col z-10 p-10">
             <img class="w-72" src={logofull} alt="">
