@@ -1,19 +1,18 @@
 <script>
 // @ts-nocheck
-
+  import 'locomotive-scroll/locomotive-scroll.css'
   import Footer from "$lib/files/layout/footer.svelte";
   import Noise from "$lib/files/layout/noise.svelte";
   import Overlay from "$lib/files/layout/overlay.svelte";
   import "../app.css";
   import logo2 from "$lib/assets/logos/logo2.svg"
   import { onMount } from 'svelte'
-  import "locomotive-scroll/locomotive-scroll.css"
 
   // @ts-nocheck
 
   
   onMount(async () => {
-    
+    const locomotive = await import('../lib/utils/locomotive')
 
     var cursor = document.getElementById("cursor");
     var cursorCircle = document.getElementById("cursorCircle");
@@ -38,7 +37,7 @@
 <div class='cursorCircle' id="cursorCircle"></div>
 
 
-<div class="" data-scroll data-scroll-speed="2">
+<div class="">
    <!--  <img class="MotionObj" src={logo2} style={`offset-distance:${distance}%`} alt="">
     <svg width="621" height="577" viewBox="0 0 621 577" class="motionPath" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M1.00001 0V470C-0.333323 505.5 19.1 576.5 107.5 576.5C195.9 576.5 486.667 576.5 621 576.5" stroke="red"/>
