@@ -1,33 +1,27 @@
-<script>
-    /** @type {string} **/
-    export let nr;
-    /** @type {string} **/
-    export let title;
-    /** @type {string} **/
-    export let categories;
-    /** @type {string} **/
-    export let img;
+<script lang="ts">
+	export let nr: string;
+	export let title: string;
+	export let categories: string[];
+	export let img: string;
 </script>
 
-<button class="relative w-full min-h-[150px] border-1 rounded-[50px] overflow-hidden flex items-center justify-between group projectGroup">
-    <div class="flex w-full items-center z-10">
-        <div class="h-[3px] w-20 bg-primary mr-5 group-hover:mr-0 group-hover:w-44 transition-all duration-300"></div>
-        <p class="mr-5 group-hover:hidden transition-all duration-300 font-bold">{nr}</p>
+<button class="border-1 projectGroup group relative flex min-h-[150px] w-full items-center justify-between overflow-hidden rounded-[50px]">
+	<div class="z-10 flex w-full items-center">
+		<div class="mr-5 h-[3px] w-20 bg-primary transition-all duration-300 group-hover:mr-0 group-hover:w-44"></div>
+		<p class="mr-5 font-bold transition-all duration-300 group-hover:hidden">{nr}</p>
 
-        <div class="relative flex flex-col justify-center rounded-xl group-hover:pr-4 py-2 items-start ">
-            <p class="group-hover:!pl-4 relative z-20 uppercase text-2xl font-semibold transition-all duration-300 group-hover:text-secondary">{title}</p>
-            <p class="group-hover:!pl-4 relative z-20 uppercase text-[10px] w-fit group-hover:text-secondary">
-                {#each categories as cat }
-                    <span>{cat}</span>
-                {/each}
-            </p>
-            <div class="z-10 w-0 absolute bg-primary  group-hover:w-full  transition-all duration-500 h-full overflow-hidden flex flex-col items-start rounded-xl justify-center"></div>
-        </div>
-
-
-    </div>
-    <div class="relative flex items-center  z-10 w-[284px] h-[80px] bg-cover projectButton transition-all duration-300">
-        <p class='absolute left-7 uppercase font-bold text-xs group-hover:text-black'>View Project</p>
-    </div>
-    <img class="absolute h-full w-[0%] z-0 group-hover:w-full  object-cover transition-all duration-300 opacity-50" alt="" src={img} />
+		<div class="relative flex flex-col items-start justify-center rounded-xl py-2 group-hover:pr-4">
+			<p class="relative z-20 text-2xl font-semibold uppercase transition-all duration-300 group-hover:!pl-4 group-hover:text-secondary">{title}</p>
+			<p class="relative z-20 w-fit text-[10px] uppercase group-hover:!pl-4 group-hover:text-secondary">
+				{#each categories as cat}
+					<span>{cat}</span>
+				{/each}
+			</p>
+			<div class="absolute z-10 flex h-full w-0 flex-col items-start justify-center overflow-hidden rounded-xl bg-primary transition-all duration-500 group-hover:w-full"></div>
+		</div>
+	</div>
+	<div class="projectButton relative z-10 flex h-[80px] w-[284px] items-center bg-cover transition-all duration-300">
+		<p class="absolute left-7 text-xs font-bold uppercase group-hover:text-black">View Project</p>
+	</div>
+	<img class="absolute z-0 h-full w-[0%] object-cover opacity-50 transition-all duration-300 group-hover:w-full" alt="" src={img} />
 </button>
