@@ -12,7 +12,7 @@
 					<div class="relative flex flex-col items-end overflow-hidden pl-16 before:absolute before:bottom-0 before:left-0 before:block before:h-1/6 before:w-4 before:rounded-lg before:bg-primary before:transition-all group-hover:before:bg-orange-300">
 						<div class="absolute left-0 top-0 flex w-4/6 flex-col justify-center rounded-xl bg-primary px-12 py-14 transition-all group-hover:bg-secondary">
 							<span class="mb-10 block font-bold text-secondary group-hover:text-primary">HERE WE ARE</span>
-							<h2 class="text-3xl font-bold text-secondary group-hover:text-white">Hier muss ich mir irgendwas ausdenken was ganz cool klingt</h2>
+							<h2 class="text-3xl font-bold text-secondary group-hover:text-primary">Hier muss ich mir irgendwas ausdenken was ganz cool klingt</h2>
 						</div>
 						<a class="mb-8 mt-2 flex items-center gap-2 text-sm font-bold text-primary" href="">
 							<span>MORE ABOUT ME</span>

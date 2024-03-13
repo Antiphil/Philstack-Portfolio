@@ -10,14 +10,14 @@
 	export let tag: string = 'Coding';
 </script>
 
-<div class="group my-4 w-full rounded-lg bg-[#00000028] px-10 py-6 text-primary transition-all hover:text-secondary">
+<div class="group my-4 w-full rounded-3xl border-2 border-primary px-10 py-5 text-primary shadow-[4px_3px_0px_rgba(237,233,208,1)] transition-all hover:scale-[1.01]">
 	<div class="flex items-center justify-between">
 		<span class="font-light">{date}</span>
-		<a class="rounded bg-primary px-2 py-1 font-bold text-secondary group-hover:bg-secondary group-hover:text-primary" href="#"><i class="fa-solid fa-tag mr-1"></i>{tag}</a>
+		<a class="rounded bg-primary px-2 py-1 text-sm font-semibold uppercase text-secondary" href="#"><i class="fa-solid fa-tag mr-1"></i>{tag}</a>
 	</div>
 	<div class="mt-2">
-		<a class="text-2xl font-bold" href="#">{title}</a>
-		<p class="mt-2">{desc}</p>
+		<a class="text-xl font-semibold uppercase" href="#">{title}</a>
+		<p class="mt-2 text-sm">{desc}</p>
 	</div>
 	<div class="mt-4 flex items-center justify-between">
 		<Button text="Read More" link="/" />

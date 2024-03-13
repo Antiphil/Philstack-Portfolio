@@ -1,4 +1,5 @@
 <script>
+	import Button from '$lib/files/modules/button.svelte';
 	import Blogitem from './blogitem.svelte';
 
 	let blogData = [1, 2, 3, 4];
@@ -8,12 +9,13 @@
 	<div class="curved-corner-topright !absolute right-0 top-[calc(0px-35px)] !z-50"></div>
 	<div class="curved-corner-bottomleft !absolute left-0 top-[calc(0px-65px)] !z-50"></div>
 	<div class="relative flex h-full w-full gap-3 overflow-hidden rounded-r-[75px] bg-secondary p-10">
-		<section class="w-full px-5 py-10">
-			<div class="flex w-full flex-col gap-3">
+		<section class="flex w-full flex-col items-center px-5 py-2">
+			<div class="flex w-full flex-col gap-1">
 				{#each blogData as blog}
 					<Blogitem title={undefined} tag={undefined} date={undefined} desc={undefined} img={undefined} />
 				{/each}
 			</div>
+			<Button text="View Blog" link="/" />
 		</section>
 	</div>
 </section>
