@@ -10,31 +10,18 @@
 	export let tag: string = 'Coding';
 </script>
 
-<div class="group my-4 w-full rounded-3xl border-2 border-primary px-10 py-5 text-primary shadow-[4px_3px_0px_rgba(237,233,208,1)] transition-all hover:scale-[1.01]">
-	<div class="flex items-center justify-between">
-		<span class="font-light">{date}</span>
-		<a class="rounded bg-primary px-2 py-1 text-sm font-semibold uppercase text-secondary" href="#"><i class="fa-solid fa-tag mr-1"></i>{tag}</a>
-	</div>
-	<div class="mt-2">
-		<a class="text-xl font-semibold uppercase" href="#">{title}</a>
-		<p class="mt-2 text-sm">{desc}</p>
-	</div>
-	<div class="mt-4 flex items-center justify-between">
-		<Button text="Read More" link="/" />
-		<div>
-			<a class="flex items-center" href="#">
-				<h1 class="flex items-center">
-					<span class="mr-1 text-xs">Posted by</span>
-					<span class="font-bold"> Philstack</span>
-					<span class="inline-flex h-6 w-6 items-center justify-center rounded-full text-sm font-semibold text-blue-800 dark:text-blue-400">
-						<svg class="h-3 w-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-							<path fill="currentColor" d="m18.774 8.245-.892-.893a1.5 1.5 0 0 1-.437-1.052V5.036a2.484 2.484 0 0 0-2.48-2.48H13.7a1.5 1.5 0 0 1-1.052-.438l-.893-.892a2.484 2.484 0 0 0-3.51 0l-.893.892a1.5 1.5 0 0 1-1.052.437H5.036a2.484 2.484 0 0 0-2.48 2.481V6.3a1.5 1.5 0 0 1-.438 1.052l-.892.893a2.484 2.484 0 0 0 0 3.51l.892.893a1.5 1.5 0 0 1 .437 1.052v1.264a2.484 2.484 0 0 0 2.481 2.481H6.3a1.5 1.5 0 0 1 1.052.437l.893.892a2.484 2.484 0 0 0 3.51 0l.893-.892a1.5 1.5 0 0 1 1.052-.437h1.264a2.484 2.484 0 0 0 2.481-2.48V13.7a1.5 1.5 0 0 1 .437-1.052l.892-.893a2.484 2.484 0 0 0 0-3.51Z" />
-							<path fill="#fff" d="M8 13a1 1 0 0 1-.707-.293l-2-2a1 1 0 1 1 1.414-1.414l1.42 1.42 5.318-3.545a1 1 0 0 1 1.11 1.664l-6 4A1 1 0 0 1 8 13Z" />
-						</svg>
-					</span>
-				</h1>
-				<img class="hidden h-10 w-10 rounded-full object-cover sm:block" src={phil} alt="avatar" />
-			</a>
+<div class="relative flex w-full flex-col rounded-3xl border-2 border-[#EDE9D0] shadow-[4px_4px_0px_rgba(237,233,208,1)] sm:h-[200px]">
+	<img class="relative z-30 w-full rounded-3xl object-cover sm:w-1/3" src="https://cdn.leonardo.ai/users/372c505e-b23b-464e-80af-b4294fdd9866/generations/912a5f12-c946-4c7e-b080-266a13edaec0/Default_a_sepia_colored_comic_image_of_a_laser_cutter_1.jpg" alt="" />
+
+	<div class="flex w-full flex-col items-center justify-center sm:relative sm:right-10 sm:w-[90%]">
+		<div class="left-[-100px] top-[-10%] z-40 w-full bg-[#EDE9D0] p-5 text-secondary sm:absolute sm:w-[400px] sm:rounded-3xl">
+			<h3 class="font-extrabold uppercase">Post about {tag}</h3>
+			<h2 class="text-2xl font-extrabold uppercase">{title}</h2>
+		</div>
+		<div class="absolute bottom-4 left-[160px] hidden h-6 w-36 rounded-3xl bg-primary sm:flex"></div>
+		<div class="top-2 flex flex-col items-end justify-center sm:relative">
+			<div class="line-clamp-4 w-full rounded-xl border-[#EDE9D0] pr-1 text-sm italic text-[#EDE9D0] sm:border-2 sm:py-1 sm:pl-[26%]">{desc}</div>
+			<Button text="Read post" />
 		</div>
 	</div>
 </div>

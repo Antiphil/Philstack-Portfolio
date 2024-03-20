@@ -23,5 +23,6 @@
 	<div class="projectButton relative z-10 flex h-[80px] w-[284px] items-center bg-cover transition-all duration-300">
 		<p class="absolute left-7 text-xs font-bold uppercase group-hover:text-black">View Project</p>
 	</div>
-	<img class="absolute z-0 h-full w-[0%] object-cover opacity-50 transition-all duration-300 group-hover:w-full" alt="" src={img} />
+	<div class="absolute z-[1] h-full w-full bg-secondary transition-all duration-300 group-hover:w-[0%]"></div>
+	<img class="absolute z-0 h-full w-full object-cover opacity-55 sepia" alt="" src={img} />
 </button>
