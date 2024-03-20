@@ -31,18 +31,6 @@
 <div class="cursorCircle" id="cursorCircle"></div>
 
 <div class="">
-<<<<<<< Updated upstream
-  <div class="relative z-50"></div>
-    <!-- <img class="MotionObj" src={logo2} style={`offset-distance:${distance}%`} alt="">
-    <svg width="200%" height="600vh"  class="motionPath" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0V470C-0.333323 505.5 19.1 576.5 107.5 576.5C195.9 576.5 486.667 576.5 621 576.5" stroke="red"/>
-      <path d="M0,50 L0,900" stroke="red"/>
-    </svg> -->
-  
-    <slot />
-    <Footer />
-</div> 
-=======
 	<div class="relative z-50"></div>
 	<!-- <img class="MotionObj" src={logo2} style={`offset-distance:${distance}%`} alt="" />
 	<svg width="100%" viewBox="0 0 1920 5291" class="motionPath" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -52,7 +40,6 @@
 	<slot />
 	<Footer />
 </div>
->>>>>>> Stashed changes
 
 <style>
 	.MotionObj {
