@@ -11,7 +11,13 @@
 	// @ts-nocheck
 
 	onMount(async () => {
-		const locomotive = await import('../lib/utils/locomotive');
+		function isMobile() {
+			return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+		}
+
+		if (!isMobile()) {
+			const locomotive = await import('../lib/utils/locomotive');
+		}
 
 		/* var cursor = document.getElementById('cursor');
 		var cursorCircle = document.getElementById('cursorCircle');
