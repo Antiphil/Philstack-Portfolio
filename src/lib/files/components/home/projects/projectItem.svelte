@@ -5,7 +5,7 @@
 	export let img: string;
 </script>
 
-<button class="projectGroup group relative flex min-h-[150px] w-full items-center justify-between overflow-hidden rounded-[25px] border-2 border-primary/20 xl:rounded-[50px]">
+<button class="projectGroup group relative flex min-h-[150px] w-full items-center justify-between overflow-hidden rounded-[25px] border-2 border-primary shadow-[4px_4px_0px_rgba(237,233,208,1)] xl:rounded-[50px]">
 	<div class="z-10 flex w-full items-center">
 		<div class="mr-1 h-[3px] w-5 bg-primary transition-all duration-300 group-hover:mr-0 group-hover:w-10 sm:mr-5 sm:w-20 lg:group-hover:w-44"></div>
 		<p class="mr-1 w-10 overflow-hidden font-bold transition-all duration-300 group-hover:mr-0 group-hover:w-0 sm:mr-5">{nr}</p>
