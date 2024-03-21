@@ -18,23 +18,32 @@
 		if (!isMobile()) {
 			const locomotive = await import('../lib/utils/locomotive');
 		}
-
-		/* var cursor = document.getElementById('cursor');
-		var cursorCircle = document.getElementById('cursorCircle');
-		document.body.addEventListener('mousemove', function (e) {
-			(cursor.style.left = e.clientX + 'px'), (cursor.style.top = e.clientY + 'px');
-			(cursorCircle.style.left = e.clientX + 'px'), (cursorCircle.style.top = e.clientY + 'px');
-		}); */
 	});
 
 	let scrollY;
 	$: distance = scrollY / 5;
 </script>
 
-<svelte:window bind:scrollY />
+<svelte:head>
+	<meta name="theme-color" content="#eaac16" />
+	<title>Welcome | Philstack.de - My Web-Developer Portfolio</title>
+	<link rel="canonical" href="https://philstack.de" />
+	<meta property="og:url" content="https://philstack.de" />
 
-<!-- <div class="cursor" id="cursor"></div>
-<div class="cursorCircle" id="cursorCircle"></div> -->
+	<meta property="og:type" content="Portfolio" />
+	<meta property="og:title" content="Philstack - Frontend Developer" />
+	<meta name="twitter:title" content="Philstack - Frontend Developer" />
+
+	<meta property="og:description" content="Developer Portfolio of the frontend developer" />
+	<meta name="description" content="Developer Portfolio of the frontend developer" />
+	<meta name="twitter:description" content="Developer Portfolio of the frontend developer" />
+
+	<meta property="og:site_name" content="Philstack.de" />
+
+	<meta property="og:image" content="/favicon.png" />
+	<meta name="twitter:image" content="/favicon.png" />
+</svelte:head>
+<svelte:window bind:scrollY />
 
 <div class="">
 	<div class="relative z-50"></div>
