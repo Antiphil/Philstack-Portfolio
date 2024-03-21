@@ -6,7 +6,7 @@
 </script>
 
 <section class="flex h-screen w-full pb-[5px] pl-[10px] xl:pb-[35px] xl:pl-[70px]">
-	<div class="relative h-full w-full overflow-hidden bg-secondary xl:rounded-bl-[75px]">
+	<div class="relative h-full w-full overflow-hidden rounded-bl-3xl bg-secondary xl:rounded-bl-[75px]">
 		<img class="absolute z-0 hidden h-full w-full object-cover object-center xl:block" src={hero} alt="hero background" />
 		<img class="absolute z-0 h-full w-full object-cover object-left xl:hidden" src={heroM} alt="hero background" />
 		<div class="relative z-10 flex h-full flex-col items-end justify-between p-10">

@@ -20,7 +20,7 @@
 			<div class="absolute z-10 flex h-full w-0 flex-col items-start justify-center overflow-hidden rounded-xl bg-primary transition-all duration-500 group-hover:w-full"></div>
 		</div>
 	</div>
-	<div class="projectButton relative z-10 hidden h-[80px] w-[284px] items-center bg-cover transition-all duration-300 lg:flex">
+	<div class="relative z-10 hidden items-center rounded-l-xl bg-cover py-8 pl-10 pr-24 transition-all duration-300 group-hover:bg-primary lg:flex">
 		<p class="absolute left-7 text-xs font-bold uppercase group-hover:text-black">View Project</p>
 	</div>
 	<div class="absolute z-[1] h-full w-full bg-secondary transition-all duration-300 group-hover:w-[0%]"></div>
