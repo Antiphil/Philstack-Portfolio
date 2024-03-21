@@ -4,7 +4,7 @@
 	let about;
 	const fetchDataFromAPI = async () => {
 		try {
-			const response = await fetch('https://strapi.antiphil.de/api/about');
+			const response = await fetch('https://strapi.antiphil.de/api/about?populate=*');
 			about = await response.json();
 		} catch (error) {
 			console.error('Fehler beim Abrufen der About Daten:', error);
@@ -29,7 +29,7 @@
 						</svg>
 					</a>
 					<div class="relative z-0 overflow-hidden rounded-xl">
-						<img class="sepia" src={mgn} alt="" />
+						<img class="sepia" src={`https://strapi.antiphil.de${about?.data?.attributes?.image?.data?.attributes?.url}`} alt="" />
 					</div>
 				</div>
 				<div>

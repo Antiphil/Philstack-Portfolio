@@ -9,7 +9,7 @@
 		{#if $blogStore.data}
 			{#each $blogStore.data.reverse() as blog, index}
 				{#if index < 4}
-					<Blogitem title={blog.attributes.title} tag={blog.attributes.tag} date={blog.attributes.date} desc={blog.attributes.description} />
+					<Blogitem title={blog.attributes.title} tag={blog.attributes.tag} date={blog.attributes.date} desc={blog.attributes.description} img={`https://strapi.antiphil.de${blog?.attributes.media.data[0].attributes.url}`} />
 				{/if}
 			{/each}
 		{/if}

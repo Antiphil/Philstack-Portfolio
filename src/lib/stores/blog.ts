@@ -8,7 +8,7 @@ export const blogStore = writable([]);
 // Funktion zum Aktualisieren des Stores mit Daten aus der API
 export async function fetchDataFromAPI() {
 	try {
-		const response = await fetch('https://strapi.antiphil.de/api/blogposts');
+		const response = await fetch('https://strapi.antiphil.de/api/blogposts?populate=*');
 		const data = await response.json();
 		// Setze die Daten im Store
 		blogStore.set(data);
