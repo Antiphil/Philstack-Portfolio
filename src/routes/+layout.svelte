@@ -13,12 +13,12 @@
 	onMount(async () => {
 		const locomotive = await import('../lib/utils/locomotive');
 
-		var cursor = document.getElementById('cursor');
+		/* var cursor = document.getElementById('cursor');
 		var cursorCircle = document.getElementById('cursorCircle');
 		document.body.addEventListener('mousemove', function (e) {
 			(cursor.style.left = e.clientX + 'px'), (cursor.style.top = e.clientY + 'px');
 			(cursorCircle.style.left = e.clientX + 'px'), (cursorCircle.style.top = e.clientY + 'px');
-		});
+		}); */
 	});
 
 	let scrollY;
@@ -27,8 +27,8 @@
 
 <svelte:window bind:scrollY />
 
-<div class="cursor" id="cursor"></div>
-<div class="cursorCircle" id="cursorCircle"></div>
+<!-- <div class="cursor" id="cursor"></div>
+<div class="cursorCircle" id="cursorCircle"></div> -->
 
 <div class="">
 	<div class="relative z-50"></div>

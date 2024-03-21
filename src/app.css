@@ -3,16 +3,14 @@
 @tailwind utilities;
 
 body {
-    background-color: #EDE9D0;
-	color: #EDE9D0;
+	background-color: #ede9d0;
+	color: #ede9d0;
 	min-height: 100vh;
 	width: 100%;
 	overflow-x: hidden;
 	font-family: 'Poppins', sans-serif !important;
 }
-*, button {
-    cursor: none !important;
-}
+
 body > #app {
 	height: 100%;
 	width: 100%;
@@ -36,53 +34,59 @@ body > #app {
 }
 
 .stack {
-    display: grid;
+	display: grid;
 }
 .stack > * {
 	grid-area: 1 / 1 / 2 / 2;
-  }
-  
-.outline-text {
--webkit-text-stroke-color: #EDE9D0;
--webkit-text-fill-color: transparent;
--webkit-text-stroke-width: 1px;
-}
-.curved-corner-bottomleft, .curved-corner-bottomright, .curved-corner-topleft, .curved-corner-topright {
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
-    position: relative;
-}
-.curved-corner-bottomleft:before, .curved-corner-bottomright:before, .curved-corner-topleft:before, .curved-corner-topright:before {
-    content: "";
-    display: block;
-    width: 200%;
-    height: 200%;
-    position: absolute;
-    border-radius: 50%;
-}
-.curved-corner-bottomleft:before {
-    bottom: 0;
-    left: 0;
-    box-shadow: -50px 50px 0 0 #24201F;
-}
-.curved-corner-bottomright:before {
-    bottom: 0;
-    right: 0;
-    box-shadow: 50px 50px 0 0 #24201F;
-}
-.curved-corner-topleft:before {
-    top: 0;
-    left: 0;
-    box-shadow: -50px -50px 0 0 #24201F;
-}
-.curved-corner-topright:before {
-    top: 0;
-    right: 0;
-    box-shadow: 50px -50px 0 0 #24201F;
 }
 
-.cursor {
+.outline-text {
+	-webkit-text-stroke-color: #ede9d0;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 1px;
+}
+.curved-corner-bottomleft,
+.curved-corner-bottomright,
+.curved-corner-topleft,
+.curved-corner-topright {
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	position: relative;
+}
+.curved-corner-bottomleft:before,
+.curved-corner-bottomright:before,
+.curved-corner-topleft:before,
+.curved-corner-topright:before {
+	content: '';
+	display: block;
+	width: 200%;
+	height: 200%;
+	position: absolute;
+	border-radius: 50%;
+}
+.curved-corner-bottomleft:before {
+	bottom: 0;
+	left: 0;
+	box-shadow: -50px 50px 0 0 #24201f;
+}
+.curved-corner-bottomright:before {
+	bottom: 0;
+	right: 0;
+	box-shadow: 50px 50px 0 0 #24201f;
+}
+.curved-corner-topleft:before {
+	top: 0;
+	left: 0;
+	box-shadow: -50px -50px 0 0 #24201f;
+}
+.curved-corner-topright:before {
+	top: 0;
+	right: 0;
+	box-shadow: 50px -50px 0 0 #24201f;
+}
+
+/* .cursor {
     position: fixed;
     border-radius: 50%;
     transform: translateX(-50%) translateY(-50%);
@@ -113,3 +117,4 @@ body > #app {
     width: 30px;
     transition: all 150ms ease-out;
   }
+ */
