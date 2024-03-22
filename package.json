@@ -29,6 +29,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"locomotive-scroll": "^5.0.0-beta.11"
+		"date-fns": "^3.6.0",
+		"locomotive-scroll": "^5.0.0-beta.11",
+		"moment": "^2.30.1"
 	}
 }
