@@ -6,9 +6,12 @@
 	import landkautz from '$lib/assets/landkautz_banner.png';
 	import lukas from '$lib/assets/lukas_banner.png';
 	import ProjectItem from './projectItem.svelte';
+	import Title from '$lib/files/modules/title.svelte';
 </script>
 
 <div class="flex w-full flex-col items-center gap-5">
+	<Title title="My Projects" nr="02." />
+	
 	<ProjectItem title="XIVData" nr="01" categories={['Javascript, PHP, Tailwind, Svelte, Inertia, HTML & CSS']} img={xivdata} />
 	<ProjectItem title="Landkautz" nr="02" categories={['Shopify, Liquid, Javascript, HTML & CSS']} img={landkautz} />
 	<ProjectItem title="Lukas Kleinecke" nr="03" categories={['Sveltekit, Javascript, Node.js']} img={lukas} />

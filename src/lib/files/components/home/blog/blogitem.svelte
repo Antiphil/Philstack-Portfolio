@@ -11,7 +11,7 @@
 	export let tag: string = 'Coding';
 </script>
 
-<div class="relative flex w-full flex-col rounded-3xl border-2 border-[#EDE9D0] shadow-[4px_4px_0px_rgba(237,233,208,1)] sm:h-[200px]">
+<div class="relative flex w-full mb-5 flex-col rounded-3xl border-2 border-[#EDE9D0] shadow-[4px_4px_0px_rgba(237,233,208,1)] sm:h-[200px]">
 	<img class="relative z-30 w-full rounded-t-3xl object-cover sm:w-1/3" src={img} alt="" />
 
 	<div class="flex w-full flex-col items-center justify-center sm:relative sm:right-10 sm:w-[90%]">

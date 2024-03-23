@@ -1,11 +1,13 @@
 <script lang="ts">
 	import Button from '$lib/files/modules/button.svelte';
+	import Title from '$lib/files/modules/title.svelte';
 	import { blogStore } from '$lib/stores/blog';
 	import Blogitem from './blogitem.svelte';
 </script>
 
 <section class="flex w-full flex-col items-center">
-	<div class="flex w-full flex-col gap-20">
+	<div class="flex w-full flex-col  items-center">
+		<Title title="Blog Posts" nr="03." />
 		{#if $blogStore.data}
 			{#each $blogStore.data.reverse() as blog, index}
 				{#if index < 4}
