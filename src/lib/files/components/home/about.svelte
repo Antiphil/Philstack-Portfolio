@@ -22,18 +22,18 @@
 						<span class="mb-2 block font-bold text-secondary group-hover:text-primary lg:mb-10">{about?.data?.attributes?.phrase}</span>
 						<h2 class="text-lg font-bold text-secondary group-hover:text-primary lg:text-3xl">{about?.data?.attributes?.title}</h2>
 					</div>
-					<a class=" mb-8 mt-2 hidden items-center gap-2 text-sm font-bold text-primary lg:flex" href="">
+					<span class=" mb-8 mt-2 hidden items-center gap-2 text-sm font-bold text-primary lg:flex" href="">
 						<span>{about?.data?.attributes?.entryline}</span>
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
 							<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
 						</svg>
-					</a>
+					</span>
 					<div class="relative z-0 overflow-hidden rounded-xl">
 						<img class="sepia" src={`https://strapi.antiphil.de${about?.data?.attributes?.image?.data?.attributes?.url}`} alt="" />
 					</div>
 				</div>
 				<div>
-					<div class="text-left text-justify lg:pl-12">
+					<div class="content text-left text-justify lg:pl-12">
 						{@html about?.data?.attributes?.text}
 					</div>
 				</div>
@@ -41,3 +41,9 @@
 		</div>
 	</div>
 {/if}
+
+<style>
+	.content > :global(p) {
+		margin-bottom: 10px;
+	}
+</style>
