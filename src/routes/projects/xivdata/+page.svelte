@@ -1,6 +1,5 @@
 <script>
 // @ts-nocheck
-	import Blogframe from "$lib/files/layout/blogframe.svelte";
 
     let data;
 	const fetchDataFromAPI = async () => {
@@ -13,11 +12,10 @@
 	};
 	fetchDataFromAPI();
 </script>
-<Blogframe>
-    <div class=""></div>
+
+
     <div class="p-10  prose-lg prose-pink">
         {#if data}
             {@html data.data?.attributes?.content}
         {/if}
     </div>
-</Blogframe>

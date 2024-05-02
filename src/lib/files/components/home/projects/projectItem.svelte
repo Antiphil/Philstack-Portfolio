@@ -3,9 +3,10 @@
 	export let title: string;
 	export let categories: string[];
 	export let img: string;
+	export let link: string
 </script>
 
-<button class="projectGroup group relative flex min-h-[150px] w-full items-center justify-between overflow-hidden rounded-[25px] border-2 border-primary shadow-[4px_4px_0px_rgba(237,233,208,1)] xl:rounded-[30px]">
+<a href={link} class="projectGroup group relative flex min-h-[150px] w-full items-center justify-between overflow-hidden rounded-[25px] border-2 border-primary shadow-[4px_4px_0px_rgba(237,233,208,1)] xl:rounded-[30px]">
 	<div class="z-10 flex w-full items-center">
 		<div class="mr-1 h-[3px] w-5 bg-primary transition-all duration-300 group-hover:mr-0 group-hover:w-10 sm:mr-5 sm:w-20 lg:group-hover:w-44"></div>
 		<p class="mr-1 w-10 overflow-hidden font-bold transition-all duration-300 group-hover:mr-0 group-hover:w-0 sm:mr-5">{nr}</p>
@@ -25,4 +26,4 @@
 	</div>
 	<div class="absolute z-[1] h-full w-full bg-secondary transition-all duration-300 group-hover:w-[0%]"></div>
 	<img class="absolute z-0 h-full w-full object-cover opacity-55 sepia" alt="" src={img} />
-</button>
+</a>
