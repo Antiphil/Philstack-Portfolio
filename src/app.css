@@ -118,3 +118,8 @@ body > #app {
     transition: all 150ms ease-out;
   }
  */
+
+ :root {
+	--svooltip-bg: rgb(27, 27, 25);
+	--svooltip-text: #EDE9D0;
+}

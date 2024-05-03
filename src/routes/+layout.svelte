@@ -7,6 +7,7 @@
 	import '../app.css';
 	import logo2 from '$lib/assets/logos/logo2.svg';
 	import { onMount } from 'svelte';
+	import { fade, fly } from 'svelte/transition'
 
 	// @ts-nocheck
 
@@ -20,6 +21,7 @@
 		}
 	});
 
+	
 	let scrollY;
 	$: distance = scrollY / 5;
 </script>
@@ -52,7 +54,10 @@
 		<path d="M0.99997 0V1706.5C-5.33336 1807.5 46.4 2009.5 304 2009.5C561.6 2009.5 2022 2009.5 2720 2009.5" stroke="#F51E1E" />
 	</svg> -->
 
-	<slot />
+	
+
+  <slot />
+
 	<Footer />
 </div>
 

@@ -1,38 +1,33 @@
 <script>
 	// @ts-nocheck
-
-	import Footer from '$lib/files/layout/footer.svelte';
+    import logo from '$lib/assets/logos/logo_full.svg'
+    import { tooltip } from 'svooltip';
+	import 'svooltip/styles.css'; // Include default styling
 
     export let data;
     console.log(1,data)
 </script>
 <section class="relative flex flex-col w-full pl-[10px] xl:pl-[70px] pb-[5px] xl:pb-[35px]">
-    <div class="bg-[rgb(22,22,19)] px-10 py-5">
-
-        <nav class="flex" aria-label="Breadcrumb">
+    <div class="bg-[rgba(22,22,19,0.8)] px-10 py-5 fixed z-10 w-full backdrop-blur-xl flex ">
+        <a href="/"><img class="h-5 mr-10" src={logo} alt=""></a>
+        <nav class="flex items-center" aria-label="Breadcrumb">
             <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
             <li class="inline-flex items-center">
-                <a href="#" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">
-                <svg class="w-3 h-3 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"/>
-                </svg>
-                Home
+                <a href="/" class="inline-flex items-center text-sm font-medium hover:text-primaryhover transition-colors">
+                    <i class="fa-solid fa-house text-xs mr-2"></i>
+                    Home
                 </a>
             </li>
             <li>
                 <div class="flex items-center">
-                <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                </svg>
-                <a href="#" class="ms-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2 dark:text-gray-400 dark:hover:text-white">Projects</a>
+                    <i class="fa-solid fa-angles-right text-xs mr-1"></i>
+                    <a href="/projects" class="ms-1 text-sm font-medium hover:text-primaryhover transition-colors">Projects</a>
                 </div>
             </li>
             <li aria-current="page">
                 <div class="flex items-center">
-                <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                </svg>
-                <span class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400">Flowbite</span>
+                    <i class="fa-solid fa-angles-right text-xs mr-1"></i>
+                    <span class="ms-1 text-sm font-medium ">XIVDATA - Das Mammutprojekt</span>
                 </div>
             </li>
             </ol>
@@ -41,11 +36,45 @@
     </div>
 	<div class="relative flex h-full w-full flex-row-reverse gap-3 overflow-hidden rounded-bl-3xl bg-secondary xl:rounded-bl-[75px]">
         
-        <div class="bg-[rgb(22,22,19)]">
-            asda
+        <div class="bg-[#181715] w-1/4 relative z-50 p-10">
+            <div class="flex justify-center gap-2 flex-wrap p-4">
+                <span class="bg-primary rounded-full px-3 py-1 text-sm font-semibold text-secondary">#photography</span>
+                <span class="bg-primary rounded-full px-3 py-1 text-sm font-semibold text-secondary">#travel</span>
+                <span class="bg-primary rounded-full px-3 py-1 text-sm font-semibold text-secondary">#winter</span>
+                <span class="bg-primary rounded-full px-3 py-1 text-sm font-semibold text-secondary">#chill</span>
+            </div>
         </div>
-		<div class="">
-            <slot />
+		<div class="p-10 w-3/4 mt-10">
+            <div class="bg-[rgba(22,22,19,0.8)] mb-5 text-xs px-5 py-2 rounded-xl flex justify-between items-center">
+                <div class="">
+                    <span>Website: <a class="underline hover:text-primaryhover transition-colors" href="https://dev.xivdata.com/" target="_blank">www.dev.xivdata.com</a></span>
+                    -
+                    <span>Joined: Start of 2023</span>
+                </div>
+                <div class="flex gap-3 text-sm">
+                    <a href="/" use:tooltip={{content: "Share on Facebook"}} class="hover:bg-primary hover:text-secondary transition-all w-6 h-6 rounded-full flex items-center justify-center">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="/" use:tooltip={{content: "Share on X/Twitter"}} class="hover:bg-primary hover:text-secondary transition-all w-6 h-6 rounded-full flex items-center justify-center">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="/" use:tooltip={{content: "Share on Threads"}} class="hover:bg-primary hover:text-secondary transition-all w-6 h-6 rounded-full flex items-center justify-center">
+                        <i class="fa-brands fa-threads"></i>
+                    </a>
+                    <a href="/" use:tooltip={{content: "Copy URL"}} class="hover:bg-primary hover:text-secondary transition-all w-6 h-6 rounded-full flex items-center justify-center">
+                        <i class="fa-solid fa-link"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="bg-[rgba(22,22,19,0.8)] p-5 rounded-xl">
+                <slot />
+            </div>
         </div>
 	</div>
 </section>
+
+<style>
+    :global(.svooltip) {
+        z-index: 100;
+    }
+</style>

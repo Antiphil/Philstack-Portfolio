@@ -1,5 +1,5 @@
 <script>
-	import Blogitemdemo from '$lib/files/components/blogitemdemo.svelte';
+	import Testimonials from '$lib/files/components/testimonials/testimonials.svelte';
 	import Contact from '$lib/files/components/contact.svelte';
 	import About from '$lib/files/components/home/about.svelte';
 	import Blog from '$lib/files/components/home/blog/blog.svelte';
@@ -22,6 +22,9 @@
 		<Blog />
 	</LeftSection>
 	<RightSection>
-		<Contact />
+		<Testimonials />
 	</RightSection>
+	<LeftSection>
+		<Contact />
+	</LeftSection>
 </div>

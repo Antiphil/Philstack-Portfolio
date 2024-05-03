@@ -14,8 +14,21 @@
 </script>
 
 
-    <div class="p-10  prose-lg prose-pink">
-        {#if data}
-            {@html data.data?.attributes?.content}
-        {/if}
-    </div>
+<article id="blogContent" class="prose-base prose-pink">
+	{#if data}
+		{@html data.data?.attributes?.content}
+	{/if}
+</article>
+
+<style>
+	:global(#blogContent img) {
+		filter: sepia(0.5);
+		border-radius: 20px;
+		border: 3px solid #EDE9D0;
+		transition: .5s all;
+	}
+	:global(#blogContent img:hover) {
+		filter: sepia(0);
+		transition: .5s all;
+	}
+</style>

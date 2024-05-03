@@ -5,6 +5,7 @@ export default {
 		extend: {
 			colors: {
 				primary: '#EDE9D0',
+				primaryhover: '#ffed88',
 				secondary: '#24201F'
 			},
 		
