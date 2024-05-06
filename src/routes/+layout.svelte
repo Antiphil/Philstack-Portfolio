@@ -84,4 +84,7 @@
 			offset-distance: 100%;
 		}
 	}
+	:global(.svooltip) {
+        z-index: 100;
+    }
 </style>
