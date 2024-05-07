@@ -3,60 +3,46 @@
 	import Title from '$lib/files/modules/title.svelte';
 	import { blogStore } from '$lib/stores/blog';
 	import Blogitem from './blogitem.svelte';
+	import { format, formatDistance, formatRelative, subDays } from 'date-fns';
 </script>
 
-<!-- <section class="flex w-full flex-col items-center">
-	<div class="flex w-full flex-col  items-center">
-		<Title title="Blog Posts" nr="03." />
+<section class="w-full">
+	<div class="container mx-auto px-6 py-10">
+		<div class="mb-10 mt-6 md:flex md:items-center md:justify-between">
+			<div>
+				<h1 class="text-2xl font-bold uppercase lg:text-3xl">My Blog</h1>
 
+				<div class="mx-auto mt-3 flex">
+					<span class="inline-block h-1 w-40 rounded-full bg-primary"></span>
+					<span class="mx-1 inline-block h-1 w-4 rounded-full bg-primary"></span>
+					<span class="inline-block h-1 w-2 rounded-full bg-primary"></span>
+				</div>
+			</div>
+		</div>
 
-		{#if $blogStore.data}
-			{#each $blogStore.data.reverse() as blog, index}
-				{#if index < 4}
-					<Blogitem title={blog.attributes.title} tag={blog.attributes.tag} date={blog.attributes.date} desc={blog.attributes.description} img={`https://strapi.antiphil.de${blog?.attributes.media.data[0].attributes.url}`} />
-				{/if}
-			{/each}
-		{/if}
-	</div>
-	<Button text="View Blog" link="/" />
-</section> -->
-<section class="">
-    <div class="container px-6 py-10 mx-auto">
-        <div class="mt-6 md:flex md:items-center md:justify-between">
-            <div>
-                <h1 class="text-2xl font-bold uppercase lg:text-3xl">
-                    My Blog
-                </h1>
-
-                <div class="flex mx-auto mt-3">
-                    <span class="inline-block w-40 h-1 bg-primary rounded-full"></span>
-                    <span class="inline-block w-4 h-1 mx-1 bg-primary rounded-full"></span>
-                    <span class="inline-block w-2 h-1 bg-primary rounded-full"></span>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2">
+		<div class="flex w-full gap-5">
 			{#if $blogStore.data}
 				{#each $blogStore.data.reverse() as blog, index}
 					{#if index < 4}
-					<div class="lg:flex bg-black/30 rounded-xl">
-						<img class="object-cover w-full h-56 rounded-lg lg:w-64" src={`https://strapi.antiphil.de${blog?.attributes.media.data[0].attributes.url}`} alt="">
-		
-						<div class="flex flex-col justify-between py-4 lg:mx-4">
-							<a href="#" class="text-xl font-semibold  hover:underline  ">
-								{blog.attributes.title}
-							</a>
-							
-							<span class="text-sm ">{blog.attributes.date}</span>
-						</div>
-					</div>
+						<article class="group h-[600px] w-[25%] transform cursor-pointer overflow-hidden rounded-2xl bg-cover bg-center shadow-xl sepia duration-500 hover:-translate-y-2" style={`background-image: url(https://strapi.antiphil.de${blog?.attributes.media.data[0].attributes.url})`}>
+							<div class="relative flex h-[600px] transform flex-col bg-black bg-opacity-20 px-6 py-6 duration-300 hover:bg-opacity-75">
+								<h1 class="absolute bottom-10 mb-5 transform text-3xl font-medium drop-shadow-[1px_1px_0px_rgba(0,0,0,1)] duration-300 group-hover:translate-y-[-100px]">{blog.attributes.title}</h1>
+								<div class="absolute bottom-5 mb-5 flex h-2 w-full transform rounded-full drop-shadow-[1px_1px_0px_rgba(0,0,0,1)] duration-300 group-hover:translate-y-[-100px]">
+									<span class="inline-block h-1.5 w-20 rounded-full bg-primary"></span>
+									<span class="mx-1 inline-block h-1.5 w-6 rounded-full bg-primary"></span>
+									<span class="inline-block h-1.5 w-2 rounded-full bg-primary"></span>
+								</div>
+								<p class="absolute bottom-5 line-clamp-3 w-[calc(100%-48px)] translate-y-[-40px] transform text-sm opacity-0 drop-shadow-[1px_1px_0px_rgba(0,0,0,1)] duration-500 group-hover:opacity-80">Lorem ipsum dolor sit, amet consectetur adipisicing consectetur adipisicing consectetur adipisicing elit. Vitae, sapiente tempore iusto consectetur quo soluta consequatur. Ad officiis ea voluptas!</p>
+								<p class="absolute bottom-5 flex w-[calc(100%-48px)] translate-y-[-0px] transform justify-between pb-3 text-xs opacity-0 drop-shadow-[1px_1px_0px_rgba(0,0,0,1)] duration-500 group-hover:opacity-80">
+									<span>{formatDistance(subDays(blog.attributes.date, 3), new Date(), { addSuffix: true })}</span>
+									<span>Author: Phil</span>
+								</p>
+							</div>
+						</article>
 					{/if}
 				{/each}
 			{/if}
-
-        </div>
+		</div>
 		<Button text="View Blog" link="/" />
-    </div>
+	</div>
 </section>

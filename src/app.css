@@ -17,14 +17,14 @@ body > #app {
 }
 ::-webkit-scrollbar {
 	width: 7px;
-	background: rgb(12, 14, 23);
+	background: #24201f;
 }
 ::-webkit-scrollbar-track {
-	background: rgb(12, 14, 23);
+	background: #24201f;
 	border-radius: 20px;
 }
 ::-webkit-scrollbar-thumb {
-	background: #f92d73;
+	background: #ede9d0;
 	border-radius: 20px;
 	width: 5px;
 }
@@ -119,7 +119,7 @@ body > #app {
   }
  */
 
- :root {
+:root {
 	--svooltip-bg: rgb(27, 27, 25);
-	--svooltip-text: #EDE9D0;
+	--svooltip-text: #ede9d0;
 }

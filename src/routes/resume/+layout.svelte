@@ -9,7 +9,7 @@
 </script>
 
 <section class="relative flex w-full flex-col pb-[5px] pl-[10px] xl:pb-[35px] xl:pl-[70px]">
-	<div class="fixed z-10 flex w-full bg-[rgba(22,22,19,0.8)] px-10 py-5 backdrop-blur-xl">
+	<div class="fixed z-20 flex w-full bg-[rgba(22,22,19,0.8)] px-10 py-5 backdrop-blur-xl">
 		<a href="/"><img class="mr-10 h-5" src={logo} alt="" /></a>
 		<nav class="flex items-center" aria-label="Breadcrumb">
 			<ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
@@ -22,7 +22,7 @@
 				<li>
 					<div class="flex items-center">
 						<i class="fa-solid fa-angles-right mr-1 text-xs"></i>
-						<a href="/resume" class="ms-1 text-sm font-medium transition-colors hover:text-primaryhover">About Me & Resume</a>
+						<a href="/resume" class="ms-1 text-sm font-medium transition-colors hover:text-primaryhover">Resume</a>
 					</div>
 				</li>
 			</ol>
@@ -52,7 +52,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="rounded-xl rounded-bl-[50px] bg-[rgba(22,22,19,0.8)] p-5">
+			<div class="">
 				<slot />
 			</div>
 		</div>

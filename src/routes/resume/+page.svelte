@@ -1,14 +1,23 @@
 <script>
 	import Skillbadge from '$lib/files/modules/skillbadge.svelte';
+	import logo from '$lib/assets/logos/logo.svg';
 </script>
 
-<section>Resume Hero Sec</section>
-<section>
-	ABOUT ME
+<section class="flex w-full items-center justify-center rounded-xl rounded-bl-[50px] rounded-tr-[50px] bg-[rgba(22,22,19,0.8)]">
+	<div class="flex w-full flex-col items-center text-center">
+		<h1 class="text text-[90px] font-bold uppercase leading-[80px]">Philstack</h1>
+		<h3 class="text-2xl font-thin uppercase">Frontend Developer & UI/UX Designer</h3>
+	</div>
+	<div class="relative flex items-center justify-center">
+		<img class="absolute opacity-20 invert sepia" src={logo} alt="" />
+		<img class="headanim scale-75" src="https://canisminor.cc/img/resume-banner-1.png" alt="" />
+	</div>
+</section>
+<section class="bg-secondary py-10">
 	<div class="m-auto flex max-w-4xl flex-col justify-around gap-5 text-center lg:flex-row lg:gap-0">
 		<div class="">
 			<h3 class="text-lg font-light">BORN:</h3>
-			<h2 class="text-2xl font-bold uppercase">22.01.1996</h2>
+			<h2 class="text-2xl font-bold uppercase">January 1996</h2>
 		</div>
 		<div class="">
 			<h3 class="text-lg font-light">MOBILE:</h3>
@@ -20,9 +29,100 @@
 		</div>
 	</div>
 </section>
-<section>
-	Skills
-	<div class="my-10 flex justify-around text-center">
+<section class="rounded-xl rounded-bl-[50px] rounded-tr-[50px] bg-[rgba(22,22,19,0.8)] py-20" style="background-image:url(https://designcourse.com/textures/roadmap.svg)">
+	<div class="m-auto flex max-w-5xl flex-col">
+		<div class="flex items-center justify-start">
+			<div class="text-right">
+				<h3 class="text-xl font-bold">2013</h3>
+				<h2 class="text-2xl font-bold">Mediengestalter</h2>
+				<p class="text-pretty text-sm font-light">Lorem ipsum dolor sit amet consectetur<br /> elit .Adipisci asperiores illo quo quis ducimus<br /> odit veniam dignissimos distinctio</p>
+			</div>
+			<div class="relative ml-10 flex items-center justify-center">
+				<div class="absolute h-7 w-7 rounded-full bg-primary"></div>
+				<div class="absolute h-7 w-7 animate-ping rounded-full bg-primary/60"></div>
+			</div>
+		</div>
+		<div class="flex items-center justify-end">
+			<div class="relative mr-10 flex items-center justify-center">
+				<div class="absolute h-7 w-7 rounded-full bg-primary"></div>
+				<div class="absolute h-7 w-7 animate-ping rounded-full bg-primary/60"></div>
+			</div>
+			<div class="text-left">
+				<h3 class="text-xl font-bold">2013</h3>
+				<h2 class="text-2xl font-bold">Mediengestalter</h2>
+				<p class="text-pretty text-sm font-light">Lorem ipsum dolor sit amet consectetur<br /> elit .Adipisci asperiores illo quo quis ducimus<br /> odit veniam dignissimos distinctio</p>
+			</div>
+		</div>
+		<div class="flex items-center justify-start">
+			<div class="text-right">
+				<h3 class="text-xl font-bold">2013</h3>
+				<h2 class="text-2xl font-bold">Mediengestalter</h2>
+				<p class="text-pretty text-sm font-light">Lorem ipsum dolor sit amet consectetur<br /> elit .Adipisci asperiores illo quo quis ducimus<br /> odit veniam dignissimos distinctio</p>
+			</div>
+			<div class="relative ml-10 flex items-center justify-center">
+				<div class="absolute h-7 w-7 rounded-full bg-primary"></div>
+				<div class="absolute h-7 w-7 animate-ping rounded-full bg-primary/60"></div>
+			</div>
+		</div>
+		<div class="flex items-center justify-end">
+			<div class="relative mr-10 flex items-center justify-center">
+				<div class="absolute h-7 w-7 rounded-full bg-primary"></div>
+				<div class="absolute h-7 w-7 animate-ping rounded-full bg-primary/60"></div>
+			</div>
+			<div class="text-left">
+				<h3 class="text-xl font-bold">2013</h3>
+				<h2 class="text-2xl font-bold">Mediengestalter</h2>
+				<p class="text-pretty text-sm font-light">Lorem ipsum dolor sit amet consectetur<br /> elit .Adipisci asperiores illo quo quis ducimus<br /> odit veniam dignissimos distinctio</p>
+			</div>
+		</div>
+		<div class="flex items-center justify-start">
+			<div class="text-right">
+				<h3 class="text-xl font-bold">2013</h3>
+				<h2 class="text-2xl font-bold">Mediengestalter</h2>
+				<p class="text-pretty text-sm font-light">Lorem ipsum dolor sit amet consectetur<br /> elit .Adipisci asperiores illo quo quis ducimus<br /> odit veniam dignissimos distinctio</p>
+			</div>
+			<div class="relative ml-10 flex items-center justify-center">
+				<div class="absolute h-7 w-7 rounded-full bg-primary"></div>
+				<div class="absolute h-7 w-7 animate-ping rounded-full bg-primary/60"></div>
+			</div>
+		</div>
+		<div class="flex items-center justify-end">
+			<div class="relative mr-10 flex items-center justify-center">
+				<div class="absolute h-7 w-7 rounded-full bg-primary"></div>
+				<div class="absolute h-7 w-7 animate-ping rounded-full bg-primary/60"></div>
+			</div>
+			<div class="text-left">
+				<h3 class="text-xl font-bold">2013</h3>
+				<h2 class="text-2xl font-bold">Mediengestalter</h2>
+				<p class="text-pretty text-sm font-light">Lorem ipsum dolor sit amet consectetur<br /> elit .Adipisci asperiores illo quo quis ducimus<br /> odit veniam dignissimos distinctio</p>
+			</div>
+		</div>
+		<div class="flex items-center justify-start">
+			<div class="text-right">
+				<h3 class="text-xl font-bold">2013</h3>
+				<h2 class="text-2xl font-bold">Mediengestalter</h2>
+				<p class="text-pretty text-sm font-light">Lorem ipsum dolor sit amet consectetur<br /> elit .Adipisci asperiores illo quo quis ducimus<br /> odit veniam dignissimos distinctio</p>
+			</div>
+			<div class="relative ml-10 flex items-center justify-center">
+				<div class="absolute h-7 w-7 rounded-full bg-primary"></div>
+				<div class="absolute h-7 w-7 animate-ping rounded-full bg-primary/60"></div>
+			</div>
+		</div>
+		<div class="flex items-center justify-end">
+			<div class="relative mr-10 flex items-center justify-center">
+				<div class="absolute h-7 w-7 rounded-full bg-primary"></div>
+				<div class="absolute h-7 w-7 animate-ping rounded-full bg-primary/60"></div>
+			</div>
+			<div class="text-left">
+				<h3 class="text-xl font-bold">2013</h3>
+				<h2 class="text-2xl font-bold">Mediengestalter</h2>
+				<p class="text-pretty text-sm font-light">Lorem ipsum dolor sit amet consectetur<br /> elit .Adipisci asperiores illo quo quis ducimus<br /> odit veniam dignissimos distinctio</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="">
+	<div class="m-auto my-10 flex max-w-7xl justify-around text-center">
 		<div class="flex flex-col items-center justify-center gap-3">
 			<img class="w-16" src="https://canisminor.cc/img/fe-skill-web.png" alt="" />
 			<span class="text-xs font-bold">Web Frontend<br /> Development</span>
@@ -44,6 +144,9 @@
 			<span class="text-xs font-bold">Mastery of Linux<br /> SSH & Git</span>
 		</div>
 	</div>
+</section>
+
+<section class="rounded-xl rounded-bl-[50px] rounded-tr-[50px] bg-[rgba(22,22,19,0.8)] p-20">
 	<div class="mb-3">
 		<div class="mb-2 flex items-center">
 			<hr class="flex-grow border-t border-gray-300" />
@@ -130,37 +233,70 @@
 		</div>
 	</div>
 </section>
-<div class="flex gap-5">
-	<article class="min-h-150 group mx-auto max-w-sm transform cursor-pointer bg-cover bg-center shadow-xl sepia duration-500 hover:-translate-y-2" style="background-image: url(https://images.pexels.com/photos/3299386/pexels-photo-3299386.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=900);">
-		<div class="min-h-150 flex transform flex-col flex-wrap bg-black bg-opacity-20 px-10 pt-96 duration-300 hover:bg-opacity-75">
-			<h1 class="mb-5 translate-y-0 transform text-3xl text-white duration-300 group-hover:translate-y-[-80px]">On A Day Like Today</h1>
-			<div class="mb-5 h-2 w-16 translate-y-0 transform rounded-full bg-primary duration-300 group-hover:translate-y-[-80px]"></div>
-			<p class="translate-y-[-80px] transform text-sm opacity-0 duration-500 group-hover:opacity-80">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, beatae!</p>
-		</div>
-	</article>
-	<article class="min-h-150 group mx-auto max-w-sm transform cursor-pointer bg-cover bg-center shadow-xl sepia duration-500 hover:-translate-y-2" style="background-image: url(https://images.pexels.com/photos/3299386/pexels-photo-3299386.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=900);">
-		<div class="min-h-150 flex transform flex-col flex-wrap bg-black bg-opacity-20 px-10 pt-96 duration-300 hover:bg-opacity-75">
-			<h1 class="mb-5 translate-y-0 transform text-3xl text-white duration-300 group-hover:translate-y-[-80px]">On A Day Like Today</h1>
-			<div class="mb-5 h-2 w-16 translate-y-0 transform rounded-full bg-primary duration-300 group-hover:translate-y-[-80px]"></div>
-			<p class="translate-y-[-80px] transform text-sm opacity-0 duration-500 group-hover:opacity-80">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, beatae!</p>
-		</div>
-	</article>
-	<article class="min-h-150 group mx-auto max-w-sm transform cursor-pointer overflow-hidden rounded-2xl bg-cover bg-center shadow-xl sepia duration-500 hover:-translate-y-2" style="background-image: url(https://images.pexels.com/photos/3299386/pexels-photo-3299386.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=900);">
-		<div class="min-h-150 flex transform flex-col flex-wrap bg-black bg-opacity-20 px-10 pt-96 duration-300 hover:bg-opacity-75">
-			<h1 class="mb-5 translate-y-0 transform text-3xl text-white duration-300 group-hover:translate-y-[-80px]">On A Day Like Today</h1>
-			<div class="mb-5 h-2 w-16 translate-y-0 transform rounded-full bg-primary duration-300 group-hover:translate-y-[-80px]"></div>
-			<p class="line-clamp-4 translate-y-[-80px] transform text-sm opacity-0 duration-500 group-hover:opacity-80">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, sapiente tempore iusto consectetur quo soluta consequatur. Ad officiis ea voluptas!</p>
-			<p class="flex translate-y-[-40px] transform justify-between text-xs opacity-0 duration-500 group-hover:opacity-80">
-				<span>06.05.2024</span>
-				<span>Author: Phil</span>
-			</p>
-		</div>
-	</article>
-	<article class="min-h-150 group mx-auto max-w-sm transform cursor-pointer bg-cover bg-center shadow-xl sepia duration-500 hover:-translate-y-2" style="background-image: url(https://images.pexels.com/photos/3299386/pexels-photo-3299386.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=900);">
-		<div class="min-h-150 flex transform flex-col flex-wrap bg-black bg-opacity-20 px-10 pt-96 duration-300 hover:bg-opacity-75">
-			<h1 class="mb-5 translate-y-0 transform text-3xl text-white duration-300 group-hover:translate-y-[-80px]">On A Day Like Today</h1>
-			<div class="mb-5 h-2 w-16 translate-y-0 transform rounded-full bg-primary duration-300 group-hover:translate-y-[-80px]"></div>
-			<p class="translate-y-[-80px] transform text-sm opacity-0 duration-500 group-hover:opacity-80">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, beatae!</p>
-		</div>
-	</article>
-</div>
+
+<style>
+	.headanim {
+		animation: 30s ease-in-out 0.5s infinite normal none running animationhead;
+	}
+	.logoanim {
+		animation: 30s ease-in-out 0.5s infinite normal none running animLogo;
+	}
+	@keyframes animationhead {
+		0% {
+			transform: translate(0px);
+		}
+		14% {
+			transform: translate(-6px, -16px);
+		}
+		25% {
+			transform: translate(-3px, 3px);
+		}
+		37% {
+			transform: translate(6px, -13px);
+		}
+		50% {
+			transform: translate(2px, -4px);
+		}
+		63% {
+			transform: translate(5px, -15px);
+		}
+		75% {
+			transform: translate(2px, -6px);
+		}
+		88% {
+			transform: translate(-4px, -15px);
+		}
+		100% {
+			transform: translate(0px);
+		}
+	}
+	@keyframes animLogo {
+		0% {
+			transform: translate(0px);
+		}
+		14% {
+			transform: translate(6px, -16px);
+		}
+		25% {
+			transform: translate(3px, 3px);
+		}
+		37% {
+			transform: translate(-3px, -13px);
+		}
+		50% {
+			transform: translate(2px, -4px);
+		}
+		63% {
+			transform: translate(-2px, -15px);
+		}
+		75% {
+			transform: translate(2px, -6px);
+		}
+		88% {
+			transform: translate(-4px, -15px);
+		}
+		100% {
+			transform: translate(0px);
+		}
+	}
+</style>
