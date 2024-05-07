@@ -8,6 +8,7 @@
 	import logo2 from '$lib/assets/logos/logo2.svg';
 	import { onMount } from 'svelte';
 	import { fade, fly } from 'svelte/transition'
+	import Cookie from '$lib/files/modules/cookie.svelte';
 
 	// @ts-nocheck
 
@@ -46,6 +47,8 @@
 	<meta name="twitter:image" content="/favicon.png" />
 </svelte:head>
 <svelte:window bind:scrollY />
+
+<Cookie />
 
 <div class="">
 	<div class="relative z-50"></div>
