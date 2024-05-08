@@ -7,10 +7,12 @@
 	import lukas from '$lib/assets/lukas_banner.png';
 	import ProjectItem from './projectItem.svelte';
 	import Title from '$lib/files/modules/title.svelte';
+	import Partner from '../partner.svelte';
 </script>
 
-<div class="flex w-full flex-col items-center gap-5">
-	<Title title="My Projects" nr="02." />
+<div class="flex w-full flex-col gap-5 px-6 py-10">
+	<Partner />
+	<Title title="My Partners & Projects" nr="02." />
 	<ProjectItem title="XIVData" link="/projects/xivdata" nr="01" categories={['Javascript, PHP, Tailwind, Svelte, Inertia']} img={xivdata} />
 	<ProjectItem title="Landkautz" link="/" nr="02" categories={['Shopify, Liquid, Javascript']} img={landkautz} />
 	<ProjectItem title="Lukas Kleinecke" link="/" nr="03" categories={['Sveltekit, Javascript, Node.js']} img={lukas} />
