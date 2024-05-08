@@ -4,6 +4,8 @@
 	export let categories: string[];
 	export let img: string;
 	export let link: string
+	export let logo: string
+	export let height: string
 </script>
 
 <a href={link} class="projectGroup group relative flex min-h-[150px] w-full items-center justify-between overflow-hidden rounded-[25px] border-2 border-primary shadow-[4px_4px_0px_rgba(237,233,208,1)] xl:rounded-[30px]">
@@ -21,6 +23,8 @@
 			<div class="absolute z-10 flex h-full w-0 flex-col items-start justify-center overflow-hidden rounded-xl bg-primary transition-all duration-500 group-hover:w-full"></div>
 		</div>
 	</div>
+	<!-- svelte-ignore a11y-missing-attribute -->
+	<img class="absolute left-0 right-0 z-10 opacity-35 transition-all drop-shadow-[2px_2px_0px_rgba(0,0,0,1)] group-hover:opacity-100 sepia !text-white !fill-white brightness-0 invert m-auto {height}" src={logo}/>
 	<div class="relative z-10 hidden items-center rounded-l-xl bg-cover py-8 pl-10 pr-24 transition-all duration-300 group-hover:bg-primary lg:flex">
 		<p class="absolute left-7 text-xs font-bold uppercase group-hover:text-black">View Project</p>
 	</div>
