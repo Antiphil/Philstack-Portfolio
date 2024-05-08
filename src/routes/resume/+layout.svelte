@@ -32,7 +32,7 @@
 		<div class="mt-10 w-full p-10">
 			<div class="mb-5 flex items-center justify-between rounded-xl bg-[rgba(22,22,19,0.8)] px-5 py-2 text-xs">
 				<div class="">
-					<span>Updated at May 2024</span>
+					<span>Updated at May 2024 (Work in Progress)</span>
 				</div>
 				<div class="flex gap-3 text-sm">
 					<a href="/" use:tooltip={{ content: 'Share on Facebook' }} class="flex h-6 w-6 items-center justify-center rounded-full transition-all hover:bg-primary hover:text-secondary">

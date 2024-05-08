@@ -22,7 +22,7 @@
 						<span class="mb-2 block font-bold text-secondary group-hover:text-primary lg:mb-10">{about?.data?.attributes?.phrase}</span>
 						<h2 class="text-lg font-bold text-secondary group-hover:text-primary lg:text-3xl">{about?.data?.attributes?.title}</h2>
 					</div>
-					<a class=" mb-8 mt-2 hidden items-center gap-2 text-sm font-bold text-primary lg:flex" href="/resume">
+					<a class=" mb-8 mt-2 hidden items-center gap-2 rounded-xl px-3 py-2 text-sm font-bold text-primary transition-all hover:bg-primary hover:text-secondary lg:flex" href="/resume">
 						<span>{about?.data?.attributes?.entryline}</span>
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
 							<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
@@ -33,7 +33,7 @@
 					</div>
 				</div>
 				<div>
-					<div class="prose-base prose-pink content text-left lg:pl-12">
+					<div class="content prose-base prose-pink text-left lg:pl-12">
 						{@html about?.data?.attributes?.text}
 					</div>
 				</div>

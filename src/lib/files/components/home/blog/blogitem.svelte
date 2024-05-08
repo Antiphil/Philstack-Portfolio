@@ -29,7 +29,7 @@
 		</div>
 	</div>
 </div> -->
-<article class="group h-[600px] w-[25%] transform cursor-pointer overflow-hidden rounded-2xl bg-cover bg-center shadow-xl sepia duration-500 hover:-translate-y-2" style="background-image: url({img});">
+<article class="group h-[600px] w-[25%] transform cursor-pointer overflow-hidden rounded-2xl bg-cover bg-center shadow-xl duration-500 hover:-translate-y-2" style="background-image: url({img});">
 	<div class="relative flex h-[600px] transform flex-col bg-black bg-opacity-20 px-6 py-6 duration-300 hover:bg-opacity-75">
 		<h1 class="absolute bottom-10 mb-5 transform text-3xl font-medium text-white duration-300 group-hover:translate-y-[-100px]">{title}</h1>
 		<div class="absolute bottom-5 mb-5 flex h-2 w-full transform rounded-full duration-300 group-hover:translate-y-[-100px]">
