@@ -6,7 +6,8 @@ export default {
 			colors: {
 				primary: '#EDE9D0',
 				primaryhover: '#ffed88',
-				secondary: '#24201F'
+				secondary: '#24201F',
+				secondarydark: '#1d1a1a'
 			},
 		
 		typography: ({ theme }) => ({
