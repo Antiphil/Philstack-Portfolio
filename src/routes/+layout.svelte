@@ -31,7 +31,7 @@
 	}
 	toggleLoad();
 </script>
-<Noise />
+<!-- <Noise /> -->
 <svelte:head>
 	<meta name="theme-color" content="#eaac16" />
 	<title>Welcome | Philstack.de - My Web-Developer Portfolio</title>
