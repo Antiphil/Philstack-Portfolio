@@ -23,6 +23,7 @@
 		"prettier-plugin-tailwindcss": "^0.5.12",
 		"svelte": "^4.2.7",
 		"svelte-check": "^3.6.0",
+		"svelte-reveal": "^1.1.0",
 		"svooltip": "^0.7.8",
 		"tailwindcss": "^3.4.1",
 		"tslib": "^2.4.1",
@@ -31,6 +32,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"aos": "^3.0.0-beta.6",
 		"date-fns": "^3.6.0",
 		"locomotive-scroll": "^5.0.0-beta.11",
 		"moment": "^2.30.1"

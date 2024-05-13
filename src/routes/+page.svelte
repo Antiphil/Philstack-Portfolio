@@ -29,4 +29,7 @@
 	<LeftSection>
 		<Contact />
 	</LeftSection>
+	<RightSection>
+		<Contact />
+	</RightSection>
 </div>

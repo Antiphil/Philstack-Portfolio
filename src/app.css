@@ -16,17 +16,13 @@ body > #app {
 	width: 100%;
 }
 ::-webkit-scrollbar {
-	width: 7px;
-	background: #24201f;
+	display: none;
 }
 ::-webkit-scrollbar-track {
-	background: #24201f;
-	border-radius: 20px;
+	display: none;
 }
 ::-webkit-scrollbar-thumb {
-	background: #ede9d0;
-	border-radius: 20px;
-	width: 5px;
+	display: none;
 }
 
 .herobg {

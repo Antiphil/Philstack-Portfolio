@@ -1,9 +1,10 @@
 <script>
 	import { cockieOpen } from '$lib/stores/cookiestore';
+	import { reveal } from 'svelte-reveal';
 </script>
 
 {#if $cockieOpen}
-	<section class="fixed bottom-0 z-[1000] w-full bg-[rgba(22,22,19,0.9)] backdrop-blur-xl">
+	<div class="fixed bottom-0 z-[1000] w-full bg-[rgba(22,22,19,0.9)] backdrop-blur-xl" use:reveal>
 		<div class="mx-auto max-w-5xl px-4 py-6 md:flex md:items-center md:gap-x-6">
 			<div class="flex items-start gap-x-2 md:items-center">
 				<div class="text-3xl">👋</div>
@@ -18,5 +19,5 @@
 				</svg>
 			</button>
 		</div>
-	</section>
+	</div>
 {/if}
