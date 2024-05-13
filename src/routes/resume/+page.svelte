@@ -147,29 +147,29 @@
 </section>
 
 <section class="mb-10 rounded-xl rounded-bl-[50px] rounded-tr-[50px] bg-[rgba(22,22,19,0.8)] p-10">
-	<div class="container mx-auto max-w-5xl px-5 py-2">
+	<div class="container mx-auto  px-5 py-2">
 		<Title title="My Showcase" />
 		<div class="mt-16 flex flex-wrap">
 			<div class="flex w-1/2 flex-wrap">
 				<div class="w-1/2 p-1 md:p-2">
-					<img alt="gallery" class="block h-full w-full cursor-pointer rounded-lg object-cover object-center sepia transition-all hover:scale-[1.03] hover:sepia-0" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp" />
+					<img alt="gallery" class="block h-full w-full cursor-pointer rounded-lg object-cover object-center sepia transition-all hover:scale-[1.03] hover:sepia-0" src="https://htmlburger.com/blog/wp-content/uploads/2023/04/modern-website-design-examples.jpg" />
 				</div>
 				<div class="w-1/2 p-1 md:p-2">
-					<img alt="gallery" class="block h-full w-full cursor-pointer rounded-lg object-cover object-center sepia transition-all hover:scale-[1.03] hover:sepia-0" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp" />
+					<img alt="gallery" class="block h-full w-full cursor-pointer rounded-lg object-cover object-center sepia transition-all hover:scale-[1.03] hover:sepia-0" src="https://htmlburger.com/blog/wp-content/uploads/2023/04/modern-website-design-examples.jpg" />
 				</div>
 				<div class="w-full p-1 md:p-2">
-					<img alt="gallery" class="block h-full w-full cursor-pointer rounded-lg object-cover object-center sepia transition-all hover:scale-[1.03] hover:sepia-0" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" />
+					<img alt="gallery" class="block h-full w-full cursor-pointer rounded-lg object-cover object-center sepia transition-all hover:scale-[1.03] hover:sepia-0" src="https://htmlburger.com/blog/wp-content/uploads/2023/04/modern-website-design-examples.jpg" />
 				</div>
 			</div>
 			<div class="flex w-1/2 flex-wrap">
 				<div class="w-full p-1 md:p-2">
-					<img alt="gallery" class="block h-full w-full cursor-pointer rounded-lg object-cover object-center sepia transition-all hover:scale-[1.03] hover:sepia-0" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp" />
+					<img alt="gallery" class="block h-full w-full cursor-pointer rounded-lg object-cover object-center sepia transition-all hover:scale-[1.03] hover:sepia-0" src="https://htmlburger.com/blog/wp-content/uploads/2023/04/modern-website-design-examples.jpg" />
 				</div>
 				<div class="w-1/2 p-1 md:p-2">
-					<img alt="gallery" class="block h-full w-full cursor-pointer rounded-lg object-cover object-center sepia transition-all hover:scale-[1.03] hover:sepia-0" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp" />
+					<img alt="gallery" class="block h-full w-full cursor-pointer rounded-lg object-cover object-center sepia transition-all hover:scale-[1.03] hover:sepia-0" src="https://htmlburger.com/blog/wp-content/uploads/2023/04/modern-website-design-examples.jpg" />
 				</div>
 				<div class="w-1/2 p-1 md:p-2">
-					<img alt="gallery" class="block h-full w-full cursor-pointer rounded-lg object-cover object-center sepia transition-all hover:scale-[1.03] hover:sepia-0" src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(77).webp" />
+					<img alt="gallery" class="block h-full w-full cursor-pointer rounded-lg object-cover object-center sepia transition-all hover:scale-[1.03] hover:sepia-0" src="https://htmlburger.com/blog/wp-content/uploads/2023/04/modern-website-design-examples.jpg" />
 				</div>
 			</div>
 		</div>

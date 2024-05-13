@@ -1,15 +1,15 @@
 <script>
 </script>
 
-<!-- <div class="noiseBG" /> -->
+<div class="noiseBG sepia" />
 
-<!-- <div class="content fixed pointer-events-none">
+<div class="content fixed pointer-events-none !opacity-20">
 	<div class='film'>
 		<div class="effect">
 			<div class="grain"></div>
 		</div>
 	</div>
-</div> -->
+</div>
 
 <style>
 	.noiseBG {
@@ -25,7 +25,7 @@
 		height: 200vh;
 		background: transparent url(http://assets.iceable.com/img/noise-transparent.png) repeat 0 0;
 		animation: bg-animation 0.3s infinite;
-		opacity: 0.7;
+		opacity: 0.5;
 		visibility: visible;
 		z-index: 2000;
 	}

@@ -31,7 +31,7 @@
 	}
 	toggleLoad();
 </script>
-
+<Noise />
 <svelte:head>
 	<meta name="theme-color" content="#eaac16" />
 	<title>Welcome | Philstack.de - My Web-Developer Portfolio</title>
@@ -93,8 +93,7 @@
 	}
 	/* Animation */
 .anim-typewriter{
-  animation: typewriter 2s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
+  animation: typewriter 2s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
 }
 @keyframes typewriter{
   from{width: 0;}
