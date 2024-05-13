@@ -22,6 +22,15 @@ body > #app {
 	height: 100%;
 	width: 100%;
 }
+::-moz-selection { /* Code for Firefox */
+	color: #24201f;
+	background: #fceac8;
+  }
+  
+  ::selection {
+	color: #181616;
+	background: #fceac8;
+  }
 ::-webkit-scrollbar {
 	display: none;
 }
