@@ -3,7 +3,7 @@
 
 </script>
 <section class="">
-    <div class="max-w-6xl px-6 py-10 mx-auto">
+    <div class="max-w-6xl md:px-6 md:py-10 mx-auto">
         <Title title="What my clients are saying"/>
         <main class="relative z-20 w-full mt-8 md:flex md:items-center xl:mt-12">
             <div class="absolute w-full bg-primary -z-10 md:h-96 rounded-2xl"></div>
@@ -13,20 +13,20 @@
                 
                 <div class="mt-2 md:mx-6">
                     <div>
-                        <p class="text-xl font-bold  text-secondary">Karina Hartung</p>
-                        <p class="text-secondary">Head of Design at "Beschriftungsteam"</p>
+                        <p class="text-xl font-bold  text-primary md:text-secondary">Karina Hartung</p>
+                        <p class="text-primary md:text-secondary">Head of Design at "Beschriftungsteam"</p>
                     </div>
 
-                    <p class="mt-4 text-lg leading-relaxed text-secondary md:text-xl"> “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus libero ad tempora doloribus expedita laborum saepe voluptas perferendis delectus assumenda”.</p>
+                    <p class="mt-4 text-lg leading-relaxed text-primary md:text-secondary md:text-xl"> “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus libero ad tempora doloribus expedita laborum saepe voluptas perferendis delectus assumenda”.</p>
                     
                     <div class="flex items-center justify-between mt-6 md:justify-start">
-                        <button title="left arrow" class="p-2 text-secondary hover:text-primary transition-colors duration-300 border rounded-full rtl:-scale-x-100 hover:bg-secondary">
+                        <button title="left arrow" class="p-2 text-primary md:text-secondary hover:text-primary transition-colors duration-300 border rounded-full rtl:-scale-x-100 hover:bg-secondary">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
                             </svg>
                         </button>
 
-                        <button title="right arrow" class="p-2 text-secondary hover:text-primary transition-colors duration-300 border rounded-full rtl:-scale-x-100 md:mx-6 hover:bg-secondary">
+                        <button title="right arrow" class="p-2 text-primary md:text-secondary hover:text-primary transition-colors duration-300 border rounded-full rtl:-scale-x-100 md:mx-6 hover:bg-secondary">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
                             </svg>

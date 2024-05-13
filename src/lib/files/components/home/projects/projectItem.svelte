@@ -24,7 +24,7 @@
 		</div>
 	</div>
 	<!-- svelte-ignore a11y-missing-attribute -->
-	<img class="absolute left-0 right-0 z-10 opacity-35 transition-all drop-shadow-[2px_2px_0px_rgba(0,0,0,1)] group-hover:opacity-100 !text-white !fill-white brightness-0 invert m-auto {height}" src={logo}/>
+	<img class="hidden md:block absolute left-0 right-0 z-10 opacity-35 transition-all drop-shadow-[2px_2px_0px_rgba(0,0,0,1)] group-hover:opacity-100 !text-white !fill-white brightness-0 invert m-auto {height}" src={logo}/>
 	<div class="relative z-10 hidden items-center rounded-l-xl bg-cover py-8 pl-10 pr-24 transition-all duration-500 group-hover:bg-primary lg:flex">
 		<p class="absolute left-7 text-xs font-bold uppercase group-hover:text-black">View Project</p>
 	</div>

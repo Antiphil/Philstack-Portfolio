@@ -16,7 +16,7 @@
 	import beschriftungsteam from '$lib/assets/logos/partner/beschriftungsteam.svg';
 </script>
 
-<div class="flex w-full flex-col gap-5 px-6 py-10">
+<div class="flex w-full flex-col gap-5 px-0 py-0 md:px-6 md:py-10">
 	<Title title="My Partners & Projects" nr="02." />
 	<ProjectItem title="KreativWerkstatt" logo={lebenshilfe} height="max-h-[70px]" link="/projects/kreawe" nr="01" categories={['Strapi, Sveltekit, Sqoosh API & Social Media Concept']} img={kreawe} />
 	<ProjectItem title="Beschriftungsteam" logo={beschriftungsteam} height="max-h-[80px]"  link="/projects/beschriftungsteam" nr="02" categories={['IONOS, Social Media Management, Movie Production']} img={beschrteam} />
