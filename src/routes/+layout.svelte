@@ -8,6 +8,7 @@
 	import { fade, fly } from 'svelte/transition';
 	import { reveal } from 'svelte-reveal';
 	import 'svelte-reveal/styles.css';
+	import Overlay from '$lib/files/layout/overlay.svelte';
 	onMount(async () => {
 		function isMobile() {
 			return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
@@ -21,7 +22,7 @@
 
 	let scrollY;
 	$: distance = scrollY / 5;
-	let loadingContent = false;
+	let loadingContent = true;
 	const toggleLoad = async () => {
 		await delay(5000);
 		loadingContent = false;
@@ -62,6 +63,7 @@
 		</div>
 	</div>
 {:else}
+	<Overlay />
 	<div class="" in:fly={{ x: 800, delay: 600 }}>
 		<div class="relative z-50"></div>
 		<slot />
