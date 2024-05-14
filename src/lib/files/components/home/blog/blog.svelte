@@ -8,8 +8,8 @@
 </script>
 
 <section class="w-full">
-	<div class="container mx-auto px-6 py-10">
-		<div class="mb-10 max-w-screen-xl m-auto mt-6 md:flex md:items-center md:justify-between">
+	<div class="container mx-auto py-10 md:px-6">
+		<div class="m-auto mb-10 mt-6 max-w-screen-xl md:flex md:items-center md:justify-between">
 			<div>
 				<h1 class="text-2xl font-bold uppercase lg:text-3xl">Latest Articles</h1>
 
@@ -21,21 +21,21 @@
 			</div>
 		</div>
 
-		<div class="flex flex-col  w-full gap-5">
+		<div class="flex w-full flex-col gap-5">
 			{#if $blogStore.data}
 				{#each $blogStore.data.reverse() as blog, index}
 					{#if index < 4}
 						{#if index % 2 == 0}
-							<Blogitem1 title={blog.attributes.title} desc={undefined} img={`https://strapi.antiphil.de${blog?.attributes.media.data[0].attributes.url}`} date={formatDistance(subDays(blog.attributes.date, 3), new Date(), { addSuffix: true })}/>
+							<Blogitem1 title={blog.attributes.title} desc={undefined} img={`https://strapi.antiphil.de${blog?.attributes.media.data[0].attributes.url}`} date={formatDistance(subDays(blog.attributes.date, 3), new Date(), { addSuffix: true })} />
 						{:else}
-							<Blogitem2 title={blog.attributes.title} desc={undefined} img={`https://strapi.antiphil.de${blog?.attributes.media.data[0].attributes.url}`} date={formatDistance(subDays(blog.attributes.date, 3), new Date(), { addSuffix: true })}/>
+							<Blogitem2 title={blog.attributes.title} desc={undefined} img={`https://strapi.antiphil.de${blog?.attributes.media.data[0].attributes.url}`} date={formatDistance(subDays(blog.attributes.date, 3), new Date(), { addSuffix: true })} />
 						{/if}
 					{/if}
 				{/each}
 			{/if}
 		</div>
-		<div class="flex justify-center mt-10">
-		<Button text="Visit blog page" link="/" />
+		<div class="mt-10 flex justify-center">
+			<Button text="Visit blog page" link="/blog" />
 		</div>
 	</div>
 </section>
