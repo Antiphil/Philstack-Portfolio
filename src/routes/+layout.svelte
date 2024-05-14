@@ -9,6 +9,8 @@
 	import { reveal } from 'svelte-reveal';
 	import 'svelte-reveal/styles.css';
 	import Overlay from '$lib/files/layout/overlay.svelte';
+
+	const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 	onMount(async () => {
 		function isMobile() {
 			return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
@@ -18,11 +20,9 @@
 			const locomotive = await import('../lib/utils/locomotive');
 		}
 	});
-	const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 
-	let scrollY;
-	$: distance = scrollY / 5;
 	let loadingContent = true;
+
 	const toggleLoad = async () => {
 		await delay(5000);
 		loadingContent = false;
@@ -50,7 +50,6 @@
 	<meta property="og:image" content="/favicon.png" />
 	<meta name="twitter:image" content="/favicon.png" />
 </svelte:head>
-<svelte:window bind:scrollY />
 
 {#if loadingContent}
 	<div class="flex h-screen items-center justify-center" use:reveal out:fly={{ x: -800 }}>
