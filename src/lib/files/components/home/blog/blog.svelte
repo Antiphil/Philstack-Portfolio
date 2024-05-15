@@ -5,6 +5,7 @@
 	import Blogitem1 from './blogitem1.svelte';
 	import Blogitem2 from './blogitem2.svelte';
 	import { format, formatDistance, formatRelative, subDays } from 'date-fns';
+
 </script>
 
 <section class="w-full">
