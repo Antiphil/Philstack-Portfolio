@@ -3,9 +3,6 @@
 	import logo from '$lib/assets/logos/logo_full.svg';
 	import { tooltip } from 'svooltip';
 	import 'svooltip/styles.css'; // Include default styling
-
-	export let data;
-	console.log(1, data);
 </script>
 
 <section class="relative flex w-full flex-col pb-[5px] pl-[10px] xl:pb-[35px] xl:pl-[70px]">
@@ -22,7 +19,7 @@
 				<li>
 					<div class="flex items-center">
 						<i class="fa-solid fa-angles-right mr-1 text-xs"></i>
-						<a href="/resume" class="ms-1 text-sm font-medium transition-colors hover:text-primaryhover">Resume</a>
+						<a href="/blog" class="ms-1 text-sm font-medium transition-colors hover:text-primaryhover">Blog</a>
 					</div>
 				</li>
 			</ol>

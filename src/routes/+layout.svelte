@@ -21,7 +21,7 @@
 		}
 	});
 
-	let loadingContent = true;
+	let loadingContent = false;
 
 	const toggleLoad = async () => {
 		await delay(5000);
