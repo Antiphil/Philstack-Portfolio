@@ -1,5 +1,6 @@
 <script>
 	import mgn from '$lib/assets/Screenshot 2024-03-13 115119.png';
+	import Button from '$lib/files/modules/button.svelte';
 
 	let about;
 	const fetchDataFromAPI = async () => {
@@ -12,7 +13,7 @@
 	};
 	fetchDataFromAPI();
 </script>
-
+<div class="m-auto w-full">
 {#if about}
 	<div class="relative flex w-full justify-center overflow-hidden py-6 sm:py-12">
 		<div class="mx-auto w-full max-w-screen-xl items-center">
@@ -83,8 +84,12 @@
 			</div>
 		</div>
 	</div>
+	
 </div>
 {/if}
-
+<div class="flex justify-center">
+	<Button text="Check out my Resume" link="/resume" />
+</div>
+</div>
 <style>
 </style>

@@ -11,7 +11,7 @@
 	export let url: string = '/';
 </script>
 
-<a href={url} class="group relative m-auto mt-[60px] flex w-full max-w-screen-xl flex-col items-center justify-between rounded-2xl border-[4px] border-primary bg-primary p-5 transition-all hover:scale-[1.01] hover:bg-secondary md:h-72 md:flex-row">
+<a href={url} class="group relative m-auto mt-[60px] md:mt-0 flex w-full max-w-screen-xl flex-col items-center justify-between rounded-2xl border-[4px] border-primary bg-primary p-5 transition-all hover:scale-[1.01] hover:bg-secondary md:h-72 md:flex-row">
 	<div class="absolute top-[-60px] h-56 w-64 overflow-hidden rounded-3xl border-[5px] border-secondary md:-left-[32px] md:top-[28px]">
 		<img src={img} alt="" class="h-full w-full object-cover sepia" />
 	</div>
