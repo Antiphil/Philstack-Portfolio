@@ -12,13 +12,13 @@
 
 	let curPage = 1
 	let pageSize = 8
-	$: strapiURL = `https://strapi.antiphil.de/api/blogposts?populate=*&pagination[pageSize]=${pageSize}&pagination[page]=${curPage}`
+	$: apiUrl = `https://strapi.antiphil.de/api/blogposts?populate=*&pagination[pageSize]=${pageSize}&pagination[page]=${curPage}`
 	let data = undefined;
 	
 	$: {
 		const fetchDataFromAPI = async () => {
 			try {
-				const response = await fetch(strapiURL);
+				const response = await fetch(apiUrl);
 				data = await response.json();
 			} catch (error) {
 				console.error('Fehler beim Abrufen der Blog Daten.', error);
