@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { locale } from '$i18n/i18n-svelte';
 	import Button from '$lib/components/modules/button.svelte';
 
 	interface AboutData {
@@ -19,28 +20,38 @@
 		};
 	}
 
-	let about: AboutData;
-	let isLoading = true;
-	let error: string | null = null;
-
-	const fetchDataFromAPI = async () => {
-		try {
-			const response = await fetch('https://strapi.antiphil.de/api/about?populate=*');
-			if (!response.ok) {
-				throw new Error('Fetching Error About Section: ' + response.status);
-			}
-			about = await response.json();
-			isLoading = false;
-		} catch (error) {
-			console.error('Fetching Error About Section: ', error);
-		}
-	};
-
-	fetchDataFromAPI();
+	export let about: AboutData;
 </script>
 
 <div class="m-auto w-full">
-	{#if isLoading}
+	{#if about}
+		<div class="relative flex w-full justify-center overflow-hidden py-6 sm:py-12">
+			<div class="mx-auto w-full max-w-screen-xl items-center">
+				<div class="group flex w-full flex-col lg:grid lg:grid-cols-2">
+					<div class="relative flex min-h-[300px] flex-col items-end justify-center overflow-hidden pl-16 before:bg-primary-main before:transition-all lg:before:absolute lg:before:bottom-0 lg:before:left-0 lg:before:block lg:before:h-1/6 lg:before:w-4 lg:before:rounded-lg">
+						<div class="absolute left-0 top-0 z-10 flex w-4/6 flex-col justify-center rounded-xl bg-primary-main p-5 text-secondary-800 transition-all group-hover:bg-secondary-800 lg:px-12 lg:py-14">
+							<span class="mb-2 block font-bold text-secondary-800 group-hover:text-primary-main lg:mb-10">{about.data.attributes.phrase}</span>
+							<h2 class="text-lg font-bold text-secondary-800 group-hover:text-primary-main lg:text-3xl">{about.data.attributes.title}</h2>
+						</div>
+						<span class="mb-8 mt-2 hidden items-center gap-2 rounded-xl px-3 py-2 text-sm font-bold text-primary-main transition-all md:flex">
+							<span class="uppercase">Thats me!</span>
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+							</svg>
+						</span>
+						<div class="relative z-0 overflow-hidden rounded-xl">
+							<img class="sepia" src={`https://strapi.antiphil.de${about.data.attributes.image.data.attributes.url}`} alt="" />
+						</div>
+					</div>
+					<div>
+						<div class="content prose-base prose-pink text-left lg:pl-12">
+							{@html about.data.attributes.text}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	{:else}
 		<div class="relative flex w-full justify-center overflow-hidden py-6 sm:py-12">
 			<div class="mx-auto w-full max-w-screen-xl items-center">
 				<div class="group flex w-full flex-col lg:grid lg:grid-cols-2">
@@ -87,39 +98,10 @@
 				</div>
 			</div>
 		</div>
-	{:else if error}
-		<p>{error}</p>
-	{:else}
-		<div class="relative flex w-full justify-center overflow-hidden py-6 sm:py-12">
-			<div class="mx-auto w-full max-w-screen-xl items-center">
-				<div class="group flex w-full flex-col lg:grid lg:grid-cols-2">
-					<div class="relative flex min-h-[300px] flex-col items-end justify-center overflow-hidden pl-16 before:bg-primary-main before:transition-all lg:before:absolute lg:before:bottom-0 lg:before:left-0 lg:before:block lg:before:h-1/6 lg:before:w-4 lg:before:rounded-lg">
-						<div class="absolute left-0 top-0 z-10 flex w-4/6 flex-col justify-center rounded-xl bg-primary-main p-5 text-secondary-800 transition-all group-hover:bg-secondary-800 lg:px-12 lg:py-14">
-							<span class="mb-2 block font-bold text-secondary-800 group-hover:text-primary-main lg:mb-10">{about.data.attributes.phrase}</span>
-							<h2 class="text-lg font-bold text-secondary-800 group-hover:text-primary-main lg:text-3xl">{about.data.attributes.title}</h2>
-						</div>
-						<span class="mb-8 mt-2 hidden items-center gap-2 rounded-xl px-3 py-2 text-sm font-bold text-primary-main transition-all md:flex">
-							<span class="uppercase">Thats me!</span>
-							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
-								<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-							</svg>
-						</span>
-						<div class="relative z-0 overflow-hidden rounded-xl">
-							<img class="sepia" src={`https://strapi.antiphil.de${about.data.attributes.image.data.attributes.url}`} alt="" />
-						</div>
-					</div>
-					<div>
-						<div class="content prose-base prose-pink text-left lg:pl-12">
-							{@html about.data.attributes.text}
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 	{/if}
 
 	<div class="flex justify-center">
-		<Button text="Check out my Resume" link="/resume" />
+		<Button text="Check out my Resume" link={`/${$locale}/resume`} />
 	</div>
 </div>
 
