@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 :root {
 	font-synthesis: none;
@@ -12,7 +12,7 @@
 body {
 	background-color: #ede9d0;
 	color: #ede9d0;
-	min-height: 100vh;
+	height: 100dvh;
 	width: 100%;
 	overflow-x: hidden;
 	font-family: 'Poppins', sans-serif !important;
@@ -22,8 +22,8 @@ body > #app {
 	height: 100%;
 	width: 100%;
 }
+
 ::-moz-selection {
-	/* Code for Firefox */
 	color: #24201f;
 	background: #fceac8;
 }
@@ -40,10 +40,6 @@ body > #app {
 }
 ::-webkit-scrollbar-thumb {
 	display: none;
-}
-
-.herobg {
-	background: linear-gradient(327.21deg, rgba(75, 0, 0, 0.24) 3.65%, rgba(136, 0, 0, 0) 40.32%), linear-gradient(245.93deg, rgba(209, 21, 111, 0.06) 0%, rgba(209, 25, 25, 0) 36.63%), linear-gradient(147.6deg, rgba(255, 19, 19, 0) 29.79%, rgba(255, 19, 19, 0.01) 85.72%), rgb(22, 19, 19);
 }
 
 .stack {
