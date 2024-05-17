@@ -6,6 +6,8 @@
 
 	import '../app.css';
 	import LocaleSwitcher from '$lib/components/modules/LocaleSwitcher.svelte';
+	import Navigation from '$lib/components/modules/navigation.svelte';
+	import { navOpen } from '$lib/stores/navstore';
 
 	export let data: LayoutData;
 	// at the very top, set the locale before you access the store and before the actual rendering takes place
@@ -13,6 +15,10 @@
 </script>
 
 <LocaleSwitcher />
+{#if $navOpen}
+	<Navigation />
+{/if}
+
 <main>
 	<slot />
 </main>

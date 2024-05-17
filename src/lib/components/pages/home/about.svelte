@@ -8,7 +8,8 @@
 			attributes: {
 				phrase: string;
 				title: string;
-				text: string;
+				text_en: string;
+				text_de: string;
 				entryline: string;
 				image: {
 					data: {
@@ -46,7 +47,11 @@
 					</div>
 					<div>
 						<div class="content prose-base prose-pink text-left lg:pl-12">
-							{@html about.data.attributes.text}
+							{#if $locale === 'en'}
+								{@html about.data.attributes.text_en}
+							{:else}
+								{@html about.data.attributes.text_de}
+							{/if}
 						</div>
 					</div>
 				</div>

@@ -10,9 +10,6 @@ export const load: LayoutLoad<{ locale: Locales }> = async ({ data: { locale } }
 	// you always need to create a new `i18nObject` instance in each `load` function
 	// to not run into shared server state issues
 	const LL = i18nObject(locale);
-
-	console.info(LL.log({ fileName: '+layout.ts' }));
-
 	// pass locale to the "rendering context"
 	return { locale };
 };

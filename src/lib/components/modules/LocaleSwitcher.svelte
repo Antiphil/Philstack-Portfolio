@@ -7,6 +7,7 @@
 	import { locales } from '$i18n/i18n-util';
 	import { loadLocaleAsync } from '$i18n/i18n-util.async';
 	import { replaceLocaleInUrl } from '../../../utils.js';
+	import { navOpen, toggleNav } from '$lib/stores/navstore.js';
 
 	const switchLocale = async (newLocale: Locales, updateHistoryState = true) => {
 		if (!newLocale || $locale === newLocale) return;
@@ -38,6 +39,7 @@
 		switchLocale(lang, false);
 		history.replaceState({ ...history.state, locale: lang }, '', replaceLocaleInUrl($page.url, lang));
 	}
+	$: console.log($navOpen);
 </script>
 
 <svelte:window on:popstate={handlePopStateEvent} />
@@ -50,4 +52,5 @@
 			</a>
 		</li>
 	{/each}
+	<button class=" mr-1 bg-secondary-900 px-3 py-1 text-primary-main" on:click={toggleNav}> toggle navigation </button>
 </ul>
