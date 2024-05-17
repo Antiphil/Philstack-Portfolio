@@ -7,7 +7,7 @@
 	import { locales } from '$i18n/i18n-util';
 	import { loadLocaleAsync } from '$i18n/i18n-util.async';
 	import { replaceLocaleInUrl } from '../../../utils.js';
-	import { navOpen, toggleNav } from '$lib/stores/navstore.js';
+	import { navOpen, toggleNav } from '$lib/stores/navstore';
 
 	const switchLocale = async (newLocale: Locales, updateHistoryState = true) => {
 		if (!newLocale || $locale === newLocale) return;
