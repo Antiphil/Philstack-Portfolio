@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { locale } from '$i18n/i18n-svelte';
+	import LL from '$i18n/i18n-svelte';
 	import Button from '$lib/components/modules/button.svelte';
 
 	interface AboutData {
@@ -101,7 +102,7 @@
 	{/if}
 
 	<div class="flex justify-center">
-		<Button text="Check out my Resume" link={`/${$locale}/resume`} />
+		<Button text={$LL.resumeButton()} link={`/${$locale}/resume`} />
 	</div>
 </div>
 

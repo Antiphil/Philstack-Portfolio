@@ -13,11 +13,13 @@ export type Translations = RootTranslation;
 
 type RootTranslation = {
 	title: String;
+	resumeButton: String;
 	projects: String;
 };
 
 export type TranslationFunctions = {
-	projects(): unknown;
+	projects(): () => LocalizedString;
+	resumeButton: () => LocalizedString;
 	title: () => LocalizedString;
 };
 
