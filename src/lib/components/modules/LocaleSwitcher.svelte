@@ -45,7 +45,7 @@
 <ul class="fixed z-[1000] flex">
 	{#each locales as l}
 		<li>
-			<a class="mr-1 bg-secondary-900 px-3 py-2 text-primary-main" class:active={l === $locale} href={replaceLocaleInUrl($page.url, l)}>
+			<a class=" mr-1 bg-secondary-900 px-3 py-2 text-primary-main" class:active={l === $locale} href={replaceLocaleInUrl($page.url, l)}>
 				{l}
 			</a>
 		</li>
