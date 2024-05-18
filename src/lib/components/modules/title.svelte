@@ -9,9 +9,9 @@
 		</h1>
 
 		<div class="mx-auto mt-3 flex">
-			<span class="bg-primary inline-block h-1 w-40 rounded-full"></span>
-			<span class="bg-primary mx-1 inline-block h-1 w-4 rounded-full"></span>
-			<span class="bg-primary inline-block h-1 w-2 rounded-full"></span>
+			<span class="inline-block h-1 w-40 rounded-full bg-primary-main"></span>
+			<span class="mx-1 inline-block h-1 w-4 rounded-full bg-primary-main"></span>
+			<span class="inline-block h-1 w-2 rounded-full bg-primary-main"></span>
 		</div>
 	</div>
 </div>

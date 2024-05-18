@@ -27,7 +27,7 @@
 		</nav>
 	</div>
 	<div class="relative flex h-full w-full flex-row-reverse gap-3 overflow-hidden rounded-bl-3xl bg-secondary-800 xl:rounded-bl-[75px]">
-		<div class="mt-10 w-full p-10">
+		<div class="mt-10 w-full p-2 md:p-10">
 			<div class="mb-5 flex items-center justify-between rounded-xl bg-[rgba(22,22,19,0.8)] px-5 py-2 text-xs">
 				<div class="">
 					<span>Updated at May 2024 (Work in Progress)</span>
