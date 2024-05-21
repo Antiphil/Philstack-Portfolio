@@ -1,9 +1,24 @@
 <script>
 	// @ts-nocheck
 	import logo from '$lib/assets/images/logos/logo_full.svg';
+	import { tooltip } from '$lib/utils/tooltip';
+
+	let buttonText = 'Hover over me';
+	let tooltipText = 'I am a tooltip with fade-in and fade-out animation';
+	import { cubicOut } from 'svelte/easing';
 
 	export let data;
-	console.log(1, data);
+
+	let tooltipParams = {
+		content: 'This is a tooltip',
+		transitionParams: {
+			delay: 0,
+			duration: 400,
+			easing: cubicOut,
+			x: 0,
+			y: -10
+		}
+	};
 </script>
 
 <section class="relative flex w-full flex-col pb-[5px] pl-[10px] xl:pb-[35px] xl:pl-[70px]">
@@ -27,9 +42,14 @@
 		</nav>
 	</div>
 	<div class="relative flex h-full w-full flex-row-reverse gap-3 overflow-hidden rounded-bl-3xl bg-secondary-800 xl:rounded-bl-[75px]">
-		<div class="mt-10 w-full p-2 md:p-10">
-			<div class="mb-5 flex items-center justify-between rounded-xl bg-[rgba(22,22,19,0.8)] px-5 py-2 text-xs">
-				<div class="">
+		<div class="mt-16 w-full p-2 md:mt-10 md:p-10">
+			<div class="m-20">
+				<button use:tooltip={{ text: tooltipText }} class="tooltip-button">
+					{buttonText}
+				</button>
+			</div>
+			<div class="mb-5 flex flex-col items-center justify-between rounded-xl bg-[rgba(22,22,19,0.8)] px-5 py-2 text-xs md:flex-row">
+				<div class="mb-3 md:mb-0">
 					<span>Updated at May 2024 (Work in Progress)</span>
 				</div>
 				<div class="flex gap-3 text-sm">
