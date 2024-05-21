@@ -9,7 +9,7 @@
 </script>
 
 <section class="flex w-full flex-col-reverse items-center justify-center rounded-xl rounded-bl-[50px] rounded-tr-[50px] bg-[rgba(22,22,19,0.8)] py-20 md:flex-row">
-	<div class="flex w-full flex-col items-center text-center">
+	<div class="flex w-full flex-col items-center text-center md:pl-10">
 		<h1 class="text text-[50px] font-bold uppercase leading-[40px] md:text-[90px] md:leading-[80px]">Philstack</h1>
 		<h3 class="text-sm font-thin uppercase md:text-2xl">Frontend Developer & UI/UX Designer</h3>
 	</div>

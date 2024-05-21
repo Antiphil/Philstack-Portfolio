@@ -1,18 +1,18 @@
-// src/lib/actions/tooltip.js
-export function tooltip(node, { text }) {
-	let tooltipElement;
+export function tooltip(node: HTMLElement, { text }: any) {
+	let tooltipElement: any;
 
 	function showTooltip() {
 		tooltipElement = document.createElement('div');
 		tooltipElement.textContent = text;
+		tooltipElement.classList.add('toolPhlip');
 		tooltipElement.style.position = 'absolute';
 		tooltipElement.style.opacity = '0';
-		tooltipElement.style.transition = 'opacity 0.3s';
+		tooltipElement.style.transition = 'opacity 0.2s';
 
 		document.body.appendChild(tooltipElement);
 
 		const { top, left, width } = node.getBoundingClientRect();
-		tooltipElement.style.top = `${top - tooltipElement.offsetHeight}px`;
+		tooltipElement.style.top = `${top - tooltipElement.offsetHeight - 15}px`;
 		tooltipElement.style.left = `${left + width / 2 - tooltipElement.offsetWidth / 2}px`;
 
 		requestAnimationFrame(() => {

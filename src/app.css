@@ -282,15 +282,13 @@ code.language-markup .token.script .token.keyword {
 .toolPhlip {
 	position: absolute;
 	white-space: nowrap;
-	background-color: rgba(0, 0, 0, 0.753);
+	background-color: #131211;
 	color: #ede9d0;
 	border-radius: 8px;
 	padding: 5px 10px;
 	font-size: 13px;
 	font-weight: 600;
-	top: -40px;
-	left: 50%;
-	transform: translate(-50%, 0);
+	z-index: 150;
 }
 .toolPhlip::before {
 	content: '';
@@ -303,16 +301,5 @@ code.language-markup .token.script .token.keyword {
 	rotate: 45deg;
 	z-index: -1;
 	background-color: inherit;
-}
-.tooltip {
-	position: absolute;
-	background-color: rgba(0, 0, 0, 0.7);
-	color: white;
-	padding: 5px 10px;
-	border-radius: 4px;
-	white-space: nowrap;
-	pointer-events: none;
-	z-index: 1000;
-	opacity: 0;
-	transition: opacity 0.3s;
+	z-index: 160;
 }
