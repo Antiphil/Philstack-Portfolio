@@ -18,13 +18,13 @@
 		<img class="headanim scale-75" src={head} alt="" />
 	</div>
 </section>
-<section class="container mx-auto my-32">
+<section class="container mx-auto my-16">
 	<div class="m-auto flex flex-col justify-around gap-5 text-center lg:flex-row lg:gap-0">
-		<div class="">
+		<div class="mb-10 md:mb-0">
 			<h3 class="text-lg font-light">BORN:</h3>
 			<h2 class="text-2xl font-bold uppercase">January 1996</h2>
 		</div>
-		<div class="">
+		<div class="mb-10 md:mb-0">
 			<h3 class="text-lg font-light">MOBILE:</h3>
 			<h2 class="text-2xl font-bold uppercase">+49 176 21942619</h2>
 		</div>
@@ -34,24 +34,22 @@
 		</div>
 	</div>
 </section>
-<section class="rounded-xl rounded-bl-[50px] rounded-tr-[50px] bg-[rgba(22,22,19,0.8)] bg-fixed bg-top py-10" style="background-image:url({bg})">
+<section class="rounded-xl rounded-bl-[50px] rounded-tr-[50px] bg-[rgba(22,22,19,0.8)] bg-fixed bg-top py-5 md:px-10" style="background-image:url({bg})">
 	<div class="m-auto flex max-w-5xl flex-col px-3">
-		<Title title="My Timeline" />
-		<TimelineItem left job={undefined} year={undefined} description={undefined} />
-		<TimelineItem right job={undefined} year={undefined} description={undefined} />
-		<TimelineItem left job={undefined} year={undefined} description={undefined} />
-		<TimelineItem right job={undefined} year={undefined} description={undefined} />
-		<TimelineItem left job={undefined} year={undefined} description={undefined} />
-		<TimelineItem right job={undefined} year={undefined} description={undefined} />
-		<TimelineItem left job={undefined} year={undefined} description={undefined} />
-		<TimelineItem right job={undefined} year={undefined} description={undefined} />
-		<TimelineItem left job={undefined} year={undefined} description={undefined} />
-		<TimelineItem right job={undefined} year={undefined} description={undefined} />
+		<div class="mb-20 mt-5">
+			<Title title="My Timeline" center />
+			<span class="mt-5 flex justify-center text-xs font-bold">only design & coding related jobs*</span>
+		</div>
+		<TimelineItem left job={'Freelancing as Frontend Developer'} year={'seit 2023'} description={undefined} />
+		<TimelineItem right job={'Freelancing as UX/UI Designer'} year={'2014-2016'} description={undefined} />
+		<TimelineItem left job={'Mediengestalter Digital & Print'} year={'2014'} description={'Nach meinem Praktikum im Hinblick auf eine Ausbildung bei der Firma Hepco & Becker habe ich 2014 noch einige Monate bis zum potentiellen Ausbildunsgbeginn für diese Firma regulär gearbeitet. Leider haben sie sich kurz vor Ausbildungsbeginn für eine voll ausgebildete Mediengestalterin und gegen ein Ausbildungsverhältnis entschieden.'} />
 	</div>
 </section>
 <section class="">
 	<div class="container mx-auto my-32 justify-around">
-		<Title title="My Skillset" />
+		<div class="mb-20 mt-5">
+			<Title title="My Skillset" center />
+		</div>
 		<div class="mb-20 mt-16 flex flex-col justify-center gap-20 md:flex-row">
 			<Skill text="Grid & Layout" img="/skills/skill/vd-skill-layout.png" />
 			<Skill text="UI/UX Design" img="/skills/skill/vd-skill-interface.png" />
@@ -72,9 +70,11 @@
 
 <section class="mb-10 rounded-xl rounded-bl-[50px] rounded-tr-[50px] bg-[rgba(22,22,19,0.8)] p-3">
 	<div class="container mx-auto py-5">
-		<Title title="My Showcase" />
-		<div class="mt-16 flex flex-wrap">
-			<div class="flex w-1/2 flex-wrap">
+		<div class="mb-20 mt-5">
+			<Title title="My Showcase" center />
+		</div>
+		<div class="mt-16 flex flex-col flex-wrap items-center justify-center sm:flex-row">
+			<div class="flex w-full flex-wrap sm:w-1/2">
 				<div class="w-1/2 p-1 md:p-2">
 					<img alt="gallery" class="block h-full w-full cursor-pointer rounded-lg object-cover object-center sepia transition-all hover:scale-[1.03] hover:sepia-0" src="https://htmlburger.com/blog/wp-content/uploads/2023/04/modern-website-design-examples.jpg" />
 				</div>
@@ -85,7 +85,7 @@
 					<img alt="gallery" class="block h-full w-full cursor-pointer rounded-lg object-cover object-center sepia transition-all hover:scale-[1.03] hover:sepia-0" src="https://htmlburger.com/blog/wp-content/uploads/2023/04/modern-website-design-examples.jpg" />
 				</div>
 			</div>
-			<div class="flex w-1/2 flex-wrap">
+			<div class="flex w-full flex-wrap sm:w-1/2">
 				<div class="w-full p-1 md:p-2">
 					<img alt="gallery" class="block h-full w-full cursor-pointer rounded-lg object-cover object-center sepia transition-all hover:scale-[1.03] hover:sepia-0" src="https://htmlburger.com/blog/wp-content/uploads/2023/04/modern-website-design-examples.jpg" />
 				</div>
@@ -102,7 +102,9 @@
 
 <section class="flex flex-col items-start gap-5 rounded-xl rounded-bl-[50px] rounded-tr-[50px] bg-[rgba(22,22,19,0.8)] p-3">
 	<div class="container m-auto py-5">
-		<Title title="Techstack & Tools" />
+		<div class="mb-20 mt-5">
+			<Title title="Techstack & Tools" center />
+		</div>
 		<div class="mb-3">
 			Programming Languages
 			<div class=" flex flex-wrap gap-3">
