@@ -38,6 +38,8 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@types/date-fns": "^2.6.0",
+		"date-fns": "^3.6.0",
 		"gsap": "^3.12.5",
 		"locomotive-scroll": "^4.1.4",
 		"prismjs": "^1.29.0"
