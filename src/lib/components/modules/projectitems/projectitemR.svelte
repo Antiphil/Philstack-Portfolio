@@ -8,11 +8,15 @@
 </script>
 
 <a href={url} class="group relative m-auto mt-[60px] flex w-full max-w-screen-xl flex-col items-center justify-between rounded-2xl border-[4px] border-primary-main transition-all hover:scale-[1.01] md:mt-0 md:h-72 md:flex-row">
-	<div class="absolute top-[-60px] z-[2] h-56 w-64 overflow-hidden rounded-3xl border-[5px] border-secondary-800 bg-primary-main transition-all group-hover:bg-secondary-800 md:-left-[32px] md:top-[28px]">
+	<div class="absolute top-[-60px] z-[2] h-56 w-64 overflow-hidden rounded-3xl border-[5px] border-secondary-800 bg-primary-main transition-all group-hover:bg-secondary-800 md:-right-[32px] md:top-[28px]">
 		<img src={logo} alt="" class="m-auto h-full w-4/6 object-contain opacity-70 brightness-0 transition-all group-hover:invert" />
 	</div>
-	<div class="relative z-[2] mt-40 p-2 text-center text-primary-main drop-shadow-[1px_1px_0px_rgba(0,0,0,1)] transition-all group-hover:text-primary-main md:ml-[calc(224px-16px)] md:mt-0 md:max-h-56 md:p-8">
-		<ul class="mb-4 line-clamp-1 flex flex-wrap justify-center text-xs font-semibold [&>li:not(:last-child)]:after:mx-1 [&>li:not(:last-child)]:after:content-['•']">
+	<div class="relative z-[2] hidden flex-col gap-2 pr-5 transition-all md:flex">
+		<div class="ml-10 h-16 w-4 rounded-xl bg-primary-main transition-all group-hover:bg-secondary-800"></div>
+		<div class="ml-10 h-6 w-4 rounded-xl bg-primary-main transition-all group-hover:bg-secondary-800"></div>
+	</div>
+	<div class="relative z-[2] mt-40 p-2 text-center text-primary-main drop-shadow-[1px_1px_0px_rgba(0,0,0,1)] transition-all group-hover:text-primary-main md:mr-[calc(224px-16px)] md:mt-0 md:max-h-56 md:p-8 md:text-right">
+		<ul class="mb-4 line-clamp-2 flex flex-wrap justify-center text-xs font-semibold md:justify-end [&>li:not(:last-child)]:after:mx-1 [&>li:not(:last-child)]:after:content-['•']">
 			{#each tags as tag}
 				<li>{tag}</li>
 			{/each}
@@ -26,9 +30,6 @@
 			</svg>
 		</div>
 	</div>
-	<div class="relative z-[2] hidden flex-col gap-2 pr-5 transition-all md:flex">
-		<div class="ml-10 h-6 w-4 rounded-xl bg-primary-main transition-all group-hover:bg-secondary-800"></div>
-		<div class="ml-10 h-16 w-4 rounded-xl bg-primary-main transition-all group-hover:bg-secondary-800"></div>
-	</div>
+
 	<img class="absolute z-[1] h-full w-full rounded-2xl object-cover opacity-5 blur-[3px] sepia transition-all duration-500 group-hover:opacity-40" alt="" src={banner} />
 </a>

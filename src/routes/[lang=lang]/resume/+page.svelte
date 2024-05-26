@@ -40,9 +40,10 @@
 			<Title title="My Timeline" center />
 			<span class="mt-5 flex justify-center text-xs font-bold">only design & coding related jobs*</span>
 		</div>
-		<TimelineItem left job={'Freelancing as Frontend Developer'} year={'seit 2023'} description={undefined} />
-		<TimelineItem right job={'Freelancing as UX/UI Designer'} year={'2014-2016'} description={undefined} />
-		<TimelineItem left job={'Mediengestalter Digital & Print'} year={'2014'} description={'Nach meinem Praktikum im Hinblick auf eine Ausbildung bei der Firma Hepco & Becker habe ich 2014 noch einige Monate bis zum potentiellen Ausbildunsgbeginn für diese Firma regulär gearbeitet. Leider haben sie sich kurz vor Ausbildungsbeginn für eine voll ausgebildete Mediengestalterin und gegen ein Ausbildungsverhältnis entschieden.'} />
+		<TimelineItem left job={'Freelancing as Frontend Developer'} year={'seit 2023'} description={'Freiberuflich'} />
+		<TimelineItem right job={'Software Entwickler'} year={'2016'} description={'Ausbildung bei Caritas Stuttgart Feuerbach'} />
+		<TimelineItem left job={'Freelancing as UX/UI Designer'} year={'2014-2016'} description={'Freiberuflich'} />
+		<TimelineItem right job={'Mediengestalter Digital & Print'} year={'2014'} description={'Nach meinem Praktikum im Hinblick auf eine Ausbildung bei der Firma Hepco & Becker habe ich 2014 noch einige Monate bis zum potentiellen Ausbildunsgbeginn für diese Firma regulär gearbeitet. Leider haben sie sich kurz vor Ausbildungsbeginn für eine voll ausgebildete Mediengestalterin und gegen ein Ausbildungsverhältnis entschieden.'} />
 	</div>
 </section>
 <section class="">
