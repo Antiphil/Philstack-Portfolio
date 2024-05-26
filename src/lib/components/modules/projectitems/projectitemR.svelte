@@ -16,7 +16,7 @@
 		<div class="ml-10 h-6 w-4 rounded-xl bg-primary-main transition-all group-hover:bg-secondary-800"></div>
 	</div>
 	<div class="relative z-[2] mt-40 p-2 text-center text-primary-main drop-shadow-[1px_1px_0px_rgba(0,0,0,1)] transition-all group-hover:text-primary-main md:mr-[calc(224px-16px)] md:mt-0 md:max-h-56 md:p-8 md:text-right">
-		<ul class="mb-4 line-clamp-2 flex flex-wrap justify-center text-xs font-semibold md:justify-end [&>li:not(:last-child)]:after:mx-1 [&>li:not(:last-child)]:after:content-['•']">
+		<ul class="mb-4 line-clamp-2 flex flex-wrap justify-center text-xs font-semibold md:mb-2 md:justify-end [&>li:not(:last-child)]:after:mx-1 [&>li:not(:last-child)]:after:content-['•']">
 			{#each tags as tag}
 				<li>{tag}</li>
 			{/each}
