@@ -5,6 +5,7 @@
 	import Blogitem1 from '$lib/components/modules/blogitems/blogitemL.svelte';
 	import Blogitem2 from '$lib/components/modules/blogitems/blogitemR.svelte';
 	import { formatDistance, subDays } from 'date-fns';
+	import { locale } from '$i18n/i18n-svelte';
 </script>
 
 <section class="w-full">
@@ -18,9 +19,9 @@
 				{#each $blogStore.data.reverse() as blog, index}
 					{#if index < 4}
 						{#if index % 2 == 0}
-							<Blogitem1 title={blog.attributes.title} url={`blog/article=${blog.id}`} desc={undefined} img={`https://strapi.antiphil.de${blog?.attributes.media.data[0].attributes.url}`} date={formatDistance(subDays(blog.attributes.date, 3), new Date(), { addSuffix: true })} />
+							<Blogitem1 title={blog.attributes.title} url="/{$locale}/blog/article={blog.id}" desc={undefined} img={`https://strapi.antiphil.de${blog?.attributes.media.data[0].attributes.url}`} date={formatDistance(subDays(blog.attributes.date, 3), new Date(), { addSuffix: true })} />
 						{:else}
-							<Blogitem2 title={blog.attributes.title} url={`blog/article=${blog.id}`} desc={undefined} img={`https://strapi.antiphil.de${blog?.attributes.media.data[0].attributes.url}`} date={formatDistance(subDays(blog.attributes.date, 3), new Date(), { addSuffix: true })} />
+							<Blogitem2 title={blog.attributes.title} url="/{$locale}/blog/article={blog.id}" desc={undefined} img={`https://strapi.antiphil.de${blog?.attributes.media.data[0].attributes.url}`} date={formatDistance(subDays(blog.attributes.date, 3), new Date(), { addSuffix: true })} />
 						{/if}
 					{/if}
 				{/each}
