@@ -17,5 +17,5 @@
 	<Projects />
 </Section>
 <Section left>
-	<Blog />
+	<!-- <Blog /> -->
 </Section>
