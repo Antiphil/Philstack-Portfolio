@@ -19,14 +19,14 @@
 		<div class="relative mb-3 block w-full pt-20 md:w-1/2 lg:mb-0">
 			<BlogitemMain />
 		</div>
-		<div class="xs:pl-3 flex w-full flex-col gap-3 md:w-1/2">
+		<div class="flex w-full flex-col gap-3 xs:pl-3 md:w-1/2">
 			{#if data.featured}
 				{#each data.featured as featuredItem, index}
 					{#if index < 4}
 						{#if $locale === 'en'}
-							<BlogitemSmall title={featuredItem.attributes.title} tags={featuredItem.attributes.tag} desc={featuredItem.attributes.description} date={formatDistance(subDays(featuredItem.attributes.createdAt, 0), new Date(), { addSuffix: true })} url="/{$locale}/blog/{featuredItem.attributes.uid}" img="https://strapi.antiphil.de{featuredItem.attributes.media.data[0].attributes.url}" />
+							<BlogitemSmall title={featuredItem.attributes.title} views={featuredItem.attributes.views || 0} tags={featuredItem.attributes.tag} desc={featuredItem.attributes.description} date={formatDistance(subDays(featuredItem.attributes.createdAt, 0), new Date(), { addSuffix: true })} url="/{$locale}/blog/{featuredItem.attributes.uid}" img="https://strapi.antiphil.de{featuredItem.attributes.media.data[0].attributes.url}" />
 						{:else if $locale === 'de'}
-							<BlogitemSmall title={featuredItem.attributes.localizations.data[0].attributes.title} desc={featuredItem.attributes.localizations.data[0].attributes.description} date={formatDistance(subDays(featuredItem.attributes.createdAt, 0), new Date(), { addSuffix: true })} url="/{$locale}/blog/{featuredItem.attributes.uid}" img="https://strapi.antiphil.de{featuredItem.attributes.media.data[0].attributes.url}" />
+							<BlogitemSmall title={featuredItem.attributes.localizations.data[0].attributes.title} views={featuredItem.attributes.views || 0} desc={featuredItem.attributes.localizations.data[0].attributes.description} date={formatDistance(subDays(featuredItem.attributes.createdAt, 0), new Date(), { addSuffix: true })} url="/{$locale}/blog/{featuredItem.attributes.uid}" img="https://strapi.antiphil.de{featuredItem.attributes.media.data[0].attributes.url}" />
 						{/if}
 					{/if}
 				{/each}

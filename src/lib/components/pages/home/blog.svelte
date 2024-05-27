@@ -15,7 +15,7 @@
 		</div>
 
 		<div class="flex w-full flex-col gap-5">
-			{#if $blogStore.data}
+			<!-- {#if $blogStore.data}
 				{#each $blogStore.data.reverse() as blog, index}
 					{#if index < 4}
 						{#if index % 2 == 0}
@@ -25,10 +25,10 @@
 						{/if}
 					{/if}
 				{/each}
-			{/if}
+			{/if} -->
 		</div>
 		<div class="mt-10 flex justify-center">
-			<Button text="Visit blog page" link="/blog" />
+			<Button text="Visit blog page" link="/{$locale}/blog" />
 		</div>
 	</div>
 </section>

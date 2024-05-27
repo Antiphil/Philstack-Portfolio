@@ -10,12 +10,15 @@
 </script>
 
 <Hero />
+
 <Section left>
 	<About about={data.api} />
 </Section>
+
 <Section right>
 	<Projects />
 </Section>
+
 <Section left>
-	<!-- <Blog /> -->
+	<Blog />
 </Section>

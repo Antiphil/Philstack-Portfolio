@@ -1,4 +1,4 @@
-export const load = async () => {
+export const load = async ({ fetch }: any) => {
 	const apiURL = 'https://strapi.antiphil.de/api/blogposts?populate=*';
 	try {
 		const response = await fetch(apiURL);

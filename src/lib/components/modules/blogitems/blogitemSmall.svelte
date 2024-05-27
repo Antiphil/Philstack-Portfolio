@@ -5,6 +5,7 @@
 	export let desc: string = 'Lorem ipsum dolor sit amet consectetur adip Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum natus, quia incidunt perferendis magnam rerum pariatur quidem?  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum natus, quia incidunt perferendis magnam rerum pariatur quidem? isicing elit. Eum natus, quia incidunt perferendis magnam rerum pariatur quidem? Maxime magnam, ullam accusamus veniam veritatis voluptas, blanditiis, molestias nemo ipsam asperiores provident?';
 	export let url: string = '/';
 	export let tags: string = 'aaa,aasd';
+	export let views: string = '0';
 
 	const formatTags = () => {
 		if (!tags || typeof tags !== 'string') {
@@ -18,10 +19,10 @@
 </script>
 
 <a href={url} class="group relative flex h-48 w-full max-w-screen-xl flex-col items-center justify-center rounded-2xl border-[4px] border-primary-main bg-primary-main p-5 transition-all hover:scale-[1.01] hover:bg-secondary-800 md:mt-0 md:flex-row">
-	<div class=" xs:block absolute -left-[32px] top-[28px] hidden h-32 w-32 overflow-hidden rounded-3xl border-[5px] border-secondary-800">
+	<div class=" absolute -left-[32px] top-[28px] hidden h-32 w-32 overflow-hidden rounded-3xl border-[5px] border-secondary-800 xs:block">
 		<img src={img} alt="" class="h-full w-full object-cover sepia" />
 	</div>
-	<div class="xs:ml-[calc(128px-64px)] xs:pl-8 max-h-56 text-secondary-800 group-hover:text-primary-main">
+	<div class="max-h-56 text-secondary-800 group-hover:text-primary-main xs:ml-[calc(128px-64px)] xs:pl-8">
 		<ul class="line-clamp-1 flex w-64 truncate text-nowrap text-xs font-semibold [&>li:not(:last-child)]:after:mx-1 [&>li:not(:last-child)]:after:content-['•']">
 			{#each tagArray as tag}
 				<li class="">{tag}</li>
@@ -29,11 +30,17 @@
 		</ul>
 		<h2 class="mb-1 line-clamp-1 text-xl font-bold md:text-xl">{title}</h2>
 		<h3 class="line-clamp-2 text-justify text-sm font-light">{desc}</h3>
-		<div class="text-secondary group-hover:text-primary mt-3 flex w-fit items-center gap-2 rounded-xl text-sm font-bold transition-all">
-			<span>Read More</span>
-			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
-				<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-			</svg>
+		<div class="mt-3 flex items-center justify-between">
+			<div class="text-secondary group-hover:text-primary flex w-fit items-center gap-2 rounded-xl text-sm font-bold transition-all">
+				<span>Read More</span>
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+				</svg>
+			</div>
+			<div class="flex items-center gap-1 text-xs">
+				<i class="fa-solid fa-eye"></i>
+				<p class="font-bold">{views}</p>
+			</div>
 		</div>
 	</div>
 	<div class="hidden flex-col gap-2 lg:flex">
