@@ -14,7 +14,6 @@ export const load = async ({ params, fetch, request, cookies }: RequestEvent) =>
 			const views = await data.data[0].attributes.views;
 
 			if (visited !== 'true') {
-				console.log('Cookie wird erstellt');
 				cookies.set('visited', 'true', { path: `${params.slug}` });
 
 				const increaseViewCount = (view: string | null) => {
