@@ -2,7 +2,6 @@
 	import { locale } from '$i18n/i18n-svelte';
 
 	export let data;
-	/* console.log(data.featured[0]); */
 </script>
 
 <div class="prose-base">
