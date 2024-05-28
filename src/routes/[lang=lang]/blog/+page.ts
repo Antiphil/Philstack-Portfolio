@@ -6,7 +6,8 @@ export const load = async ({ fetch }: any) => {
 			const data = await response.json();
 			return {
 				status: 200,
-				featured: data.data.filter((article: { attributes: { featured: boolean } }) => article.attributes.featured === true).reverse()
+				featured: data.data.filter((article: { attributes: { featured: boolean } }) => article.attributes.featured === true).reverse(),
+				main: data.data.filter((article: { id: number }) => article.id === 50)
 			};
 		} else {
 			return {

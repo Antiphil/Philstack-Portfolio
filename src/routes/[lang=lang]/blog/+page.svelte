@@ -17,7 +17,17 @@
 	<!-- FEATURED POSTS -->
 	<div class="mb-16 flex flex-wrap space-x-0 md:flex-nowrap md:space-x-6">
 		<div class="relative mb-3 block w-full pt-20 md:w-1/2 lg:mb-0">
-			<BlogitemMain />
+			{#if data.main}
+				{#if $locale === 'en'}
+					<BlogitemMain title={data.main[0].attributes.title} views={data.main[0].attributes.views || 0} tags={data.main[0].attributes.tag} desc={data.main[0].attributes.description} date={formatDistance(subDays(data.main[0].attributes.createdAt, 0), new Date(), { addSuffix: true })} url="/{$locale}/blog/{data.main[0].attributes.uid}" img="https://strapi.antiphil.de{data.main[0].attributes.media.data[0].attributes.url}" />
+				{:else if $locale === 'de'}
+					<BlogitemMain title={data.main[0].attributes.localizations.data[0].attributes.title} views={data.main[0].attributes.views || 0} desc={data.main[0].attributes.localizations.data[0].attributes.description} date={formatDistance(subDays(data.main[0].attributes.createdAt, 0), new Date(), { addSuffix: true })} url="/{$locale}/blog/{data.main[0].attributes.uid}" img="https://strapi.antiphil.de{data.main[0].attributes.media.data[0].attributes.url}" />
+				{/if}
+			{:else}
+				<div class="flex h-full w-full flex-col gap-3">
+					<div class="h-full w-full animate-pulse rounded-3xl bg-secondary-900"></div>
+				</div>
+			{/if}
 		</div>
 		<div class="flex w-full flex-col gap-3 xs:pl-3 md:w-1/2">
 			{#if data.featured}
