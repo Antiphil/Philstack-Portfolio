@@ -16,7 +16,7 @@
 	setLocale(data.locale);
 </script>
 
-<!-- <LocaleSwitcher /> -->
+<LocaleSwitcher />
 {#if $navOpen}
 	<Navigation />
 {:else}

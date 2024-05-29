@@ -2,14 +2,13 @@ export async function load({ fetch }: any) {
 	let apiAbout = `https://strapi.antiphil.de/api/about?populate=*`;
 	let apiBlog = `https://strapi.antiphil.de/api/blogposts?populate=*`;
 	try {
-		const responseAbout = await fetch(apiAbout);
-		const responseBlog = await fetch(apiBlog);
+		const [responseAbout, responseBlog] = await Promise.all([fetch(apiAbout), fetch(apiBlog)]);
+
 		if (responseAbout.ok) {
-			const aboutData = await responseAbout.json();
-			const blogData = await responseBlog.json();
+			const [aboutData, blogData] = await Promise.all([responseAbout.json(), responseBlog.json()]);
 			return {
 				status: 200,
-				api: aboutData,
+				about: aboutData,
 				blog: blogData
 			};
 		} else {

@@ -12,7 +12,7 @@
 <Hero />
 
 <Section left>
-	<About about={data.api} />
+	<About about={data.about} />
 </Section>
 
 <Section right>

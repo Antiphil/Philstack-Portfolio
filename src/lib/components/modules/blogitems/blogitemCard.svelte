@@ -28,7 +28,7 @@
 				<span>Posted {date}</span>
 				<span>Author: Phil</span>
 			</h3>
-			<ul class="line-clamp-1 flex max-w-full gap-2 truncate text-nowrap text-xs font-semibold">
+			<ul class="mb-2 line-clamp-1 flex max-w-full gap-2 truncate text-nowrap text-xs font-semibold">
 				{#each tagArray as tag}
 					<li class="rounded-lg bg-secondary-800 px-2 py-1 text-primary-main transition-all group-hover:bg-primary-main group-hover:text-secondary-800">{tag}</li>
 				{/each}
