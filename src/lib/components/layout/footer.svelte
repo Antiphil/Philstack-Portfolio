@@ -1,4 +1,5 @@
 <script>
+	import { locale } from '$i18n/i18n-svelte';
 	import logofull from '$lib/assets/images/logos/logo_full.svg';
 </script>
 
@@ -8,7 +9,7 @@
 	<div class="flex flex-col items-center gap-1 md:flex-row">
 		<p class="text-center text-xs font-semibold uppercase">Copyright © 2022 - 2024 Philstack. <br class="block md:hidden" />All rights reserved</p>
 		<span class="hidden md:block">•</span>
-		<a class=" hover:text-primaryhover mt-1 text-center text-xs font-semibold uppercase hover:underline md:mt-0" href="/impressum">Impressum</a>
+		<a class=" hover:text-primaryhover mt-1 text-center text-xs font-semibold uppercase hover:underline md:mt-0" href="/{$locale}/imprint">Impressum</a>
 	</div>
 
 	<div class="flex gap-2">

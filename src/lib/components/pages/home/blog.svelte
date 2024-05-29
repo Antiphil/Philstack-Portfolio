@@ -1,11 +1,12 @@
 <script lang="ts">
 	import Button from '$lib/components/modules/button.svelte';
 	import Title from '$lib/components/modules/title.svelte';
-	import { blogStore } from '$lib/stores/blog';
 	import Blogitem1 from '$lib/components/modules/blogitems/blogitemL.svelte';
 	import Blogitem2 from '$lib/components/modules/blogitems/blogitemR.svelte';
 	import { formatDistance, subDays } from 'date-fns';
 	import { locale } from '$i18n/i18n-svelte';
+
+	export let blog;
 </script>
 
 <section class="w-full">
@@ -15,17 +16,17 @@
 		</div>
 
 		<div class="flex w-full flex-col gap-5">
-			<!-- {#if $blogStore.data}
-				{#each $blogStore.data.reverse() as blog, index}
+			{#if blog}
+				{#each blog.data.reverse() as blog, index}
 					{#if index < 4}
 						{#if index % 2 == 0}
-							<Blogitem1 title={blog.attributes.title} url="/{$locale}/blog/article={blog.id}" desc={undefined} img={`https://strapi.antiphil.de${blog?.attributes.media.data[0].attributes.url}`} date={formatDistance(subDays(blog.attributes.date, 3), new Date(), { addSuffix: true })} />
+							<Blogitem1 title={blog.attributes.title} url="/{$locale}/blog/article={blog.id}" desc={blog.attributes.description} img={`https://strapi.antiphil.de${blog?.attributes.media.data[0].attributes.url}`} date={formatDistance(subDays(blog.attributes.createdAt, 0), new Date(), { addSuffix: true })} />
 						{:else}
-							<Blogitem2 title={blog.attributes.title} url="/{$locale}/blog/article={blog.id}" desc={undefined} img={`https://strapi.antiphil.de${blog?.attributes.media.data[0].attributes.url}`} date={formatDistance(subDays(blog.attributes.date, 3), new Date(), { addSuffix: true })} />
+							<Blogitem2 title={blog.attributes.title} url="/{$locale}/blog/article={blog.id}" desc={blog.attributes.description} img={`https://strapi.antiphil.de${blog?.attributes.media.data[0].attributes.url}`} date={formatDistance(subDays(blog.attributes.createdAt, 0), new Date(), { addSuffix: true })} />
 						{/if}
 					{/if}
 				{/each}
-			{/if} -->
+			{/if}
 		</div>
 		<div class="mt-10 flex justify-center">
 			<Button text="Visit blog page" link="/{$locale}/blog" />

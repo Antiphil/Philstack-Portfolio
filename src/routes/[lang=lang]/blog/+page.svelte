@@ -56,12 +56,23 @@
 		<div class="">
 			<Title left title="Latest Posts" />
 		</div>
-		<Button text="View All" link="/" />
+		<div class="hidden lg:block">
+			<Button text="View All" link="/{$locale}/blog/latest" />
+		</div>
 	</div>
-	<div class="block space-x-0 lg:flex lg:space-x-6">
-		<BlogitemCard />
-		<BlogitemCard />
-		<BlogitemCard />
+	<div class="flex max-w-screen-xl flex-col justify-center gap-3 space-x-0 lg:flex lg:flex-row lg:space-x-6">
+		{#each data.latest as blog, index}
+			{#if index < 3}
+				{#if $locale === 'en'}
+					<BlogitemCard title={blog.attributes.title} views={blog.attributes.views || 0} tags={blog.attributes.tag} desc={blog.attributes.description} date={formatDistance(subDays(blog.attributes.createdAt, 0), new Date(), { addSuffix: true })} url="/{$locale}/blog/{blog.attributes.uid}" img="https://strapi.antiphil.de{blog.attributes.media.data[0].attributes.url}" />
+				{:else if $locale === 'de'}
+					<BlogitemCard title={blog.attributes.localizations.data[0].attributes.title} views={blog.attributes.views || 0} desc={blog.attributes.localizations.data[0].attributes.description} date={formatDistance(subDays(blog.attributes.createdAt, 0), new Date(), { addSuffix: true })} url="/{$locale}/blog/{blog.attributes.uid}" img="https://strapi.antiphil.de{blog.attributes.media.data[0].attributes.url}" />
+				{/if}
+			{/if}
+		{/each}
+	</div>
+	<div class="flex justify-center lg:hidden">
+		<Button text="View All" link="/{$locale}/blog/latest" />
 	</div>
 	<!-- end recent posts -->
 
@@ -70,12 +81,23 @@
 		<div class="">
 			<Title left title="Popular Posts" />
 		</div>
-		<Button text="View All" link="/" />
+		<div class="hidden lg:block">
+			<Button text="View All" link="/{$locale}/blog/popular" />
+		</div>
 	</div>
-	<div class="block space-x-0 lg:flex lg:space-x-6">
-		<BlogitemCard />
-		<BlogitemCard />
-		<BlogitemCard />
+	<div class="flex max-w-screen-xl flex-col justify-center gap-3 space-x-0 lg:flex lg:flex-row lg:space-x-6">
+		{#each data.popular as blog, index}
+			{#if index < 3}
+				{#if $locale === 'en'}
+					<BlogitemCard title={blog.attributes.title} views={blog.attributes.views || 0} tags={blog.attributes.tag} desc={blog.attributes.description} date={formatDistance(subDays(blog.attributes.createdAt, 0), new Date(), { addSuffix: true })} url="/{$locale}/blog/{blog.attributes.uid}" img="https://strapi.antiphil.de{blog.attributes.media.data[0].attributes.url}" />
+				{:else if $locale === 'de'}
+					<BlogitemCard title={blog.attributes.localizations.data[0].attributes.title} views={blog.attributes.views || 0} desc={blog.attributes.localizations.data[0].attributes.description} date={formatDistance(subDays(blog.attributes.createdAt, 0), new Date(), { addSuffix: true })} url="/{$locale}/blog/{blog.attributes.uid}" img="https://strapi.antiphil.de{blog.attributes.media.data[0].attributes.url}" />
+				{/if}
+			{/if}
+		{/each}
+	</div>
+	<div class="flex justify-center lg:hidden">
+		<Button text="View All" link="/{$locale}/blog/popular" />
 	</div>
 	<!-- end popular posts -->
 </main>

@@ -23,11 +23,10 @@
 		<img src={img} alt="" class="h-full w-full object-cover sepia" />
 	</div>
 	<div class="max-h-56 text-secondary-800 group-hover:text-primary-main xs:ml-[calc(128px-64px)] xs:pl-8">
-		<ul class="line-clamp-1 flex w-64 truncate text-nowrap text-xs font-semibold [&>li:not(:last-child)]:after:mx-1 [&>li:not(:last-child)]:after:content-['•']">
-			{#each tagArray as tag}
-				<li class="">{tag}</li>
-			{/each}
-		</ul>
+		<h3 class="mb-2 line-clamp-1 flex justify-between text-xs font-semibold">
+			<span>Posted {date}</span>
+			<span>Author: Phil</span>
+		</h3>
 		<h2 class="mb-1 line-clamp-1 text-xl font-bold md:text-xl">{title}</h2>
 		<h3 class="line-clamp-2 text-justify text-sm font-light">{desc}</h3>
 		<div class="mt-3 flex items-center justify-between">

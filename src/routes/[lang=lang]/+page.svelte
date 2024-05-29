@@ -20,5 +20,5 @@
 </Section>
 
 <Section left>
-	<Blog />
+	<Blog blog={data.blog} />
 </Section>

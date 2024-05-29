@@ -7,7 +7,9 @@ export const load = async ({ fetch }: any) => {
 			return {
 				status: 200,
 				featured: data.data.filter((article: { attributes: { featured: boolean } }) => article.attributes.featured === true).reverse(),
-				main: data.data.filter((article: { id: number }) => article.id === 50)
+				main: data.data.filter((article: { id: number }) => article.id === 50),
+				latest: data.data,
+				popular: data.data
 			};
 		} else {
 			return {

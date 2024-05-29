@@ -21,9 +21,13 @@
 <a href={url} class="group relative block h-full w-full rounded-3xl border-[4px] border-primary-main bg-primary-main p-3 text-secondary-800 transition-all hover:scale-[1.01] hover:bg-secondary-800 hover:text-primary-main">
 	<img class="absolute -top-20 left-1/2 h-64 w-[calc(100%-24px)] -translate-x-1/2 rounded-3xl border-[5px] border-secondary-800 object-cover sepia" alt="a" src="https://img.freepik.com/free-vector/cute-astronaut-friend-playing-space-cartoon-vector-icon-illustration-science-technology-isolated_138676-8720.jpg" />
 	<div class="xs:p-3">
-		<ul class="line-clamp-1 flex w-64 truncate text-nowrap pt-[calc(256px-80px)] text-xs font-semibold [&>li:not(:last-child)]:after:mx-1 [&>li:not(:last-child)]:after:content-['•']">
+		<h3 class="mb-2 line-clamp-1 flex justify-between pt-[calc(256px-80px)] text-xs font-semibold">
+			<span>Posted {date}</span>
+			<span>Author: Phil</span>
+		</h3>
+		<ul class="line-clamp-1 flex w-64 gap-2 truncate text-nowrap text-xs font-semibold">
 			{#each tagArray as tag}
-				<li class="">{tag}</li>
+				<li class="rounded-lg bg-secondary-800 px-2 py-1 text-primary-main transition-all group-hover:bg-primary-main group-hover:text-secondary-800">{tag}</li>
 			{/each}
 		</ul>
 
