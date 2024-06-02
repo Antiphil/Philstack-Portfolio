@@ -36,7 +36,7 @@
 				<p class="text-xs font-bold">Location:</p>
 				<p class="text-sm font-light">Thuringia/Germany</p>
 			</div>
-			<div class="mt-3 text-sm font-light">Ich bin ein IT-Nerd aus Thüringen mit einer großen Leidenschaft für alles Technische und Kreative. Die meisten meiner Fähigkeiten habe ich mir selbst beigebracht und möchte meine Erfahrungen und Skills mit euch zu teilen!</div>
+			<div class="mt-3 text-sm font-light">Ich bin ein 28 jähriger IT-Nerd aus Thüringen mit einer großen Leidenschaft für alles Technische und Kreative. Die meisten meiner Fähigkeiten habe ich mir selbst beigebracht und möchte hier meine Erfahrungen und Skills mit euch zu teilen!</div>
 		</div>
 	</div>
 	<Titlesmall title="Tags" />
