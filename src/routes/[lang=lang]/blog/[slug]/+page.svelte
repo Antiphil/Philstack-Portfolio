@@ -20,7 +20,7 @@
 		{/if}
 	</div>
 	<div class="hidden w-1/4 md:block">
-		<Sidebar />
+		<Sidebar tags={data.featured[0].attributes.tags.tags} />
 	</div>
 </div>
 

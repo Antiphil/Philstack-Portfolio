@@ -6,16 +6,6 @@
 	export let url: string = '/';
 	export let tags: string = 'aaa,aasd';
 	export let views: string = '0';
-
-	const formatTags = () => {
-		if (!tags || typeof tags !== 'string') {
-			return [];
-		}
-		const tagsArray = tags.split(',').map((tag) => tag.trim());
-
-		return tagsArray;
-	};
-	let tagArray = formatTags();
 </script>
 
 <a href={url} class="group relative flex h-24 w-full max-w-screen-xl flex-col items-center justify-center rounded-xl border-[4px] border-primary-main bg-primary-main transition-all hover:scale-[1.01] hover:bg-secondary-800 md:mt-0 md:flex-row">

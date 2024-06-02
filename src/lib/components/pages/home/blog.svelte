@@ -23,15 +23,15 @@
 					{#if index < 4}
 						{#if $locale === 'en'}
 							{#if index % 2 == 0}
-								<Blogitem1 title={blog.attributes.title} url="/{$locale}/blog/{blog.attributes.uid}" desc={blog.attributes.description} tags={blog.attributes.tag} views={blog.attributes.views} img={`https://strapi.antiphil.de${blog?.attributes.media.data[0].attributes.url}`} date={formatDistance(subDays(blog.attributes.createdAt, 0), new Date(), { addSuffix: true })} />
+								<Blogitem1 title={blog.attributes.title} url="/{$locale}/blog/{blog.attributes.uid}" desc={blog.attributes.description} tags={blog.attributes.tags.tags} views={blog.attributes.views} img={`https://strapi.antiphil.de${blog?.attributes.media.data[0].attributes.url}`} date={formatDistance(subDays(blog.attributes.createdAt, 0), new Date(), { addSuffix: true })} />
 							{:else}
-								<Blogitem2 title={blog.attributes.title} url="/{$locale}/blog/{blog.attributes.uid}" desc={blog.attributes.description} tags={blog.attributes.tag} views={blog.attributes.views} img={`https://strapi.antiphil.de${blog?.attributes.media.data[0].attributes.url}`} date={formatDistance(subDays(blog.attributes.createdAt, 0), new Date(), { addSuffix: true })} />
+								<Blogitem2 title={blog.attributes.title} url="/{$locale}/blog/{blog.attributes.uid}" desc={blog.attributes.description} tags={blog.attributes.tags.tags} views={blog.attributes.views} img={`https://strapi.antiphil.de${blog?.attributes.media.data[0].attributes.url}`} date={formatDistance(subDays(blog.attributes.createdAt, 0), new Date(), { addSuffix: true })} />
 							{/if}
 						{:else if $locale === 'de'}
 							{#if index % 2 == 0}
-								<Blogitem1 title={blog.attributes.localizations.data[0].attributes.title} url="/{$locale}/blog/{blog.attributes.uid}" views={blog.attributes.views} tags={blog.attributes.tag} desc={blog.attributes.localizations.data[0].attributes.description} img={`https://strapi.antiphil.de${blog?.attributes.media.data[0].attributes.url}`} date={formatDistance(subDays(blog.attributes.createdAt, 0), new Date(), { addSuffix: true })} />
+								<Blogitem1 title={blog.attributes.localizations.data[0].attributes.title} url="/{$locale}/blog/{blog.attributes.uid}" views={blog.attributes.views} tags={blog.attributes.tags.tags} desc={blog.attributes.localizations.data[0].attributes.description} img={`https://strapi.antiphil.de${blog?.attributes.media.data[0].attributes.url}`} date={formatDistance(subDays(blog.attributes.createdAt, 0), new Date(), { addSuffix: true })} />
 							{:else}
-								<Blogitem2 title={blog.attributes.localizations.data[0].attributes.title} url="/{$locale}/blog/{blog.attributes.uid}" views={blog.attributes.views} tags={blog.attributes.tag} desc={blog.attributes.localizations.data[0].attributes.description} img={`https://strapi.antiphil.de${blog?.attributes.media.data[0].attributes.url}`} date={formatDistance(subDays(blog.attributes.createdAt, 0), new Date(), { addSuffix: true })} />
+								<Blogitem2 title={blog.attributes.localizations.data[0].attributes.title} url="/{$locale}/blog/{blog.attributes.uid}" views={blog.attributes.views} tags={blog.attributes.tags.tags} desc={blog.attributes.localizations.data[0].attributes.description} img={`https://strapi.antiphil.de${blog?.attributes.media.data[0].attributes.url}`} date={formatDistance(subDays(blog.attributes.createdAt, 0), new Date(), { addSuffix: true })} />
 							{/if}
 						{/if}
 					{/if}

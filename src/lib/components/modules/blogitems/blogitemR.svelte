@@ -6,16 +6,6 @@
 	export let url: string = '/';
 	export let tags: string = 'aaa,aasd';
 	export let views: string = '0';
-
-	const formatTags = () => {
-		if (!tags || typeof tags !== 'string') {
-			return [];
-		}
-		const tagsArray = tags.split(',').map((tag) => tag.trim());
-
-		return tagsArray;
-	};
-	let tagArray = formatTags();
 </script>
 
 <a href={url} class="group relative m-auto mt-[60px] flex w-full max-w-screen-xl flex-col items-center justify-between rounded-2xl border-[4px] border-primary-main bg-primary-main p-5 transition-all hover:scale-[1.01] hover:bg-secondary-800 md:mt-0 md:h-72 md:flex-row">
@@ -32,7 +22,7 @@
 			<span>Author: Phil</span>
 		</h3>
 		<ul class="mb-2 line-clamp-1 flex max-w-full flex-row-reverse gap-2 truncate text-nowrap text-xs font-semibold">
-			{#each tagArray as tag}
+			{#each tags as tag}
 				<li class="rounded-lg bg-secondary-800 px-2 py-1 text-primary-main transition-all group-hover:bg-primary-main group-hover:text-secondary-800">{tag}</li>
 			{/each}
 		</ul>

@@ -26,19 +26,19 @@
 						</a>
 					</li>
 					<li class="flex h-1/5" in:fly={{ delay: 800, duration: 300, x: -2000 }}>
-						<a class="{$page.route.id === `/[lang=lang]/projects` ? '!pl-16' : 'hover:pl-16'} group relative flex h-full w-full items-center pl-5 text-5xl font-bold uppercase transition-all md:pl-10 md:text-[80px]" href="/{$locale}/projects">
+						<a on:click={toggleNav} class="{$page.route.id === `/[lang=lang]/projects` ? '!pl-16' : 'hover:pl-16'} group relative flex h-full w-full items-center pl-5 text-5xl font-bold uppercase transition-all md:pl-10 md:text-[80px]" href="/{$locale}/projects">
 							<span class="{$page.route.id === `/[lang=lang]/projects` ? 'text-secondary-800' : 'group-hover:text-secondary-800'} z-20 transition-all">projects</span>
 							<div class="{$page.route.id === `/[lang=lang]/projects` ? 'w-full' : 'group-hover:w-full'} absolute left-0 z-10 h-full w-[0%] bg-primary-main transition-all"></div>
 						</a>
 					</li>
 					<li class="flex h-1/5" in:fly={{ delay: 900, duration: 300, x: -2000 }}>
-						<a class="{$page.route.id === `/[lang=lang]/blog` ? '!pl-16' : 'hover:pl-16'} group relative flex h-full w-full items-center pl-5 text-5xl font-bold uppercase transition-all md:pl-10 md:text-[80px]" href="/{$locale}/blog">
+						<a on:click={toggleNav} class="{$page.route.id === `/[lang=lang]/blog` ? '!pl-16' : 'hover:pl-16'} group relative flex h-full w-full items-center pl-5 text-5xl font-bold uppercase transition-all md:pl-10 md:text-[80px]" href="/{$locale}/blog">
 							<span class="{$page.route.id === `/[lang=lang]/blog` ? 'text-secondary-800' : 'group-hover:text-secondary-800'} z-20 transition-all">blog</span>
 							<div class="{$page.route.id === `/[lang=lang]/blog` ? 'w-full' : 'group-hover:w-full'} absolute left-0 z-10 h-full w-[0%] bg-primary-main transition-all"></div>
 						</a>
 					</li>
 					<li class="flex h-1/5" in:fly={{ delay: 1000, duration: 300, x: -2000 }}>
-						<a class="{$page.route.id === `/[lang=lang]/contact` ? '!pl-16' : 'hover:pl-16'} group relative flex h-full w-full items-center pl-5 text-5xl font-bold uppercase transition-all md:pl-10 md:text-[80px]" href="/{$locale}/contact">
+						<a on:click={toggleNav} class="{$page.route.id === `/[lang=lang]/contact` ? '!pl-16' : 'hover:pl-16'} group relative flex h-full w-full items-center pl-5 text-5xl font-bold uppercase transition-all md:pl-10 md:text-[80px]" href="/{$locale}/contact">
 							<span class="{$page.route.id === `/[lang=lang]/contact` ? 'text-secondary-800' : 'group-hover:text-secondary-800'} z-20 transition-all">contact</span>
 							<div class="{$page.route.id === `/[lang=lang]/contact` ? 'w-full' : 'group-hover:w-full'} absolute left-0 z-10 h-full w-[0%] bg-primary-main transition-all"></div>
 						</a>
