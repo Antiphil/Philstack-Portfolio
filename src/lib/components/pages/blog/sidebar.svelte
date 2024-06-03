@@ -8,18 +8,7 @@
 	export let tags;
 </script>
 
-<!-- 
-    Suche
-    About
-    Tags
-    Other Posts
- -->
-
 <div class="h-full w-full bg-secondary-900 p-10">
-	<!-- <div class="">
-		<span>Search for Blog Content</span>
-		<input class="m-a rounded-lg bg-secondary-800 px-5 py-2" type="text" placeholder="Suchbegriff" />
-	</div> -->
 	<Titlesmall title="about me" />
 	<div class="my-10 flex flex-col">
 		<img class="m-auto mb-2 h-40 w-40 rounded-full object-cover" src={phil} alt="Philstack" />
