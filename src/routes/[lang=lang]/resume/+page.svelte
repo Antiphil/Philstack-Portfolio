@@ -8,7 +8,7 @@
 	import TimelineItem from '$lib/components/pages/resume/timelineItem.svelte';
 </script>
 
-<section class="flex w-full flex-col-reverse items-center justify-center rounded-xl rounded-bl-[50px] rounded-tr-[50px] bg-[rgba(22,22,19,0.8)] py-20 md:flex-row">
+<section class="flex w-full flex-col-reverse items-center justify-center rounded-xl bg-secondary-900 py-20 md:flex-row md:rounded-bl-[50px] md:rounded-tr-[50px]">
 	<div class="flex w-full flex-col items-center text-center md:pl-10">
 		<h1 class="text text-[50px] font-bold uppercase leading-[40px] md:text-[90px] md:leading-[80px]">Philstack</h1>
 		<h3 class="text-sm font-thin uppercase md:text-2xl">Frontend Developer & UI/UX Designer</h3>
@@ -34,7 +34,7 @@
 		</div>
 	</div>
 </section>
-<section class="rounded-xl rounded-bl-[50px] rounded-tr-[50px] bg-[rgba(22,22,19,0.8)] bg-fixed bg-top py-5 md:px-10" style="background-image:url({bg})">
+<section class="rounded-xl bg-secondary-900 bg-fixed bg-top py-5 md:rounded-bl-[50px] md:rounded-tr-[50px] md:px-10" style="background-image:url({bg})">
 	<div class="m-auto flex max-w-5xl flex-col px-3">
 		<div class="mb-20 mt-5">
 			<Title title="My Timeline" center />
@@ -69,7 +69,7 @@
 	</div>
 </section>
 
-<section class="mb-10 rounded-xl rounded-bl-[50px] rounded-tr-[50px] bg-[rgba(22,22,19,0.8)] p-3">
+<section class="mb-10 rounded-xl bg-secondary-900 p-3 md:rounded-bl-[50px] md:rounded-tr-[50px]">
 	<div class="container mx-auto py-5">
 		<div class="mb-20 mt-5">
 			<Title title="My Showcase" center />
@@ -101,7 +101,7 @@
 	</div>
 </section>
 
-<section class="flex flex-col items-start gap-5 rounded-xl rounded-bl-[50px] rounded-tr-[50px] bg-[rgba(22,22,19,0.8)] p-3">
+<section class="flex flex-col items-start gap-5 rounded-xl bg-secondary-900 p-3 md:rounded-bl-[50px] md:rounded-tr-[50px]">
 	<div class="container m-auto py-5">
 		<div class="mb-20 mt-5">
 			<Title title="Techstack & Tools" center />

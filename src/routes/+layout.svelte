@@ -19,15 +19,12 @@
 <!-- <LocaleSwitcher /> -->
 {#if $navOpen}
 	<Navigation />
-{:else}
-	<button out:fly={{ duration: 800, x: -1000 }} in:fly={{ delay: 0, duration: 600, x: -1000 }} on:click={toggleNav} class="fixed left-2.5 top-1/2 z-[1000] flex h-10 w-5 -translate-x-1/2 transform items-center justify-center rounded-r-lg bg-primary-main text-secondary-800 drop-shadow-[1px_1px_0px_rgba(0,0,0,1)] transition-all hover:bg-secondary-800 hover:text-primary-main">
-		<i class="fa-solid fa-bars"></i>
-	</button>
 {/if}
 
 <main>
 	<slot />
 </main>
+
 <Footer />
 <svelte:head>
 	<title>{$LL.title()}</title>

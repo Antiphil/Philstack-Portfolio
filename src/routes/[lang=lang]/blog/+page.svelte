@@ -4,13 +4,15 @@
 	import BlogitemMain from '$lib/components/modules/blogitems/blogitemMain.svelte';
 	import BlogitemSmall from '$lib/components/modules/blogitems/blogitemSmall.svelte';
 	import Button from '$lib/components/modules/button.svelte';
+	import Offpagenavbar from '$lib/components/modules/offpagenavbar.svelte';
 	import Title from '$lib/components/modules/title.svelte';
 	import { formatDistance, subDays } from 'date-fns';
 
 	export let data;
 </script>
 
-<main class="m-auto mt-12 max-w-7xl p-3 pb-20">
+<Offpagenavbar />
+<main class="m-auto mt-20 max-w-7xl p-3 pb-20">
 	<div class="mb-8">
 		<Title left title="Featured Posts" />
 	</div>

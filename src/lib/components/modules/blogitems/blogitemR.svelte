@@ -27,7 +27,7 @@
 			{/each}
 		</ul>
 		<h2 class="mb-3 line-clamp-1 text-xl font-bold md:text-3xl">{title}</h2>
-		<h3 class="line-clamp-3 text-justify text-sm font-light">{desc}</h3>
+		<h3 class="line-clamp-2 text-justify text-sm font-light">{desc}</h3>
 		<div class="mt-3 flex items-center justify-between">
 			<div class="text-secondary group-hover:text-primary flex w-fit items-center gap-2 rounded-xl text-sm font-bold transition-all">
 				<span>Read More</span>
