@@ -56,7 +56,9 @@
 
 <style>
 	:global(.prose-pink img) {
-		margin: auto;
 		border-radius: 16px;
+	}
+	:global(.prose-pink .image) {
+		margin: 0 auto;
 	}
 </style>
