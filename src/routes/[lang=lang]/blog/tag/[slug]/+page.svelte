@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { locale } from '$i18n/i18n-svelte';
-	import Offpagenavbar from './../../../../lib/components/modules/offpagenavbar.svelte';
+	import Offpagenavbar from '$lib/components/modules/offpagenavbar.svelte';
 	import BlogitemL from '$lib/components/modules/blogitems/blogitemL.svelte';
 	import BlogitemR from '$lib/components/modules/blogitems/blogitemR.svelte';
 	import Title from '$lib/components/modules/title.svelte';
@@ -41,7 +41,7 @@
 
 <Offpagenavbar />
 <div class="m-auto mt-16 max-w-7xl p-10">
-	<Title title="Latest Posts" />
+	<Title title="Popular Posts" />
 	<div class="mt-10 flex flex-col gap-5">
 		{#each data.posts as blog, index}
 			{#if index < 4}
@@ -60,6 +60,8 @@
 				{/if}
 			{/if}
 		{/each}
+
+		<!-- <BlogitemR /> -->
 	</div>
 	<div class="mb-5 mt-10 flex justify-center">
 		<div class="flex items-center gap-4">

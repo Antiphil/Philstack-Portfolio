@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { PageData } from './../../../../../.svelte-kit/types/src/routes/[lang=lang]/resume/$types.d.ts';
 	import { locale } from '$i18n/i18n-svelte';
 	import Offpagenavbar from './../../../../lib/components/modules/offpagenavbar.svelte';
 	import BlogitemL from '$lib/components/modules/blogitems/blogitemL.svelte';
@@ -15,7 +14,6 @@
 	let posts = [];
 	let pagination: any;
 	let curPage = 1;
-	console.log(data.pagination);
 
 	$: {
 		const unsubscribe = page.subscribe(($page) => {
@@ -45,23 +43,19 @@
 <div class="m-auto mt-16 max-w-7xl p-10">
 	<Title title="Popular Posts" />
 	<div class="mt-10 flex flex-col gap-5">
-		{#each data.posts as post}
-			<BlogitemL title={post.attributes.title} />
-		{/each}
-
 		{#each data.posts as blog, index}
 			{#if index < 4}
 				{#if $locale === 'en'}
 					{#if index % 2 == 0}
-						<BlogitemL title={blog.attributes.title} url="/{$locale}/blog/{blog.attributes.uid}" desc={blog.attributes.description} tags={blog.attributes.tags.tags} views={blog.attributes.views} img={`https://strapi.antiphil.de${blog?.attributes.media.data[0].attributes.url}`} date={formatDistance(subDays(blog.attributes.createdAt, 0), new Date(), { addSuffix: true })} />
+						<BlogitemL title={blog.attributes.title} url="/{$locale}/blog/article/{blog.attributes.uid}" desc={blog.attributes.description} tags={blog.attributes.tags.tags} views={blog.attributes.views} img={`https://strapi.antiphil.de${blog?.attributes.media.data[0].attributes.url}`} date={formatDistance(subDays(blog.attributes.createdAt, 0), new Date(), { addSuffix: true })} />
 					{:else}
-						<BlogitemR title={blog.attributes.title} url="/{$locale}/blog/{blog.attributes.uid}" desc={blog.attributes.description} tags={blog.attributes.tags.tags} views={blog.attributes.views} img={`https://strapi.antiphil.de${blog?.attributes.media.data[0].attributes.url}`} date={formatDistance(subDays(blog.attributes.createdAt, 0), new Date(), { addSuffix: true })} />
+						<BlogitemR title={blog.attributes.title} url="/{$locale}/blog/article/{blog.attributes.uid}" desc={blog.attributes.description} tags={blog.attributes.tags.tags} views={blog.attributes.views} img={`https://strapi.antiphil.de${blog?.attributes.media.data[0].attributes.url}`} date={formatDistance(subDays(blog.attributes.createdAt, 0), new Date(), { addSuffix: true })} />
 					{/if}
 				{:else if $locale === 'de'}
 					{#if index % 2 == 0}
-						<BlogitemL title={blog.attributes.localizations.data[0].attributes.title} url="/{$locale}/blog/{blog.attributes.uid}" views={blog.attributes.views} tags={blog.attributes.tags.tags} desc={blog.attributes.localizations.data[0].attributes.description} img={`https://strapi.antiphil.de${blog?.attributes.media.data[0].attributes.url}`} date={formatDistance(subDays(blog.attributes.createdAt, 0), new Date(), { addSuffix: true })} />
+						<BlogitemL title={blog.attributes.localizations.data[0].attributes.title} url="/{$locale}/blog/article/{blog.attributes.uid}" views={blog.attributes.views} tags={blog.attributes.tags.tags} desc={blog.attributes.localizations.data[0].attributes.description} img={`https://strapi.antiphil.de${blog?.attributes.media.data[0].attributes.url}`} date={formatDistance(subDays(blog.attributes.createdAt, 0), new Date(), { addSuffix: true })} />
 					{:else}
-						<BlogitemR title={blog.attributes.localizations.data[0].attributes.title} url="/{$locale}/blog/{blog.attributes.uid}" views={blog.attributes.views} tags={blog.attributes.tags.tags} desc={blog.attributes.localizations.data[0].attributes.description} img={`https://strapi.antiphil.de${blog?.attributes.media.data[0].attributes.url}`} date={formatDistance(subDays(blog.attributes.createdAt, 0), new Date(), { addSuffix: true })} />
+						<BlogitemR title={blog.attributes.localizations.data[0].attributes.title} url="/{$locale}/blog/article/{blog.attributes.uid}" views={blog.attributes.views} tags={blog.attributes.tags.tags} desc={blog.attributes.localizations.data[0].attributes.description} img={`https://strapi.antiphil.de${blog?.attributes.media.data[0].attributes.url}`} date={formatDistance(subDays(blog.attributes.createdAt, 0), new Date(), { addSuffix: true })} />
 					{/if}
 				{/if}
 			{/if}

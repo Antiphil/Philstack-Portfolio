@@ -4,6 +4,7 @@
 	import BlogitemSmall from '$lib/components/modules/blogitems/blogitemSmall.svelte';
 	import Titlesmall from '$lib/components/modules/titlesmall.svelte';
 	import Tag from './tag.svelte';
+	import { locale } from '$i18n/i18n-svelte';
 
 	export let tags;
 </script>
@@ -31,7 +32,7 @@
 	<Titlesmall title="Tags" />
 	<div class="my-10 flex flex-wrap gap-2">
 		{#each tags as tag}
-			<Tag name={tag} url="/" />
+			<Tag name={tag} url="/{$locale}/blog/tag/{tag}" />
 		{/each}
 	</div>
 	<Titlesmall title="Other Posts" />
