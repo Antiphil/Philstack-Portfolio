@@ -14,7 +14,13 @@
 <Offpagenavbar />
 <main class="m-auto mt-20 max-w-7xl p-3 pb-20">
 	<div class="mb-8">
-		<Title left title="Featured Posts" />
+		<div class="flex items-center justify-between">
+			<Title left title="Featured Posts" />
+			<a href="/{$locale}/" class="text-secondary flex h-fit w-fit items-center gap-2 rounded-xl bg-secondary-900 px-4 py-3 text-xs font-semibold transition-all hover:bg-primary-main hover:text-secondary-800">
+				<i class="fa-solid fa-chevron-left"></i>
+				<span>Back to Home</span>
+			</a>
+		</div>
 	</div>
 	<!-- FEATURED POSTS -->
 	<div class="mb-16 flex flex-wrap space-x-0 md:flex-nowrap md:space-x-6">

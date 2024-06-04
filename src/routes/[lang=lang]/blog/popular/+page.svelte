@@ -41,7 +41,14 @@
 
 <Offpagenavbar />
 <div class="m-auto mt-16 max-w-7xl p-10">
-	<Title title="Popular Posts" />
+	<div class="flex items-center justify-between">
+		<Title title="Popular Posts" />
+		<a href="/{$locale}/blog" class="text-secondary flex h-fit w-fit items-center gap-2 rounded-xl bg-secondary-900 px-4 py-3 text-xs font-semibold transition-all hover:bg-primary-main hover:text-secondary-800">
+			<i class="fa-solid fa-chevron-left"></i>
+			<span>Back to Blog Overview</span>
+		</a>
+	</div>
+
 	<div class="mt-10 flex flex-col gap-5">
 		{#each data.posts as blog, index}
 			{#if index < 4}
