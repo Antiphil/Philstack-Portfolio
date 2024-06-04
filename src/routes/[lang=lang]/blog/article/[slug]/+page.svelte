@@ -35,7 +35,7 @@
 		</article>
 	</div>
 	<div class="relative z-30 hidden w-1/4 md:block">
-		<Sidebar tags={data.featured[0].attributes.tags.tags} />
+		<Sidebar tags={data.featured[0].attributes.tags.tags} data={data.sidebar} />
 	</div>
 </div>
 

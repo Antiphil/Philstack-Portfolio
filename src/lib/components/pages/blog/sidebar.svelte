@@ -7,6 +7,8 @@
 	import { locale } from '$i18n/i18n-svelte';
 
 	export let tags;
+	export let data;
+	console.log(data.data);
 </script>
 
 <div class="h-full w-full bg-secondary-900 p-10">
@@ -37,9 +39,14 @@
 	</div>
 	<Titlesmall title="Other Posts" />
 	<div class="mt-10 flex flex-col items-center justify-center gap-3">
-		<BlogitemMini />
-		<BlogitemMini />
-		<BlogitemMini />
-		<BlogitemMini />
+		{#each data.data as post, index}
+			{#if index >= 4}
+				{#if $locale === 'en'}
+					<BlogitemMini title={post.attributes.title} desc={post.attributes.description} url="/{$locale}/blog/article/{post.attributes.uid}" img="https://strapi.antiphil.de{post.attributes.media.data[0].attributes.url}" />
+				{:else}
+					<BlogitemMini title={post.attributes.localizations.data[0].attributes.title} desc={post.attributes.localizations.data[0].attributes.description} url="/{$locale}/blog/article/{post.attributes.uid}" img="https://strapi.antiphil.de{post.attributes.media.data[0].attributes.url}" />
+				{/if}
+			{/if}
+		{/each}
 	</div>
 </div>

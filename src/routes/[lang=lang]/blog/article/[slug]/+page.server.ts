@@ -3,15 +3,16 @@ import type { RequestEvent } from '@sveltejs/kit';
 
 export const load = async ({ params, fetch, request, cookies }: RequestEvent) => {
 	const apiURL = `https://strapi.antiphil.de/api/blogposts?populate=*&filters[uid][$eq]=${params.slug}`;
+	const sidebarURL = `https://strapi.antiphil.de/api/blogposts?populate=*`;
 
 	try {
-		const response = await fetch(apiURL);
+		const [responseAPI, responseViews] = await Promise.all([fetch(apiURL), fetch(sidebarURL)]);
 
-		if (response.ok) {
+		if (responseAPI.ok) {
 			const visited = cookies.get('visited');
 
-			const data = await response.json();
-			const views = await data.data[0].attributes.views;
+			const [apiData, sidebarData] = await Promise.all([responseAPI.json(), responseViews.json()]);
+			const views = await apiData.data[0].attributes.views;
 
 			if (visited !== 'true') {
 				cookies.set('visited', 'true', { path: `${params.slug}` });
@@ -20,7 +21,7 @@ export const load = async ({ params, fetch, request, cookies }: RequestEvent) =>
 					return view === null ? 1 : parseInt(view) + 1;
 				};
 
-				await fetch(`https://strapi.antiphil.de/api/blogposts/${await data.data[0].id}`, {
+				await fetch(`https://strapi.antiphil.de/api/blogposts/${await apiData.data[0].id}`, {
 					method: 'PUT',
 					headers: {
 						'Content-Type': 'application/json',
@@ -36,12 +37,13 @@ export const load = async ({ params, fetch, request, cookies }: RequestEvent) =>
 
 			return {
 				status: 200,
-				featured: data.data,
+				featured: apiData.data,
+				sidebar: sidebarData,
 				visited
 			};
 		} else {
 			return {
-				status: response.status,
+				status: responseAPI.status,
 				body: {
 					error: 'Failed to fetch data from the API'
 				}
