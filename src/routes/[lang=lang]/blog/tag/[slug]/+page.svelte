@@ -41,7 +41,7 @@
 
 <Offpagenavbar />
 <div class="m-auto mt-16 max-w-7xl p-10">
-	<Title title="Popular Posts" />
+	<Title title="Posts about '{$page.params.slug}'" />
 	<div class="mt-10 flex flex-col gap-5">
 		{#each data.posts as blog, index}
 			{#if index < 4}
@@ -63,37 +63,43 @@
 
 		<!-- <BlogitemR /> -->
 	</div>
-	<div class="mb-5 mt-10 flex justify-center">
-		<div class="flex items-center gap-4">
-			<button on:click={prevPage} disabled={curPage === 1} class="flex select-none items-center gap-2 rounded-full px-6 py-3 text-center align-middle font-sans text-xs font-bold uppercase text-primary-main transition-all hover:bg-primary-main/10 active:bg-primary-main/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
-				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="h-4 w-4">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"></path>
-				</svg>
-				Previous
-			</button>
-			<div class="flex items-center gap-2 font-bold">
-				{#if pagination.pageCount > 1 && pagination.page > 1}
-					<button class="relative h-10 max-h-[40px] w-10 max-w-[40px] select-none rounded-full text-center align-middle font-sans text-xs uppercase text-primary-main transition-all hover:bg-primary-main/10 active:bg-primary-main/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
-						<span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform"> {pagination.page - 1} </span>
-					</button>
-				{/if}
-
-				<button class="relative h-10 max-h-[40px] w-10 max-w-[40px] select-none rounded-full bg-primary-main text-center align-middle font-sans text-xs uppercase text-secondary-800 shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
-					<span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform"> {data.pagination.page} </span>
+	{#if pagination.pageCount >= 2}
+		<div class="mb-5 mt-10 flex justify-center">
+			<div class="flex items-center gap-4">
+				<button on:click={prevPage} disabled={curPage === 1} class="flex select-none items-center gap-2 rounded-full px-6 py-3 text-center align-middle font-sans text-xs font-bold uppercase text-primary-main transition-all hover:bg-primary-main/10 active:bg-primary-main/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="h-4 w-4">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"></path>
+					</svg>
+					Previous
 				</button>
+				<div class="flex items-center gap-2 font-bold">
+					{#if pagination.pageCount > 1 && pagination.page > 1}
+						<button class="relative h-10 max-h-[40px] w-10 max-w-[40px] select-none rounded-full text-center align-middle font-sans text-xs uppercase text-primary-main transition-all hover:bg-primary-main/10 active:bg-primary-main/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+							<span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform"> {pagination.page - 1} </span>
+						</button>
+					{/if}
 
-				{#if pagination.page < pagination.pageCount}
-					<button class="relative h-10 max-h-[40px] w-10 max-w-[40px] select-none rounded-full text-center align-middle font-sans text-xs uppercase text-primary-main transition-all hover:bg-primary-main/10 active:bg-primary-main/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
-						<span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform"> {pagination.page + 1} </span>
+					<button class="relative h-10 max-h-[40px] w-10 max-w-[40px] select-none rounded-full bg-primary-main text-center align-middle font-sans text-xs uppercase text-secondary-800 shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+						<span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform"> {data.pagination.page} </span>
 					</button>
-				{/if}
+
+					{#if pagination.page < pagination.pageCount}
+						<button class="relative h-10 max-h-[40px] w-10 max-w-[40px] select-none rounded-full text-center align-middle font-sans text-xs uppercase text-primary-main transition-all hover:bg-primary-main/10 active:bg-primary-main/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+							<span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform"> {pagination.page + 1} </span>
+						</button>
+					{/if}
+				</div>
+				<button on:click={nextPage} disabled={curPage === pagination.pageCount} class="flex select-none items-center gap-2 rounded-full px-6 py-3 text-center align-middle font-sans text-xs font-bold uppercase text-primary-main transition-all hover:bg-primary-main/10 active:bg-primary-main/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+					Next
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="h-4 w-4">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+					</svg>
+				</button>
 			</div>
-			<button on:click={nextPage} disabled={curPage === pagination.pageCount} class="flex select-none items-center gap-2 rounded-full px-6 py-3 text-center align-middle font-sans text-xs font-bold uppercase text-primary-main transition-all hover:bg-primary-main/10 active:bg-primary-main/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
-				Next
-				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="h-4 w-4">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
-				</svg>
-			</button>
 		</div>
-	</div>
+	{:else}
+		<div class="mt-5 flex justify-center">
+			<p class="text-xs font-semibold text-primary-main/60">Showing {data.posts.length} out of {data.posts.length} results.</p>
+		</div>
+	{/if}
 </div>
