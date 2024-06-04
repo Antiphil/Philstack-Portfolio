@@ -18,7 +18,11 @@
 
 <div class="flex">
 	<Offpagenavbar />
-	<div class="mt-[68px] w-full p-2 md:w-3/4 md:p-10">
+	<div class="mt-[30px] w-full p-2 md:w-3/4 md:p-10">
+		<a href="/{$locale}/blog" class="text-secondary my-4 flex w-fit items-center gap-2 rounded-xl bg-secondary-900 px-4 py-3 text-xs font-semibold transition-all hover:bg-primary-main hover:text-secondary-800">
+			<i class="fa-solid fa-chevron-left"></i>
+			<span>Back to Blog Overview</span>
+		</a>
 		<Infobar date={data.featured[0].attributes.createdAt} />
 		<article class="prose-sm prose-pink overflow-hidden p-3 md:p-5">
 			<h1>{@html data.featured[0].attributes.title}</h1>
