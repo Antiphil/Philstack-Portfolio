@@ -9,7 +9,7 @@
 </script>
 
 <a href={url} class="group relative block h-full w-full rounded-3xl border-[4px] border-primary-main bg-primary-main p-3 text-secondary-800 transition-all hover:scale-[1.01] hover:bg-secondary-800 hover:text-primary-main">
-	<img class="absolute -top-20 left-1/2 h-64 w-[calc(100%-24px)] -translate-x-1/2 rounded-3xl border-[5px] border-secondary-800 object-cover sepia" alt="a" src="https://img.freepik.com/free-vector/cute-astronaut-friend-playing-space-cartoon-vector-icon-illustration-science-technology-isolated_138676-8720.jpg" />
+	<img class="absolute -top-20 left-1/2 h-64 w-[calc(100%-24px)] -translate-x-1/2 rounded-3xl border-[5px] border-secondary-800 object-cover sepia" alt="a" src={img} />
 	<div class="xs:p-3">
 		<h3 class="mb-2 line-clamp-1 flex justify-between pt-[calc(256px-80px)] text-xs font-semibold">
 			<span>Posted {date}</span>

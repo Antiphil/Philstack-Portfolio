@@ -1,12 +1,9 @@
 <script lang="ts">
 	import Offpagenavbar from '$lib/components/modules/offpagenavbar.svelte';
-	import { tooltip } from '$lib/utils/tooltip';
-	import { toggleNav } from '$lib/stores/navstore';
 	import { locale } from '$i18n/i18n-svelte';
 	import Sidebar from '$lib/components/pages/blog/sidebar.svelte';
 	import { initializePrism } from '$lib/utils/prismjs.js';
 	import { onMount } from 'svelte';
-	import { formatDistance, subDays } from 'date-fns';
 	import Infobar from '$lib/components/modules/infobar.svelte';
 
 	export let data;
@@ -18,12 +15,14 @@
 
 <div class="flex">
 	<Offpagenavbar />
-	<div class="mt-[30px] w-full p-2 md:w-3/4 md:p-10">
-		<a href="/{$locale}/blog" class="text-secondary my-4 flex w-fit items-center gap-2 rounded-xl bg-secondary-900 px-4 py-3 text-xs font-semibold transition-all hover:bg-primary-main hover:text-secondary-800">
-			<i class="fa-solid fa-chevron-left"></i>
-			<span>Back to Blog Overview</span>
-		</a>
-		<Infobar date={data.featured[0].attributes.createdAt} />
+	<div class="mt-[68px] w-full p-3 md:w-3/4 md:p-8">
+		<div class=" flex w-full flex-col-reverse items-center gap-2 md:flex-row">
+			<Infobar date={data.featured[0].attributes.createdAt} />
+			<a href="/{$locale}/blog" class="flex h-fit w-full items-center gap-2 rounded-xl bg-primary-main px-6 py-2.5 text-xs font-semibold text-secondary-900 transition-all hover:bg-secondary-900 hover:text-primary-main md:w-fit">
+				<i class="fa-solid fa-chevron-left"></i>
+				<span>Back</span>
+			</a>
+		</div>
 		<article class="prose-sm prose-pink overflow-hidden p-3 md:p-5">
 			<h1>{@html data.featured[0].attributes.title}</h1>
 			<img src={`https://strapi.antiphil.de${data.featured[0].attributes.media.data[0].attributes.url}`} alt="Thumbnail" />

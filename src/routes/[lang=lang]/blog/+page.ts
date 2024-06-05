@@ -7,6 +7,7 @@ export const load = async ({ fetch }: any) => {
 
 		if (responseAPI.ok) {
 			const [apiData, viewData] = await Promise.all([responseAPI.json(), responseViews.json()]);
+
 			return {
 				status: 200,
 				featured: apiData.data.filter((article: { attributes: { featured: boolean } }) => article.attributes.featured === true).reverse(),

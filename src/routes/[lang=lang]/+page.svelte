@@ -3,6 +3,7 @@
 	import Section from '$lib/components/layout/section.svelte';
 	import About from '$lib/components/pages/home/about.svelte';
 	import Blog from '$lib/components/pages/home/blog.svelte';
+	import Contact from '$lib/components/pages/home/contact.svelte';
 	import Hero from '$lib/components/pages/home/hero.svelte';
 	import Projects from '$lib/components/pages/home/projects.svelte';
 
@@ -21,4 +22,8 @@
 
 <Section left>
 	<Blog blog={data.blog} />
+</Section>
+
+<Section right>
+	<Contact />
 </Section>

@@ -12,13 +12,13 @@
 </script>
 
 <Offpagenavbar />
-<main class="m-auto mt-20 max-w-7xl p-3 pb-20">
+<main class="m-auto mt-[68px] max-w-7xl p-3 pb-20">
 	<div class="mb-8">
-		<div class="flex items-center justify-between">
+		<div class="flex flex-col-reverse items-center justify-between gap-5 md:flex-row">
 			<Title left title="Featured Posts" />
-			<a href="/{$locale}/" class="text-secondary flex h-fit w-fit items-center gap-2 rounded-xl bg-secondary-900 px-4 py-3 text-xs font-semibold transition-all hover:bg-primary-main hover:text-secondary-800">
-				<i class="fa-solid fa-chevron-left"></i>
-				<span>Back to Home</span>
+			<a href="/{$locale}/" class="flex h-fit w-full items-center gap-2 rounded-xl bg-primary-main px-6 py-2.5 text-xs font-semibold text-secondary-900 transition-all hover:bg-secondary-900 hover:text-primary-main md:w-fit">
+				<i class="fa-solid fa-arrow-left"></i>
+				<span>Back</span>
 			</a>
 		</div>
 	</div>
@@ -65,7 +65,10 @@
 			<Title left title="Latest Posts" />
 		</div>
 		<div class="hidden lg:block">
-			<Button text="View All" link="/{$locale}/blog/latest" />
+			<a href="/{$locale}/blog/latest" class="flex h-fit w-fit items-center gap-2 rounded-xl bg-primary-main px-6 py-2.5 text-xs font-semibold text-secondary-900 transition-all hover:bg-secondary-900 hover:text-primary-main">
+				<span>View All</span>
+				<i class="fa-solid fa-arrow-right"></i>
+			</a>
 		</div>
 	</div>
 	<div class="flex max-w-screen-xl flex-col justify-center gap-3 space-x-0 lg:flex lg:flex-row lg:space-x-6">
@@ -80,7 +83,10 @@
 		{/each}
 	</div>
 	<div class="flex justify-center lg:hidden">
-		<Button text="View All" link="/{$locale}/blog/latest" />
+		<a href="/{$locale}/blog/latest" class="mt-3 flex h-fit w-fit items-center gap-2 rounded-xl bg-primary-main px-6 py-2.5 text-xs font-semibold text-secondary-900 transition-all hover:bg-secondary-900 hover:text-primary-main">
+			<span>View All</span>
+			<i class="fa-solid fa-arrow-right"></i>
+		</a>
 	</div>
 	<!-- end recent posts -->
 
@@ -90,7 +96,10 @@
 			<Title left title="Popular Posts" />
 		</div>
 		<div class="hidden lg:block">
-			<Button text="View All" link="/{$locale}/blog/popular" />
+			<a href="/{$locale}/blog/popular" class="flex h-fit w-fit items-center gap-2 rounded-xl bg-primary-main px-6 py-2.5 text-xs font-semibold text-secondary-900 transition-all hover:bg-secondary-900 hover:text-primary-main">
+				<span>View All</span>
+				<i class="fa-solid fa-arrow-right"></i>
+			</a>
 		</div>
 	</div>
 	<div class="flex max-w-screen-xl flex-col justify-center gap-3 space-x-0 lg:flex lg:flex-row lg:space-x-6">
@@ -105,7 +114,10 @@
 		{/each}
 	</div>
 	<div class="flex justify-center lg:hidden">
-		<Button text="View All" link="/{$locale}/blog/popular" />
+		<a href="/{$locale}/blog/popular" class="mt-3 flex h-fit w-fit items-center gap-2 rounded-xl bg-primary-main px-6 py-2.5 text-xs font-semibold text-secondary-900 transition-all hover:bg-secondary-900 hover:text-primary-main">
+			<span>View All</span>
+			<i class="fa-solid fa-arrow-right"></i>
+		</a>
 	</div>
 	<!-- end popular posts -->
 </main>

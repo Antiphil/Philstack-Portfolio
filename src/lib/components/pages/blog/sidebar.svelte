@@ -8,7 +8,6 @@
 
 	export let tags;
 	export let data;
-	console.log(data.data);
 </script>
 
 <div class="h-full w-full bg-secondary-900 p-10">
