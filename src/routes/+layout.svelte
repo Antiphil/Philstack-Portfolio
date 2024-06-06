@@ -11,11 +11,13 @@
 	import Navigation from '$lib/components/modules/navigation.svelte';
 	import { navOpen, toggleNav } from '$lib/stores/navstore';
 	import Footer from '$lib/components/layout/footer.svelte';
+	import Headerbar from '$lib/components/layout/headerbar.svelte';
 
 	export let data: LayoutData;
 	setLocale(data.locale);
 </script>
 
+<Headerbar />
 <!-- <LocaleSwitcher /> -->
 {#if $navOpen}
 	<Navigation />

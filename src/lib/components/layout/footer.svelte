@@ -3,7 +3,7 @@
 	import logofull from '$lib/assets/images/logos/logo_full.svg';
 </script>
 
-<footer class="relative mt-[10px] flex h-[200px] w-full flex-col items-center justify-center gap-3 bg-secondary-800 lg:mt-[35px]">
+<footer class="relative mt-[10px] flex h-[200px] w-full flex-col items-center justify-center gap-3 bg-secondary-800 bg-blend-screen lg:mt-[35px]">
 	<div class="curved-corner-bottomleft !absolute left-0 top-[calc(0px-100px)] !z-50 hidden lg:block"></div>
 	<img class="w-[200px]" src={logofull} alt="" />
 	<div class="flex flex-col items-center gap-1 md:flex-row">
