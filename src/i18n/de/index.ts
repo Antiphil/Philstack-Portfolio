@@ -37,14 +37,14 @@ const de = {
 	readMore: '',
 	/* Article */
 	job: '',
-	location: '',
-	articleAbout: '',
+	location: 'Thüringen/Deutschland',
+	articleAbout: 'I am a 28 year old IT nerd from Thuringia with a great passion for everything technical and creative. I taught myself most of my skills and would like to share my experience and skills with you here!',
 	otherPosts: '',
 	/* InfoBar */
 	fbShare: '',
 	xShare: '',
 	threadsShare: '',
-	linkShare: '',
+	linkShare: 'Link kopieren',
 	dlPDF: '',
 	/* Contact */
 	contactSub: 'Es würde mich freuen von dir zu hören. Füll einfach das Forumlar da unten aus oder schick mir ne Mail!',

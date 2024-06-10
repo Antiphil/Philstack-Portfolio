@@ -5,6 +5,7 @@
 	import Titlesmall from '$lib/components/modules/titlesmall.svelte';
 	import Tag from './tag.svelte';
 	import { locale } from '$i18n/i18n-svelte';
+	import LL from '$i18n/i18n-svelte';
 
 	export let tags;
 	export let data;
@@ -25,9 +26,9 @@
 			</div>
 			<div class="flex items-center gap-3">
 				<p class="text-xs font-bold">Location:</p>
-				<p class="text-sm font-light">Thuringia/Germany</p>
+				<p class="text-sm font-light">{$LL.location()}</p>
 			</div>
-			<div class="mt-3 text-sm font-light">Ich bin ein 28 jähriger IT-Nerd aus Thüringen mit einer großen Leidenschaft für alles Technische und Kreative. Die meisten meiner Fähigkeiten habe ich mir selbst beigebracht und möchte hier meine Erfahrungen und Skills mit euch zu teilen!</div>
+			<div class="mt-3 text-sm font-light">{$LL.articleAbout()}</div>
 		</div>
 	</div>
 	<Titlesmall title="Tags" />

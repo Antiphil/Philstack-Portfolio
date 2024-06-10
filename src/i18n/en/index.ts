@@ -24,7 +24,7 @@ const en = {
 	projectButton: 'View all Projects',
 	blogButton: 'Vist Blogpage',
 	contactButton: 'Send Message',
-	/*  */
+	/* projects */
 	keaWeDescr: 'The KreativWerkstatt is a workshop for people with disabilities (WfbM) of Lebenshilfe Süd-Thuringia. In collaboration with them, I created a photo gallery for their unique and beautiful clay and wood products so that a tablet can be displayed in the entrance area. This allows customers and visitors to view older products as well, to possibly get inspired for their own orders.',
 	beschrTeamDescr: 'Due to my collaboration with KreativWerkstatt and the concept for social media, the labeling team approached me and tasked me with creating a promotional film for them and managing their social media presence. Additionally, I was responsible for revamping their in-house website and optimizing it for SEO.',
 	xivdataDesc: 'XIVDATA is a project I joined last year, which will be a massive database and tool collection for the successful MMORPG "Final Fantasy XIV" once it is completed. It is a hobby and side project with big ambitions and therefore might take some time to complete.',
@@ -37,14 +37,14 @@ const en = {
 	readMore: '',
 	/* Article */
 	job: '',
-	location: '',
-	articleAbout: '',
+	location: 'Thuringia/Germany',
+	articleAbout: 'I am a 28 year old IT nerd from Thuringia with a great passion for everything technical and creative. I taught myself most of my skills and would like to share my experience and skills with you here!',
 	otherPosts: '',
 	/* InfoBar */
 	fbShare: '',
 	xShare: '',
 	threadsShare: '',
-	linkShare: '',
+	linkShare: 'Copy Link',
 	dlPDF: '',
 	/* Contact */
 	contactSub: 'I’d love to hear from you. Please fill out this form or shoot us an mail!',
