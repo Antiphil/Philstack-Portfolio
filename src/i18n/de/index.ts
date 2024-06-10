@@ -1,6 +1,12 @@
 import type { Translation } from '../i18n-types';
 
 const de = {
+	/* Navigation */
+	navHome: 'Startseite',
+	navResume: 'Lebenslauf',
+	navProjects: 'Projekte',
+	navBlog: 'Blog',
+	navContact: 'Kontakt',
 	/* Titles */
 	title: 'Welcome | Philstack.de - My Web-Developer Portfolio',
 	projectsTitle: 'Meine Projekte',

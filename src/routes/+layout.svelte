@@ -8,7 +8,7 @@
 	import '../app.css';
 
 	import LocaleSwitcher from '$lib/components/modules/LocaleSwitcher.svelte';
-	import Navigation from '$lib/components/modules/navigation.svelte';
+	import Navigation from '$lib/components/layout/navigation.svelte';
 	import { navOpen, toggleNav } from '$lib/stores/navstore';
 	import Footer from '$lib/components/layout/footer.svelte';
 	import Headerbar from '$lib/components/layout/headerbar.svelte';

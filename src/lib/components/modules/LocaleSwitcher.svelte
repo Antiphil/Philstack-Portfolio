@@ -44,13 +44,12 @@
 
 <svelte:window on:popstate={handlePopStateEvent} />
 
-<ul class="fixed z-[1000] flex">
+<ul class="fixed right-1 top-2 z-[1000] flex flex-col gap-2">
 	{#each locales as l}
 		<li>
-			<a class=" mr-1 bg-secondary-900 px-3 py-2 text-primary-main" class:active={l === $locale} href={replaceLocaleInUrl($page.url, l)}>
+			<a class="bg-secondary-800 px-2 py-1" class:active={l === $locale} href={replaceLocaleInUrl($page.url, l)}>
 				{l}
 			</a>
 		</li>
 	{/each}
-	<button class=" mr-1 bg-secondary-900 px-3 py-1 text-primary-main" on:click={toggleNav}> toggle navigation </button>
 </ul>

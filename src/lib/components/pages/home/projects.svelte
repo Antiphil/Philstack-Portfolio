@@ -26,7 +26,7 @@
 			<ProjectitemR url="/{$locale}/projects/landkautz-handwerk-aus-der-rhoen" title="Landkautz" desc={$LL.landkautzDescr()} tags={['Shopify', 'Liquid', 'React', 'Javascript', 'HTML&CSS']} logo={landkautzlogo} banner={landkautz} />
 		</div>
 		<div class="mt-10 flex justify-center">
-			<Button text={$LL.viewProjectsBtn()} link="/blog" />
+			<Button text={$LL.viewProjectsBtn()} link="/{$locale}/projects" />
 		</div>
 	</div>
 </section>
