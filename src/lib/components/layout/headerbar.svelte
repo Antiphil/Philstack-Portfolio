@@ -2,7 +2,7 @@
 	import { toggleNav } from '$lib/stores/navstore';
 </script>
 
-<div class="pointer-events-none absolute z-[0] hidden h-[95vh] w-[70px] flex-col items-center justify-between gap-2 px-2 py-5 text-secondary-900 lg:px-5 lg:py-5 xl:flex">
+<div class="pointer-events-none absolute z-[30] hidden h-[90vh] w-[70px] flex-col items-center justify-between gap-2 px-2 py-5 text-secondary-900 lg:px-5 lg:py-5 xl:flex">
 	<button on:click={toggleNav}><i class="fa-solid fa-bars pointer-events-auto cursor-pointer text-2xl"></i></button>
 	<div class="pointer-events-auto hidden max-w-5 flex-col items-center gap-2 sm:flex">
 		<a href="https://twitter.com/MisterNamazu" target="_blank" class="socHov relative flex items-center hover:text-[#1DA1F2]">
