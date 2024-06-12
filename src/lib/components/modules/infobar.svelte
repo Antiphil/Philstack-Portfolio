@@ -11,8 +11,23 @@
 	export let threads: boolean = false;
 	export let linkedin: boolean = false;
 	export let link: boolean = false;
+	export let download: boolean = false;
 
 	const copyURL = () => window.navigator.clipboard.writeText(`https://philstack.de${$page.url.pathname}`);
+
+	async function downloadPDF() {
+		const response = await fetch('/api/pdf');
+		const blob = await response.blob();
+		console.log(blob);
+		const url = window.URL.createObjectURL(blob);
+		const a = document.createElement('a');
+		a.href = url;
+		a.download = 'article.pdf';
+		document.body.appendChild(a);
+		a.click();
+		document.body.removeChild(a);
+		window.URL.revokeObjectURL(url);
+	}
 </script>
 
 <div class=" flex w-full items-center justify-between rounded-xl bg-secondary-900 px-5 py-2 text-xs">
@@ -47,6 +62,11 @@
 		{#if link}
 			<button on:click={copyURL} use:tooltip={{ text: `${$LL.linkShare()}` }} class="flex h-6 w-6 items-center justify-center rounded-full bg-primary-main text-secondary-900 transition-all hover:bg-secondary-800 hover:text-primary-main">
 				<i class="fa-solid fa-link"></i>
+			</button>
+		{/if}
+		{#if download}
+			<button on:click={downloadPDF} use:tooltip={{ text: `${$LL.dlPDF()}` }} class="flex h-6 w-6 items-center justify-center rounded-full bg-primary-main text-secondary-900 transition-all hover:bg-secondary-800 hover:text-primary-main">
+				<i class="fa-solid fa-download"></i>
 			</button>
 		{/if}
 	</div>
