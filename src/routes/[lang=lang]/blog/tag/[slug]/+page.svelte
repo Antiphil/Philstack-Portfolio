@@ -70,7 +70,8 @@
 		<!-- <BlogitemR /> -->
 	</div>
 	{#if pagination.pageCount >= 2}
-		<div class="mb-5 mt-10 flex justify-center">
+		<p class="mt-10 flex justify-center text-xs font-semibold text-primary-main/60">Showing <span class="mx-1 text-primary-main">4</span> out of <span class="mx-1 text-primary-main">{data.posts.length}</span> results</p>
+		<div class="mb-5 mt-5 flex justify-center">
 			<div class="flex items-center gap-4">
 				<button on:click={prevPage} disabled={curPage === 1} class="flex select-none items-center gap-2 rounded-full px-6 py-3 text-center align-middle font-sans text-xs font-bold uppercase text-primary-main transition-all hover:bg-primary-main/10 active:bg-primary-main/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="h-4 w-4">
@@ -105,7 +106,7 @@
 		</div>
 	{:else}
 		<div class="mt-5 flex justify-center">
-			<p class="text-xs font-semibold text-primary-main/60">Showing {data.posts.length} out of {data.posts.length} results.</p>
+			<p class="mt-10 flex justify-center text-xs font-semibold text-primary-main/60">Showing <span class="mx-1 text-primary-main">{data.posts.length}</span> out of <span class="mx-1 text-primary-main">{data.posts.length}</span> results</p>
 		</div>
 	{/if}
 </div>

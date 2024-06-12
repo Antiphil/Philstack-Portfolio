@@ -41,11 +41,12 @@ const en = {
 	articleAbout: 'I am a 28 year old IT nerd from Thuringia with a great passion for everything technical and creative. I taught myself most of my skills and would like to share my experience and skills with you here!',
 	otherPosts: '',
 	/* InfoBar */
-	fbShare: '',
-	xShare: '',
-	threadsShare: '',
+	fbShare: 'Share on Facebook',
+	xShare: 'Share on X/Twitter',
+	threadsShare: 'Share on Threads',
+	linkledInShare: 'Share on LinkedIn',
 	linkShare: 'Copy Link',
-	dlPDF: '',
+	dlPDF: 'Download PDF',
 	/* Contact */
 	contactSub: 'I’d love to hear from you. Please fill out this form or shoot us an mail!',
 	mailText: 'Drop a Message in my Inbox 🤗',

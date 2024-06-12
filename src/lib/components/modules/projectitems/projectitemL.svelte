@@ -20,7 +20,7 @@
 		<h2 class="mb-3 line-clamp-1 text-xl font-bold md:text-3xl">{title}</h2>
 		<h3 class="line-clamp-3 text-justify text-sm font-normal">{desc}</h3>
 		<div class="text-secondary group-hover:text-primary mt-3 flex w-fit items-center gap-2 rounded-xl text-sm font-bold transition-all">
-			<span>View Project</span>
+			<span>Read case study</span>
 			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
 				<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
 			</svg>
