@@ -94,26 +94,10 @@ export default {
 								borderBottomRightRadius: '15px' // Hintergrundfarbe für jede zweite Reihe
 							}
 						},
-						// Nummerierung für Pre-Elemente
-
-						'pre[class*="language-"]': {
-							//backgroundColor: '#f5f2f0', // Hintergrundfarbe
-							padding: '1em', // Innenabstand
-							borderRadius: theme('borderRadius.DEFAULT'), // Abgerundete Ecken
-							overflow: 'auto', // Scrollbalken anzeigen, wenn der Inhalt zu groß ist
-							margin: '0.5em 0' // Außenabstand
-						},
-						'code[class*="language-"]': {
-							fontFamily: theme('fontFamily.mono'), // Monospace-Schriftart
-							fontSize: theme('fontSize.sm') // Schriftgröße
-						},
-						'code[class*="language-"]': {
-							// Andere Stile für Codeelemente
-							color: theme('colors.white') // Textfarbe für Prism.js-Code
-						},
-						'.token': {
-							// Textfarbe für Prism.js-Token
-							color: theme('colors.white')
+						hr: {
+							height: '3px',
+							backgroundColor: '#EDE9D0',
+							opacity: '0.7'
 						}
 					}
 				}

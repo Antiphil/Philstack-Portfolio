@@ -112,12 +112,12 @@ pre[class*='language-'] {
 	word-wrap: normal;
 	font-family: Menlo, Monaco, 'Courier New', monospace;
 	font-size: 14px;
-	color: #76d9e6;
+	color: #fff;
 	text-shadow: none;
 }
-code[class*='language-']:before,
+/* code[class*='language-']:before,
 pre[class*='language-']:before {
-	content: attr(class);
+	content: '';
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -126,7 +126,7 @@ pre[class*='language-']:before {
 	padding: 0.25em 0.5em;
 	border-top-left-radius: 0.25em;
 	border-bottom-right-radius: 0.25em;
-}
+} */
 pre > code[class*='language-'] {
 	font-size: 1em;
 }
@@ -142,6 +142,7 @@ pre[class*='language-'] {
 	border: 1px solid rgba(255, 255, 255, 0.1);
 	overflow: auto;
 	position: relative;
+	margin: 10px 0px 0px 0px !important;
 }
 
 pre[class*='language-'] code {
