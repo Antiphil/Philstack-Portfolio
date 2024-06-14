@@ -15,6 +15,26 @@ export type Translations = RootTranslation
 
 type RootTranslation = {
 	/**
+	 * H​o​m​e
+	 */
+	navHome: string
+	/**
+	 * R​e​s​u​m​e
+	 */
+	navResume: string
+	/**
+	 * P​r​o​j​e​c​t​s
+	 */
+	navProjects: string
+	/**
+	 * B​l​o​g
+	 */
+	navBlog: string
+	/**
+	 * C​o​n​t​a​c​t
+	 */
+	navContact: string
+	/**
 	 * W​e​l​c​o​m​e​ ​|​ ​P​h​i​l​s​t​a​c​k​.​d​e​ ​-​ ​M​y​ ​W​e​b​-​D​e​v​e​l​o​p​e​r​ ​P​o​r​t​f​o​l​i​o
 	 */
 	title: string
@@ -75,13 +95,38 @@ type RootTranslation = {
 	viewAll: string
 	readMore: string
 	job: string
+	/**
+	 * T​h​u​r​i​n​g​i​a​/​G​e​r​m​a​n​y
+	 */
 	location: string
+	/**
+	 * I​ ​a​m​ ​a​ ​2​8​ ​y​e​a​r​ ​o​l​d​ ​I​T​ ​n​e​r​d​ ​f​r​o​m​ ​T​h​u​r​i​n​g​i​a​ ​w​i​t​h​ ​a​ ​g​r​e​a​t​ ​p​a​s​s​i​o​n​ ​f​o​r​ ​e​v​e​r​y​t​h​i​n​g​ ​t​e​c​h​n​i​c​a​l​ ​a​n​d​ ​c​r​e​a​t​i​v​e​.​ ​I​ ​t​a​u​g​h​t​ ​m​y​s​e​l​f​ ​m​o​s​t​ ​o​f​ ​m​y​ ​s​k​i​l​l​s​ ​a​n​d​ ​w​o​u​l​d​ ​l​i​k​e​ ​t​o​ ​s​h​a​r​e​ ​m​y​ ​e​x​p​e​r​i​e​n​c​e​ ​a​n​d​ ​s​k​i​l​l​s​ ​w​i​t​h​ ​y​o​u​ ​h​e​r​e​!
+	 */
 	articleAbout: string
 	otherPosts: string
+	/**
+	 * S​h​a​r​e​ ​o​n​ ​F​a​c​e​b​o​o​k
+	 */
 	fbShare: string
+	/**
+	 * S​h​a​r​e​ ​o​n​ ​X​/​T​w​i​t​t​e​r
+	 */
 	xShare: string
+	/**
+	 * S​h​a​r​e​ ​o​n​ ​T​h​r​e​a​d​s
+	 */
 	threadsShare: string
+	/**
+	 * S​h​a​r​e​ ​o​n​ ​L​i​n​k​e​d​I​n
+	 */
+	linkledInShare: string
+	/**
+	 * C​o​p​y​ ​L​i​n​k
+	 */
 	linkShare: string
+	/**
+	 * D​o​w​n​l​o​a​d​ ​P​D​F
+	 */
 	dlPDF: string
 	/**
 	 * I​’​d​ ​l​o​v​e​ ​t​o​ ​h​e​a​r​ ​f​r​o​m​ ​y​o​u​.​ ​P​l​e​a​s​e​ ​f​i​l​l​ ​o​u​t​ ​t​h​i​s​ ​f​o​r​m​ ​o​r​ ​s​h​o​o​t​ ​u​s​ ​a​n​ ​m​a​i​l​!
@@ -128,6 +173,26 @@ type RootTranslation = {
 }
 
 export type TranslationFunctions = {
+	/**
+	 * Home
+	 */
+	navHome: () => LocalizedString
+	/**
+	 * Resume
+	 */
+	navResume: () => LocalizedString
+	/**
+	 * Projects
+	 */
+	navProjects: () => LocalizedString
+	/**
+	 * Blog
+	 */
+	navBlog: () => LocalizedString
+	/**
+	 * Contact
+	 */
+	navContact: () => LocalizedString
 	/**
 	 * Welcome | Philstack.de - My Web-Developer Portfolio
 	 */
@@ -189,13 +254,38 @@ export type TranslationFunctions = {
 	viewAll: () => LocalizedString
 	readMore: () => LocalizedString
 	job: () => LocalizedString
+	/**
+	 * Thuringia/Germany
+	 */
 	location: () => LocalizedString
+	/**
+	 * I am a 28 year old IT nerd from Thuringia with a great passion for everything technical and creative. I taught myself most of my skills and would like to share my experience and skills with you here!
+	 */
 	articleAbout: () => LocalizedString
 	otherPosts: () => LocalizedString
+	/**
+	 * Share on Facebook
+	 */
 	fbShare: () => LocalizedString
+	/**
+	 * Share on X/Twitter
+	 */
 	xShare: () => LocalizedString
+	/**
+	 * Share on Threads
+	 */
 	threadsShare: () => LocalizedString
+	/**
+	 * Share on LinkedIn
+	 */
+	linkledInShare: () => LocalizedString
+	/**
+	 * Copy Link
+	 */
 	linkShare: () => LocalizedString
+	/**
+	 * Download PDF
+	 */
 	dlPDF: () => LocalizedString
 	/**
 	 * I’d love to hear from you. Please fill out this form or shoot us an mail!

@@ -16,17 +16,25 @@
 	const copyURL = () => window.navigator.clipboard.writeText(`https://philstack.de${$page.url.pathname}`);
 
 	async function downloadPDF() {
-		const response = await fetch('/api/pdf');
-		const blob = await response.blob();
-		console.log(blob);
-		const url = window.URL.createObjectURL(blob);
-		const a = document.createElement('a');
-		a.href = url;
-		a.download = 'article.pdf';
-		document.body.appendChild(a);
-		a.click();
-		document.body.removeChild(a);
-		window.URL.revokeObjectURL(url);
+		const response = await fetch('/api/pdf', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify({ url: window.location.href })
+		});
+
+		if (response.ok) {
+			const blob = await response.blob();
+			const url = window.URL.createObjectURL(blob);
+			const a = document.createElement('a');
+			a.href = url;
+			a.download = 'article.pdf';
+			a.click();
+			window.URL.revokeObjectURL(url);
+		} else {
+			console.error('Failed to generate PDF');
+		}
 	}
 </script>
 
