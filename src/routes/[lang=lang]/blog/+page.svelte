@@ -1,5 +1,5 @@
 <script>
-	import { locale } from '$i18n/i18n-svelte';
+	import LL, { locale } from '$i18n/i18n-svelte';
 	import BlogitemCard from '$lib/components/modules/blogitems/blogitemCard.svelte';
 	import BlogitemMain from '$lib/components/modules/blogitems/blogitemMain.svelte';
 	import BlogitemSmall from '$lib/components/modules/blogitems/blogitemSmall.svelte';
@@ -18,7 +18,7 @@
 			<Title left title="Featured Posts" />
 			<a href="/{$locale}/" class="flex h-fit w-full items-center gap-2 rounded-xl bg-primary-main px-6 py-2.5 text-xs font-semibold text-secondary-900 transition-all hover:bg-secondary-900 hover:text-primary-main md:w-fit">
 				<i class="fa-solid fa-arrow-left"></i>
-				<span>Back</span>
+				<span>{$LL.back()}</span>
 			</a>
 		</div>
 	</div>
@@ -66,7 +66,7 @@
 		</div>
 		<div class="hidden lg:block">
 			<a href="/{$locale}/blog/latest" class="flex h-fit w-fit items-center gap-2 rounded-xl bg-primary-main px-6 py-2.5 text-xs font-semibold text-secondary-900 transition-all hover:bg-secondary-900 hover:text-primary-main">
-				<span>View All</span>
+				<span>{$LL.viewAll()}</span>
 				<i class="fa-solid fa-arrow-right"></i>
 			</a>
 		</div>
@@ -84,7 +84,7 @@
 	</div>
 	<div class="flex justify-center lg:hidden">
 		<a href="/{$locale}/blog/latest" class="mt-3 flex h-fit w-fit items-center gap-2 rounded-xl bg-primary-main px-6 py-2.5 text-xs font-semibold text-secondary-900 transition-all hover:bg-secondary-900 hover:text-primary-main">
-			<span>View All</span>
+			<span>{$LL.viewAll()}</span>
 			<i class="fa-solid fa-arrow-right"></i>
 		</a>
 	</div>
@@ -97,7 +97,7 @@
 		</div>
 		<div class="hidden lg:block">
 			<a href="/{$locale}/blog/popular" class="flex h-fit w-fit items-center gap-2 rounded-xl bg-primary-main px-6 py-2.5 text-xs font-semibold text-secondary-900 transition-all hover:bg-secondary-900 hover:text-primary-main">
-				<span>View All</span>
+				<span>{$LL.viewAll()}</span>
 				<i class="fa-solid fa-arrow-right"></i>
 			</a>
 		</div>
@@ -115,7 +115,7 @@
 	</div>
 	<div class="flex justify-center lg:hidden">
 		<a href="/{$locale}/blog/popular" class="mt-3 flex h-fit w-fit items-center gap-2 rounded-xl bg-primary-main px-6 py-2.5 text-xs font-semibold text-secondary-900 transition-all hover:bg-secondary-900 hover:text-primary-main">
-			<span>View All</span>
+			<span>{$LL.viewAll()}</span>
 			<i class="fa-solid fa-arrow-right"></i>
 		</a>
 	</div>

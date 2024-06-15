@@ -92,6 +92,9 @@ type RootTranslation = {
 	viewProjectsBtn: string
 	posted: string
 	author: string
+	/**
+	 * V​i​e​w​ ​A​l​l
+	 */
 	viewAll: string
 	readMore: string
 	job: string
@@ -100,7 +103,7 @@ type RootTranslation = {
 	 */
 	location: string
 	/**
-	 * I​ ​a​m​ ​a​ ​2​8​ ​y​e​a​r​ ​o​l​d​ ​I​T​ ​n​e​r​d​ ​f​r​o​m​ ​T​h​u​r​i​n​g​i​a​ ​w​i​t​h​ ​a​ ​g​r​e​a​t​ ​p​a​s​s​i​o​n​ ​f​o​r​ ​e​v​e​r​y​t​h​i​n​g​ ​t​e​c​h​n​i​c​a​l​ ​a​n​d​ ​c​r​e​a​t​i​v​e​.​ ​I​ ​t​a​u​g​h​t​ ​m​y​s​e​l​f​ ​m​o​s​t​ ​o​f​ ​m​y​ ​s​k​i​l​l​s​ ​a​n​d​ ​w​o​u​l​d​ ​l​i​k​e​ ​t​o​ ​s​h​a​r​e​ ​m​y​ ​e​x​p​e​r​i​e​n​c​e​ ​a​n​d​ ​s​k​i​l​l​s​ ​w​i​t​h​ ​y​o​u​ ​h​e​r​e​!
+	 * I​ ​a​m​ ​a​ ​2​8​ ​y​e​a​r​ ​o​l​d​ ​I​T​ ​n​e​r​d​ ​f​r​o​m​ ​T​h​u​r​i​n​g​i​a​ ​w​i​t​h​ ​a​ ​g​r​e​a​t​ ​p​a​s​s​i​o​n​ ​f​o​r​ ​e​v​e​r​y​t​h​i​n​g​ ​t​e​c​h​n​i​c​a​l​ ​a​n​d​ ​c​r​e​a​t​i​v​e​.​ ​I​ ​t​a​u​g​h​t​ ​m​y​s​e​l​f​ ​m​o​s​t​ ​o​f​ ​m​y​ ​s​k​i​l​l​s​ ​a​n​d​ ​w​o​u​l​d​ ​l​i​k​e​ ​t​o​ ​s​h​a​r​e​ ​m​y​ ​e​x​p​e​r​i​e​n​c​e​,​ ​l​e​a​r​n​i​n​g​s​ ​a​n​d​ ​s​k​i​l​l​s​ ​w​i​t​h​ ​y​o​u​ ​h​e​r​e​!
 	 */
 	articleAbout: string
 	otherPosts: string
@@ -164,6 +167,9 @@ type RootTranslation = {
 	 * Y​o​u​r​ ​M​e​s​s​a​g​e
 	 */
 	contactMessage: string
+	/**
+	 * B​a​c​k
+	 */
 	back: string
 	born: string
 	/**
@@ -251,6 +257,9 @@ export type TranslationFunctions = {
 	viewProjectsBtn: () => LocalizedString
 	posted: () => LocalizedString
 	author: () => LocalizedString
+	/**
+	 * View All
+	 */
 	viewAll: () => LocalizedString
 	readMore: () => LocalizedString
 	job: () => LocalizedString
@@ -259,7 +268,7 @@ export type TranslationFunctions = {
 	 */
 	location: () => LocalizedString
 	/**
-	 * I am a 28 year old IT nerd from Thuringia with a great passion for everything technical and creative. I taught myself most of my skills and would like to share my experience and skills with you here!
+	 * I am a 28 year old IT nerd from Thuringia with a great passion for everything technical and creative. I taught myself most of my skills and would like to share my experience, learnings and skills with you here!
 	 */
 	articleAbout: () => LocalizedString
 	otherPosts: () => LocalizedString
@@ -323,6 +332,9 @@ export type TranslationFunctions = {
 	 * Your Message
 	 */
 	contactMessage: () => LocalizedString
+	/**
+	 * Back
+	 */
 	back: () => LocalizedString
 	born: () => LocalizedString
 	/**

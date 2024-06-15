@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { locale } from '$i18n/i18n-svelte';
+	import LL, { locale } from '$i18n/i18n-svelte';
 	import Offpagenavbar from './../../../../lib/components/modules/offpagenavbar.svelte';
 	import BlogitemL from '$lib/components/modules/blogitems/blogitemL.svelte';
 	import BlogitemR from '$lib/components/modules/blogitems/blogitemR.svelte';
@@ -56,7 +56,7 @@
 		</div>
 		<a href="/{$locale}/blog" class="flex h-fit w-full items-center gap-2 rounded-xl bg-primary-main px-6 py-2.5 text-xs font-semibold text-secondary-900 transition-all hover:bg-secondary-900 hover:text-primary-main md:w-fit">
 			<i class="fa-solid fa-chevron-left"></i>
-			<span>Back</span>
+			<span>{$LL.back()}</span>
 		</a>
 	</div>
 	<div class="mb-14 ml-5 mt-10">

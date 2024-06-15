@@ -29,7 +29,7 @@ const de = {
 	beschrTeamDescr: 'Über meine Zusammenarbeit mit der KreativWerkstatt und dem Konzept für Social Media kam das Beschriftungsteam auf mich zu und beauftragte mich, einen Imagefilm für sie zu erstellen und ihre Social Media Präsenz zu verwalten. Hinzu kam eine Überarbeitung der hauseigenen Website und SEO-Optimierung.',
 	xivdataDesc: 'XIVDATA ist ein Projekt, dem ich mich letztes Jahr angeschlossen habe, das eine riesige Datenbank und Toolsammlung für das erfolgreiche MMORPG "Final Fantasy XIV" wird, sobald es fertiggestellt ist. Es handelt sich hierbei um ein Freizeit- und Nebenbei-Projekt mit großen Ambitionen und kann daher noch einige Zeit bis zur Fertigstellung in Anspruch nehmen.',
 	landkautzDescr: 'Marcel Reukauf, der Inhaber von Landkautz, kam Ende 2022 auf mich zu und fragte, ob ich ein neues Design für seinen aufstrebenden Online-Shop erstellen könne. Es handelte sich dabei um einen Shopify-Store, mit dem ich vorher noch keinerlei Berührungspunkte hatte. Neben dem neuen Design nahm ich auch einige systemische Anpassungen im Kauf- und Bestellungsprozess vor.',
-	viewProjectsBtn: 'alle projekte anschauen',
+	viewProjectsBtn: 'Alle Projekte Ansehen',
 	/* Blog */
 	posted: '',
 	author: '',
@@ -38,7 +38,7 @@ const de = {
 	/* Article */
 	job: '',
 	location: 'Thüringen/Deutschland',
-	articleAbout: 'I am a 28 year old IT nerd from Thuringia with a great passion for everything technical and creative. I taught myself most of my skills and would like to share my experience and skills with you here!',
+	articleAbout: 'Ich bin ein 28-jähriger IT-Nerd aus Thüringen mit einer großen Leidenschaft für alles Technische und Kreative. Die meisten meiner Fähigkeiten habe ich mir selbst beigebracht und möchte hier meine Erfahrungen, learnings & Fähigkeiten mit euch teilen!',
 	otherPosts: '',
 	/* InfoBar */
 	fbShare: 'Auf Facebook teilen',
@@ -59,7 +59,8 @@ const de = {
 	contactMessage: 'Deine Nachricht',
 
 	/* misc */
-	back: '',
+	back: 'Zurück',
+	viewAll: 'Alle Ansehen',
 	/* resume */
 	born: '',
 	timelineSub: 'only design & coding related jobs*'

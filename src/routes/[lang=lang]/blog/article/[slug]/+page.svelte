@@ -17,7 +17,7 @@
 	<Offpagenavbar />
 	<div class="mt-[68px] w-full p-3 md:w-3/4 md:p-8">
 		<div class=" flex w-full flex-col-reverse items-center gap-2 md:flex-row">
-			<Infobar date={data.featured[0].attributes.createdAt} link twitter linkedin facebook threads download />
+			<Infobar date={data.featured[0].attributes.createdAt} link twitter linkedin facebook threads />
 			<a href="/{$locale}/blog" class="flex h-fit w-full items-center gap-2 rounded-xl bg-primary-main px-6 py-2.5 text-xs font-semibold text-secondary-900 transition-all hover:bg-secondary-900 hover:text-primary-main md:w-fit">
 				<i class="fa-solid fa-chevron-left"></i>
 				<span>Back</span>

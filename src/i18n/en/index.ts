@@ -38,7 +38,7 @@ const en = {
 	/* Article */
 	job: '',
 	location: 'Thuringia/Germany',
-	articleAbout: 'I am a 28 year old IT nerd from Thuringia with a great passion for everything technical and creative. I taught myself most of my skills and would like to share my experience and skills with you here!',
+	articleAbout: 'I am a 28 year old IT nerd from Thuringia with a great passion for everything technical and creative. I taught myself most of my skills and would like to share my experience, learnings and skills with you here!',
 	otherPosts: '',
 	/* InfoBar */
 	fbShare: 'Share on Facebook',
@@ -58,7 +58,8 @@ const en = {
 	contacMail: 'Email adress',
 	contactMessage: 'Your Message',
 	/* misc */
-	back: '',
+	back: 'Back',
+	viewAll: 'View All',
 	/* resume */
 	born: '',
 	timelineSub: 'only design & coding related jobs*'
