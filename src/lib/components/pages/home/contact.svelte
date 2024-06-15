@@ -20,7 +20,7 @@
 
 					<h2 class="mt-4 text-base font-semibold">Email</h2>
 					<p class="mt-2 text-sm">{$LL.mailText()}</p>
-					<p class="mt-2 text-sm font-bold"><i class="fa-solid fa-caret-right"></i> stehle@mailbox.org</p>
+					<p class="mt-2 text-sm font-bold"><i class="fa-solid fa-caret-right"></i> Philipp-Stehle@outlook.de</p>
 				</div>
 				<div>
 					<span class="flex h-12 w-12 items-center justify-center rounded-full bg-primary-main/10">
@@ -29,7 +29,7 @@
 
 					<h2 class="mt-4 text-base font-semibold">Phone</h2>
 					<p class="mt-2 text-sm">{$LL.phoneText()}</p>
-					<p class="mt-2 text-sm font-bold"><i class="fa-solid fa-caret-right"></i> +49 00000000000000</p>
+					<p class="mt-2 text-sm font-bold"><i class="fa-solid fa-caret-right"></i> +49 17621942619</p>
 				</div>
 				<div>
 					<span class="flex h-12 w-12 items-center justify-center rounded-full bg-primary-main/10">
@@ -38,7 +38,7 @@
 
 					<h2 class="mt-4 text-base font-semibold">Whatsapp</h2>
 					<p class="mt-2 text-sm">{$LL.whatsappText()}</p>
-					<p class="mt-2 text-sm font-bold"><i class="fa-solid fa-caret-right"></i> +49 0000000000000</p>
+					<p class="mt-2 text-sm font-bold"><i class="fa-solid fa-caret-right"></i> +49 17621942619</p>
 				</div>
 				<div>
 					<span class="flex h-12 w-12 items-center justify-center rounded-full bg-primary-main/10">

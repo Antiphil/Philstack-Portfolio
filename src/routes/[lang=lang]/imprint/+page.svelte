@@ -8,7 +8,7 @@
 	<h2>Kontakt</h2>
 	<p>
 		Telefon: 017621942619<br />
-		E-Mail: stehle@mailbox.org
+		E-Mail: Philipp-Stehle@outlook.de
 	</p>
 	<h2>Redaktionell verantwortlich</h2>
 	<p>Person sowie personbezogene Daten der verantwortlichen Person sind identisch mit den oben genannten.</p>
