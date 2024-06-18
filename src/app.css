@@ -97,9 +97,15 @@ body > #app {
 	--svooltip-bg: rgb(27, 27, 25);
 	--svooltip-text: #ede9d0;
 }
-
+code {
+	background-color: rgba(0, 0, 0, 0.41);
+	border-radius: 4px;
+	padding: 3px;
+	color: #fff;
+}
 code[class*='language-'],
 pre[class*='language-'] {
+	background-color: unset;
 	-moz-tab-size: 2;
 	-o-tab-size: 2;
 	tab-size: 2;

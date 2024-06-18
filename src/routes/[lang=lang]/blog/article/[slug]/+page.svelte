@@ -26,9 +26,9 @@
 
 		<article class="prose-sm prose-pink overflow-hidden p-3 md:p-5">
 			{#if $locale === 'en'}
-				<h1>{@html data.featured[0].attributes.title}</h1>
+				<h1 class="font-semibold">{@html data.featured[0].attributes.title}</h1>
 			{:else}
-				<h1>{@html data.featured[0].attributes.localizations.data[0].attributes.title}</h1>
+				<h1 class="font-semibold">{@html data.featured[0].attributes.localizations.data[0].attributes.title}</h1>
 			{/if}
 			<img class="w-full" src={`https://strapi.antiphil.de${data.featured[0].attributes.media.data[0].attributes.url}`} alt="Thumbnail" />
 			{#if $locale === 'en'}
