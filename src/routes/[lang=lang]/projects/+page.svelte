@@ -37,9 +37,9 @@
 			<span>{$LL.back()}</span>
 		</a>
 	</div>
-	<div class="mb-14 mt-5 rounded-xl bg-secondary-900 p-5">
+	<div class="mb-14 mt-8 rounded-xl p-2">
 		<Title title={$LL.navProjects()} />
-		<div class="m-auto mt-10 flex flex-col gap-5 p-5">
+		<div class="m-auto mt-5 flex flex-col gap-5 p-5">
 			<ProjectitemL url="/{$locale}/projects/kreativwerkstatt-lebenshilfe-suedthueringen" title="KreativWerkstatt" desc={$LL.keaWeDescr()} tags={['Strapi', 'Sveltekit', 'Sqoosh API', 'Social Media Concept']} logo={lebenshilfeLogo} banner={kreaweBanner} />
 			<ProjectitemR url="/{$locale}/projects/beschriftungsteam-dreißigacker-meiningen" title="Beschriftungsteam" desc={$LL.beschrTeamDescr()} tags={['UI/UX', 'IONOS', 'CSS', 'Social Media Management', 'Movie Prod.']} logo={beschriftungsteamLogo} banner={beschriftungsteamBanner} />
 			<ProjectitemL url="/{$locale}/projects/xivdata-finalfantasy-database" title="XIVDATA" desc={$LL.xivdataDesc()} tags={['Javascript', 'PHP', 'Tailwind', 'Svelte', 'Laravel']} logo={xivdataLogo} banner={xivdataBanner} />
